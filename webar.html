@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A-FrameとAR.jsでWebAR体験</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:url" content="https://miyaryo1212.github.io/webar/webar.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A-FrameとAR.jsでWebAR体験" />
+    <meta property="og:description" content="A-FrameとAR.jsを用いてブラウザ上でARを体験！" />
+    <meta property="og:site_name" content="butsukaga" />
+    <meta property="og:image" content="#" />
+    <!--
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-scene embedded arjs="debugUIEnabled:false; patternRatio:0.75">
+
+        <a-assets>
+            <a-assets-item id="ethanol-obj" src="./assets/model/ethanol/ethanol.fixed.obj"></a-assets-item>
+            <a-assets-item id="ethanol-mtl" src="./assets/model/ethanol/ethanol.fixed.mtl"></a-assets-item>
+
+            <a-assets-item id="benzene-obj" src="./assets/model/benzene/benzene.obj"></a-assets-item>
+            <a-assets-item id="benzene-mtl" src="./assets/model/benzene/benzene.mtl"></a-assets-item>
+        </a-assets>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.001.patt">
+            <a-box position="0 0.5 0" color="#0000ff"
+                animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true;"></a-box>
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.002.patt">
+            <a-box position="0 0.5 0" color="#ff0000"
+                animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true;"></a-box>
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.003.patt">
+            <a-entity obj-model="obj: #ethanol-obj; mtl: #ethanol-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.004.patt">
+            <a-entity obj-model="obj: #benzene-obj; mtl: #benzene-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;"></a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
