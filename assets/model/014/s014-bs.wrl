@@ -1,0 +1,155 @@
+#VRML V2.0 utf8
+WorldInfo {
+  info [
+    "copyright (c) 2000 - Ratio International Inc."
+    "s014(ethanol).wrl"
+  ]
+  title "data_CSD_CIF/MIF_ETANOL"
+}
+NavigationInfo {
+ headlight TRUE
+ type [ "EXAMINE" ]
+}
+Background{
+  skyColor [ 0.400 0.400 0.400 ]
+  groundColor [ 0.400 0.400 0.400 ]
+}
+
+Viewpoint {
+
+  description "ExpressCamera"
+  position 0.0000 0.0000 100.0000
+  orientation 0 0 1 0
+  fieldOfView 0.0828
+}
+
+PROTO Atom [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 1.000 1.000 1.000
+  field SFFloat Radius   0.360
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Sphere{
+          radius IS Radius
+        }
+      }
+    ]
+  }
+}
+
+PROTO Bond [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 0.700 0.700 0.700
+  field SFRotation Rot 0 0 0 0
+  field SFFloat Len 1.0
+  field SFFloat Radius   0.100
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    rotation IS Rot
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Cylinder{
+          radius IS Radius
+          height IS Len
+        }
+      }
+    ]
+  }
+}
+
+
+Atom{  #H
+  Pos  -1.295   0.432  -0.356
+}
+Atom{  #H
+  Pos  -0.575   1.045   0.887
+}
+Atom{  #C
+  Pos  -0.513   0.320   0.315
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   1.523  -0.036   0.112
+}
+Atom{  #H
+  Pos   0.705  -0.641  -1.179
+}
+Atom{  #H
+  Pos  -0.847  -1.433   0.580
+}
+Atom{  #C
+  Pos   0.751   0.171  -0.503
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -0.740  -0.807   1.153
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   0.991   0.948  -1.009
+}
+Bond{  #C-H
+  Pos  -0.904   0.376  -0.020
+  Rot   0.391   0.462   0.336 3.1416
+  Len   1.037
+}
+Bond{  #H-O
+  Pos  -0.794  -1.120   0.866
+  Rot  -0.054   0.115  -0.286 3.1416
+  Len   0.855
+}
+Bond{  #C-H
+  Pos  -0.544   0.682   0.601
+  Rot   0.031   0.100  -0.286 3.1416
+  Len   0.925
+}
+Bond{  #C-O
+  Pos  -0.626  -0.244   0.734
+  Rot   0.113   1.275  -0.419 3.1416
+  Len   1.423
+}
+Bond{  #C-C
+  Pos   0.119   0.246  -0.094
+  Rot   0.632   0.682  -0.409 3.1416
+  Len   1.513
+}
+Bond{  #C-H
+  Pos   1.137   0.068  -0.195
+  Rot  -0.386   0.608  -0.307 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos   0.871   0.560  -0.756
+  Rot  -0.120   0.091   0.253 3.1416
+  Len   0.958
+}
+Bond{  #C-H
+  Pos   0.728  -0.235  -0.841
+  Rot   0.023   0.935   0.338 3.1416
+  Len   1.058
+}

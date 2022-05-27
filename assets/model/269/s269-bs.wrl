@@ -1,0 +1,7583 @@
+#VRML V2.0 utf8
+WorldInfo {
+  info [
+    "copyright (c) 2000 - Ratio International Inc."
+    "DNA.wrl"
+  ]
+  title "DNA"
+}
+NavigationInfo {
+ headlight TRUE
+ type [ "EXAMINE" ]
+}
+Background{
+  skyColor [ 0.400 0.400 0.400 ]
+  groundColor [ 0.400 0.400 0.400 ]
+}
+
+Viewpoint {
+
+  description "ExpressCamera"
+  position 5.0000 1.0000 600.0000
+  orientation 0 0 1 0
+  fieldOfView 0.0828
+}
+
+PROTO Atom [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 1.000 1.000 1.000
+  field SFFloat Radius   0.360
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Sphere{
+          radius IS Radius
+        }
+      }
+    ]
+  }
+}
+
+PROTO Bond [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 0.700 0.700 0.700
+  field SFRotation Rot 0 0 0 0
+  field SFFloat Len 1.0
+  field SFFloat Radius   0.100
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    rotation IS Rot
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Cylinder{
+          radius IS Radius
+          height IS Len
+        }
+      }
+    ]
+  }
+}
+
+
+Atom{  #H
+  Pos  -5.703 -14.894   4.522
+}
+Atom{  #P
+  Pos  -6.534 -14.414   7.292
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos   7.005  19.107   0.775
+}
+Atom{  #H
+  Pos   0.069  15.235   1.057
+}
+Atom{  #H
+  Pos   0.451  -4.437  -2.806
+}
+Atom{  #H
+  Pos  -5.589  10.343  -2.966
+}
+Atom{  #H
+  Pos   5.562  -8.757   2.560
+}
+Atom{  #H
+  Pos   6.217   2.067  -2.881
+}
+Atom{  #H
+  Pos   7.851   2.993  -6.814
+}
+Atom{  #H
+  Pos   0.523 -12.928  -3.357
+}
+Atom{  #N
+  Pos  -0.681  17.883  -1.966
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   1.134 -14.604   4.440
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   4.464  -7.037   2.730
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   7.656 -13.269   1.773
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   3.220  20.717   1.448
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   2.946   4.704  -0.143
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -1.080 -20.733   1.666
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -0.504  15.345   1.885
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   1.142  -4.414  -3.547
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -6.630 -15.995   3.481
+}
+Atom{  #C
+  Pos   4.558   1.885  -1.617
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.075   3.121  -5.556
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.518  -9.741   2.552
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   7.377  20.000  -0.722
+}
+Atom{  #H
+  Pos   1.370   4.430  -7.385
+}
+Atom{  #H
+  Pos  -4.325  14.780   3.896
+}
+Atom{  #H
+  Pos   5.213  -5.162  -4.894
+}
+Atom{  #H
+  Pos  -7.333  11.339  -1.748
+}
+Atom{  #H
+  Pos   7.427  -7.844   1.444
+}
+Atom{  #H
+  Pos   5.578   4.072  -5.733
+}
+Atom{  #O
+  Pos   0.711  20.664  -1.832
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   1.950 -12.906  -2.334
+}
+Atom{  #N
+  Pos   3.606  17.278   2.096
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   0.368  12.229  -4.348
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -0.968  18.143   0.310
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   2.314   1.799  -4.970
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -3.723  -2.209  -2.586
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -2.508  15.070   2.989
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   3.285  -4.794  -4.301
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -3.043 -10.865   4.661
+}
+Atom{  #H
+  Pos  -4.373 -16.711   5.397
+}
+Atom{  #C
+  Pos  -6.168  14.372  -2.152
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.422   1.939  -0.371
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.086   1.977  -5.335
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.251 -12.248  -1.443
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.787 -11.086   2.512
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -3.729  10.087  -0.218
+}
+Atom{  #H
+  Pos   5.878  21.020   1.728
+}
+Atom{  #H
+  Pos   2.676   6.727  -8.324
+}
+Atom{  #H
+  Pos  -7.475  13.385  -3.581
+}
+Atom{  #H
+  Pos   7.295  -5.615   3.047
+}
+Atom{  #H
+  Pos   6.781   3.227  -4.736
+}
+Atom{  #P
+  Pos   3.562  -6.924   4.058
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #O
+  Pos   2.698   4.651  -5.832
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -0.258  11.773  -2.170
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   6.523 -14.273   1.937
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   0.685   4.316  -0.461
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -4.919  -2.099  -1.660
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   3.547   5.807  -3.945
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -4.421 -11.917   5.096
+}
+Atom{  #P
+  Pos   5.037 -12.344  -1.689
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos  -0.903 -17.421   2.534
+}
+Atom{  #C
+  Pos  -3.806  14.776   2.951
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.636  13.757  -0.862
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.814  -5.603   0.093
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.142   1.992  -2.837
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -2.231   9.161  -0.180
+}
+Atom{  #H
+  Pos   5.829  21.295  -2.187
+}
+Atom{  #H
+  Pos   2.783   7.932  -5.866
+}
+Atom{  #H
+  Pos  -6.554  15.376  -2.003
+}
+Atom{  #H
+  Pos   6.527  -3.836   1.162
+}
+Atom{  #O
+  Pos   3.740  11.050  -1.471
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -6.600  16.494   0.866
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -0.338   8.108  -2.538
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -3.106  18.128   1.391
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   3.677  -1.511  -3.202
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   2.685 -14.079   6.062
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -4.945  17.818  -0.203
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   5.266  -1.649  -1.337
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   5.843  -6.978   0.432
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   5.614 -13.508   2.894
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   1.926   5.007  -2.291
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -2.214 -20.317   3.803
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   5.145  -5.238  -2.858
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -1.692 -12.735   4.043
+}
+Atom{  #C
+  Pos   1.518  20.705  -0.906
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.371   4.257  -8.123
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.021   1.846  -3.966
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -0.746 -10.615   2.504
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -6.406  -2.027  -8.852
+}
+Atom{  #H
+  Pos  -2.411  11.875  -0.530
+}
+Atom{  #H
+  Pos  -7.517  18.432  -0.763
+}
+Atom{  #H
+  Pos   0.061  20.531   0.528
+}
+Atom{  #H
+  Pos   4.113   6.867  -6.415
+}
+Atom{  #H
+  Pos  10.062  22.711  -0.224
+}
+Atom{  #H
+  Pos  -5.414  14.386  -2.937
+}
+Atom{  #H
+  Pos   5.300  -4.777   2.042
+}
+Atom{  #O
+  Pos   9.823  19.191   4.125
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.726   4.537  -2.013
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   5.128   5.089   0.311
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   1.869  17.464   0.502
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   0.879   6.770  -7.293
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -6.062 -15.914   4.406
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   5.390   5.876  -2.658
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -5.463 -12.632   3.207
+}
+Atom{  #C
+  Pos  -3.822  14.485   0.749
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.339   4.891  -7.185
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.254  -5.095  -1.840
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.167  14.362  -1.327
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.302  -4.987   0.119
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.721  -7.693   2.730
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.061 -11.433   0.657
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #Lp
+  Pos   0.000   0.000   0.000
+  Radius   0.015
+  Color 0.392 0.392 0.392
+}
+Atom{  #H
+  Pos  -5.662  -2.855  -1.918
+}
+Atom{  #H
+  Pos  -5.789  -0.516  -8.171
+}
+Atom{  #H
+  Pos   6.743  20.162   4.431
+}
+Atom{  #H
+  Pos   0.105  10.668   2.176
+}
+Atom{  #H
+  Pos  -5.765  18.170   1.712
+}
+Atom{  #H
+  Pos   0.285  20.475   2.782
+}
+Atom{  #H
+  Pos   1.641   6.111  -4.807
+}
+Atom{  #H
+  Pos   8.746  23.858  -0.542
+}
+Atom{  #H
+  Pos  -6.323  14.024  -0.061
+}
+Atom{  #H
+  Pos   6.610  -5.423  -0.628
+}
+Atom{  #O
+  Pos   9.354  18.131   1.842
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -8.526  18.646   2.413
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   9.162  -1.103  -3.510
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -4.451 -17.702  -0.395
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   1.893   8.366  -2.727
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -4.938 -16.944   4.495
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   5.644   4.099 -10.080
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   3.389 -14.092   3.956
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -3.754  17.670  -2.108
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   3.811  -1.603   0.382
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   8.471  -5.625   1.344
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -1.821 -15.221  -1.404
+}
+Atom{  #H
+  Pos  -3.792 -13.963   8.271
+}
+Atom{  #C
+  Pos   4.305   5.439  -1.907
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.616  -7.135   1.615
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   7.346 -11.609  -0.308
+}
+Atom{  #H
+  Pos  -4.617  -2.249  -0.623
+}
+Atom{  #O
+  Pos  -0.439 -10.175   8.254
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -3.896  -1.762  -8.847
+}
+Atom{  #H
+  Pos   5.064  18.997   5.726
+}
+Atom{  #H
+  Pos   2.705  11.704  -3.595
+}
+Atom{  #H
+  Pos  -5.838  17.538  -2.157
+}
+Atom{  #H
+  Pos   5.858  -1.702   0.751
+}
+Atom{  #H
+  Pos  -3.600  10.605   4.362
+}
+Atom{  #H
+  Pos   1.862  20.474   3.547
+}
+Atom{  #H
+  Pos   5.491   6.434  -4.667
+}
+Atom{  #H
+  Pos   8.472  22.781   1.647
+}
+Atom{  #H
+  Pos   3.159  -5.017   1.188
+}
+Atom{  #O
+  Pos   7.499  18.499   3.486
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -0.439   8.061  -8.998
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.814  21.268   0.267
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos -10.740  14.433  -1.386
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  10.782  -4.649   1.246
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -4.587 -17.231   2.042
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   7.110   5.120  -8.246
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -3.479 -20.835   2.004
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   0.298 -15.465  -0.666
+}
+Atom{  #H
+  Pos  -3.836 -15.375   7.202
+}
+Atom{  #C
+  Pos   1.884  20.606   1.519
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.229   5.086  -0.526
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.247   6.411  -7.372
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.485  14.770   0.637
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.915  -4.819  -1.959
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.120   1.734  -1.498
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   6.211 -10.440   0.380
+}
+Atom{  #H
+  Pos  -4.933  -2.601  -4.249
+}
+Atom{  #H
+  Pos   5.569  17.235   1.281
+}
+Atom{  #O
+  Pos  -2.112  -9.328   6.505
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -5.344  -4.128  -8.307
+}
+Atom{  #H
+  Pos   6.624  16.653   5.456
+}
+Atom{  #H
+  Pos   1.060  12.268  -5.081
+}
+Atom{  #H
+  Pos   0.317  17.992  -1.843
+}
+Atom{  #H
+  Pos  -0.176  -1.429  -0.493
+}
+Atom{  #H
+  Pos  -2.970  12.244   4.140
+}
+Atom{  #H
+  Pos  -9.859  15.703   0.925
+}
+Atom{  #H
+  Pos  10.295  -3.750  -1.321
+}
+Atom{  #H
+  Pos   9.205  22.519  -2.337
+}
+Atom{  #H
+  Pos   2.822   4.440   0.822
+}
+Atom{  #O
+  Pos  -4.768   7.278   0.251
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   3.067   4.426  -9.157
+}
+Atom{  #N
+  Pos  -2.701  -4.768  -0.328
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos   0.850  -4.267  -4.502
+}
+Atom{  #O
+  Pos   1.438   9.197  -7.672
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   0.243   3.819  -4.289
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -9.234  15.394  -3.219
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   8.960  -3.530   2.654
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -2.677 -17.088   3.499
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   4.646   4.830  -7.903
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -7.959 -18.655   4.871
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   0.772 -14.962   0.941
+}
+Atom{  #H
+  Pos  -1.809 -14.080   6.816
+}
+Atom{  #C
+  Pos  -8.405  18.029   1.139
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.807  15.061   1.839
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.422  -4.678  -3.273
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   7.201  -5.758   1.969
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.882 -13.931   7.112
+}
+Atom{  #H
+  Pos   7.495 -11.158   2.207
+}
+Atom{  #H
+  Pos  -7.165   7.816  -1.997
+}
+Atom{  #H
+  Pos  -3.515  -4.987  -6.458
+}
+Atom{  #H
+  Pos   4.669  15.334   4.062
+}
+Atom{  #H
+  Pos  -2.628   8.623  -7.197
+}
+Atom{  #H
+  Pos  -0.613  12.385  -4.562
+}
+Atom{  #H
+  Pos  -1.069  17.748  -2.888
+}
+Atom{  #H
+  Pos   1.049  -1.512   0.759
+}
+Atom{  #H
+  Pos  -4.180  11.488   2.125
+}
+Atom{  #H
+  Pos  -8.503  14.572   0.827
+}
+Atom{  #H
+  Pos   8.939  -4.890  -1.301
+}
+Atom{  #H
+  Pos   0.614   4.079   0.517
+}
+Atom{  #H
+  Pos   3.402   3.183  -7.939
+}
+Atom{  #O
+  Pos   1.379  17.386   2.714
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -0.690   8.535  -6.543
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.560   4.059  -5.701
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -2.217  20.980  -1.981
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -8.742  15.826  -0.800
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   8.887  -3.431   0.150
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -6.761 -17.920   5.479
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   0.795  -1.473  -0.218
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos  -3.366 -11.782   7.227
+}
+Atom{  #C
+  Pos   0.701  11.877  -3.102
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.050   6.921  -6.174
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #P
+  Pos  -0.997 -10.224   6.884
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos   8.206 -13.437   0.846
+}
+Atom{  #H
+  Pos  -7.579   5.858  -0.109
+}
+Atom{  #H
+  Pos   0.352   6.926   2.907
+}
+Atom{  #H
+  Pos  -4.942  -4.038  -5.994
+}
+Atom{  #H
+  Pos   5.932  16.270   3.237
+}
+Atom{  #H
+  Pos  -2.045   6.989  -6.838
+}
+Atom{  #H
+  Pos  -1.298  18.375   2.317
+}
+Atom{  #H
+  Pos   2.014  -1.412  -4.395
+}
+Atom{  #H
+  Pos  -2.132   9.221   2.201
+}
+Atom{  #H
+  Pos  -7.947  16.329   2.400
+}
+Atom{  #H
+  Pos   8.666  -3.422  -3.183
+}
+Atom{  #H
+  Pos  -0.150   4.335  -1.037
+}
+Atom{  #N
+  Pos  -0.442  -4.372  -0.002
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   0.548  14.927  -1.832
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -2.149  -6.417  -3.934
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   2.902  13.491   2.034
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   4.686  18.604   3.750
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #P
+  Pos   5.963   4.274  -8.646
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos   1.693   7.555   0.872
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   1.406  -1.437  -2.443
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -3.919  -2.501  -3.897
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.288  18.627   0.284
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   7.638  -0.843  -1.609
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.684  20.847   0.175
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.856   4.677  -0.992
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.659   5.879  -5.130
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.152  -4.834   1.366
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   6.847 -15.224   2.347
+}
+Atom{  #H
+  Pos  -6.320   3.833  -1.385
+}
+Atom{  #H
+  Pos  -4.895  23.497   2.309
+}
+Atom{  #H
+  Pos  -1.215   6.851   2.123
+}
+Atom{  #H
+  Pos  -2.194  -2.994  -6.792
+}
+Atom{  #H
+  Pos   3.224  17.267   4.210
+}
+Atom{  #H
+  Pos  -3.595   7.780  -5.082
+}
+Atom{  #H
+  Pos  -9.358  18.055   0.610
+}
+Atom{  #H
+  Pos   9.752  -1.349  -1.542
+}
+Atom{  #N
+  Pos   2.536 -17.627   4.883
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   4.787 -17.460   3.922
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -4.402   1.326  -3.039
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -5.368   6.847  -2.328
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #P
+  Pos  -9.394  14.810  -1.869
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #P
+  Pos   9.363  -4.276   1.441
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos  -1.086  -5.351  -2.000
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   1.521  14.247   0.158
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -2.751 -12.171   6.416
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -3.755   4.674  -4.965
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -3.863   4.998  -2.544
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -2.368 -17.603   1.102
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.955 -16.396   5.550
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -2.812 -21.335  -0.110
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   2.237  17.366   1.835
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.884  19.096   4.612
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.779  18.218   1.364
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.358  -1.447  -3.373
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.088  17.802   0.739
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.534  -1.778  -2.095
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.562  -5.063  -4.040
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -1.964  -7.827  -6.285
+}
+Atom{  #H
+  Pos   6.050 -14.437   0.971
+}
+Atom{  #H
+  Pos  -5.394   4.922  -0.325
+}
+Atom{  #H
+  Pos  -3.331  21.535   3.953
+}
+Atom{  #H
+  Pos  -0.426  -2.036  -2.699
+}
+Atom{  #H
+  Pos   0.880  17.558   0.315
+}
+Atom{  #H
+  Pos  -1.573  10.062  -4.854
+}
+Atom{  #O
+  Pos   1.386  -7.767  -6.152
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -7.149  19.695   0.441
+}
+Atom{  #H
+  Pos   7.497   0.178  -1.959
+}
+Atom{  #O
+  Pos  -5.178  20.822   3.513
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   2.281  17.673  -1.715
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -4.295  -6.345  -3.267
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   4.913  13.452   1.028
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   4.750  16.719   6.336
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -1.825   7.353  -4.184
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -3.608  21.408   1.811
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   7.079  -3.068  -1.929
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -0.210   6.988   2.072
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -5.940   7.904  -0.242
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.202  11.377  -0.955
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.519  18.461   4.891
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.888   6.082  -3.843
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -0.078  -6.793  -4.131
+}
+Atom{  #H
+  Pos   6.017 -13.627   3.898
+}
+Atom{  #H
+  Pos  -5.820   5.137  -3.330
+}
+Atom{  #H
+  Pos  -1.216  20.953  -2.129
+}
+Atom{  #H
+  Pos  -5.373  -1.115  -1.755
+}
+Atom{  #H
+  Pos   4.756  17.043  -2.266
+}
+Atom{  #H
+  Pos  -3.515   9.237  -2.692
+}
+Atom{  #H
+  Pos   7.517  18.970   5.492
+}
+Atom{  #H
+  Pos   7.729  -0.858  -0.523
+}
+Atom{  #O
+  Pos  -2.294  -5.641 -10.580
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   4.020  15.432   8.361
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   4.265 -17.645   1.740
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -3.529   1.560  -0.976
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -8.183   5.587  -2.069
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -3.335 -11.844   5.041
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -0.460   7.469  -0.177
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -3.808 -17.502   0.964
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.463   7.161  -1.478
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.409  20.939   4.430
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.746   8.359  -3.343
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.618  17.939   0.144
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.012   8.031  -6.519
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.005  -1.564  -1.882
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.941  17.661  -1.568
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.062  -1.659   0.023
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -8.827  15.586   0.592
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   9.220  -3.846  -1.162
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.174   5.384  -2.687
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -3.797  -7.185  -5.112
+}
+Atom{  #H
+  Pos   4.735  12.918   3.038
+}
+Atom{  #H
+  Pos   3.765 -14.289   0.763
+}
+Atom{  #H
+  Pos  -3.088   5.063  -0.519
+}
+Atom{  #H
+  Pos  -2.850  20.847  -2.756
+}
+Atom{  #H
+  Pos  -8.057  21.555   5.054
+}
+Atom{  #H
+  Pos   5.565  18.405  -1.473
+}
+Atom{  #H
+  Pos  -2.015  10.137  -2.518
+}
+Atom{  #O
+  Pos  10.631 -13.997   4.067
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos -10.379   4.557  -2.718
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   6.357  -1.604  -3.158
+}
+Atom{  #O
+  Pos  -4.256  -6.422  -9.133
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   5.783  14.468   6.774
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -5.844  23.770   5.287
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -5.461   6.874   2.615
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   3.614   8.107  -0.190
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -1.196 -14.693   0.496
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -3.619  10.313  -5.044
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -2.741 -12.983   4.218
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.111  -7.460  -6.691
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.913   4.421  -3.384
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.979  21.486   4.471
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.207   7.851  -1.298
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.730  17.523  -0.582
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.603  16.962   5.226
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.566   8.145  -5.094
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.934  16.582   1.339
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   8.472  -3.000  -2.195
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   0.323 -18.116   0.752
+}
+Atom{  #H
+  Pos   9.080 -14.949   6.168
+}
+Atom{  #H
+  Pos  -9.158   3.290  -4.850
+}
+Atom{  #H
+  Pos  -2.869  -4.365   0.581
+}
+Atom{  #H
+  Pos   2.846  14.814  -2.798
+}
+Atom{  #H
+  Pos  -0.111  -5.770  -8.901
+}
+Atom{  #H
+  Pos   1.619  14.963   7.085
+}
+Atom{  #H
+  Pos  -0.799 -15.098   4.849
+}
+Atom{  #H
+  Pos   0.806   3.543  -5.082
+}
+Atom{  #H
+  Pos  -4.842  21.010  -1.284
+}
+Atom{  #H
+  Pos  -6.727   7.926   0.514
+}
+Atom{  #H
+  Pos  -7.415  19.923   4.828
+}
+Atom{  #H
+  Pos   6.011  16.740  -1.054
+}
+Atom{  #H
+  Pos  -2.311   7.429  -2.161
+}
+Atom{  #O
+  Pos   9.762 -15.291   2.035
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -9.100   3.703  -0.672
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -1.998  -6.029  -8.124
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   3.381  14.619   6.080
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -3.000   6.754   1.940
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos -10.116  20.076   3.731
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  10.872   0.227  -4.781
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.077 -20.427   3.024
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -1.051   4.100  -4.455
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.159   5.840  -1.116
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.561   8.070  -1.412
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.903  17.845  -1.024
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.128  -1.551  -0.825
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   1.969 -17.957   0.174
+}
+Atom{  #H
+  Pos   7.817 -13.917   5.486
+}
+Atom{  #H
+  Pos  -7.845   4.453  -4.590
+}
+Atom{  #H
+  Pos  -0.665  -3.996   0.907
+}
+Atom{  #H
+  Pos   0.616  15.164  -2.810
+}
+Atom{  #H
+  Pos  -0.767  -4.375  -8.026
+}
+Atom{  #H
+  Pos   2.071  16.205   5.906
+}
+Atom{  #H
+  Pos  -0.403 -14.971   3.149
+}
+Atom{  #H
+  Pos   0.680   3.957  -3.385
+}
+Atom{  #H
+  Pos  -5.562  21.282   1.013
+}
+Atom{  #H
+  Pos  -5.702   8.931  -0.517
+}
+Atom{  #H
+  Pos  -5.546  21.325   5.460
+}
+Atom{  #H
+  Pos   0.678   8.518  -4.403
+}
+Atom{  #O
+  Pos   8.550 -15.384   4.227
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -8.271   3.230  -2.990
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -4.648  12.420  -5.917
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   1.307 -17.978   0.936
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -0.476   1.392  -0.618
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   9.854   1.156  -2.622
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -9.578  20.645   1.295
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -4.715 -13.058   2.555
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   2.835  14.554  -1.824
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -3.896 -14.287   7.234
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.024  -7.820  -5.730
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.104  12.403   4.190
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.689  21.136  -0.741
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.913  22.975   4.122
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.401   7.935  -0.265
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.133  17.400  -0.235
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.506   9.580  -4.566
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.097  16.325   3.932
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.757  -1.487  -1.146
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.500  17.949  -0.911
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   8.883  -1.518  -2.181
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   0.527 -17.826   5.218
+}
+Atom{  #H
+  Pos  -0.392   0.704  -4.915
+}
+Atom{  #H
+  Pos   6.806 -15.445   7.070
+}
+Atom{  #H
+  Pos  -7.051   2.726  -6.058
+}
+Atom{  #H
+  Pos   0.527  -4.453  -0.290
+}
+Atom{  #H
+  Pos  -0.361  14.900  -1.383
+}
+Atom{  #H
+  Pos   0.985  -5.478  -6.723
+}
+Atom{  #H
+  Pos   0.208  14.873   5.072
+}
+Atom{  #H
+  Pos  -3.208   4.315  -6.895
+}
+Atom{  #H
+  Pos  -6.657  23.652   5.783
+}
+Atom{  #P
+  Pos  -3.026  -5.616  -9.294
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos  -6.768  23.275   3.514
+}
+Atom{  #P
+  Pos   4.549  15.254   6.990
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos   2.224   7.458   1.723
+}
+Atom{  #O
+  Pos   6.811  22.374   0.501
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.895  -7.440   1.378
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -2.422  12.498  -4.662
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #P
+  Pos   8.934  19.011   2.956
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos   0.854 -17.899   3.198
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -0.395   1.024  -2.896
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -2.807 -13.820   1.820
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   8.487   0.997  -4.715
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -7.866  20.968   3.088
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   4.994  21.017  -0.212
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -2.748 -13.705   6.405
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -8.313 -23.137   0.040
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -2.045 -20.010   5.092
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   6.857 -18.064   5.238
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.405  -4.837  -0.802
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -0.947  -6.633  -4.774
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.853  13.416   3.078
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.000   4.859  -1.228
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.185  17.396  -1.328
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.057  17.362   3.513
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   4.963  -8.310  -2.583
+}
+Atom{  #H
+  Pos   8.712 -17.341   6.108
+}
+Atom{  #H
+  Pos  -8.627   0.896  -4.526
+}
+Atom{  #P
+  Pos   9.498 -14.507   3.262
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos  -0.015  -7.917  -7.673
+}
+Atom{  #H
+  Pos   1.450  12.654   6.263
+}
+Atom{  #H
+  Pos  -3.902  23.753   3.761
+}
+Atom{  #P
+  Pos  -4.335   7.377   1.798
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #O
+  Pos  -0.749  -5.516  -5.619
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -4.564  12.045  -3.452
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   1.766  14.658   3.749
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -3.784 -13.924   0.857
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -0.017 -20.780   1.053
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -7.935 -22.349   1.300
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -3.455 -20.507   3.325
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   5.569 -17.250   5.162
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.848   4.344  -5.879
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.105  21.125  -0.502
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.273   5.437  -2.438
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.638  23.102   3.292
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.516  17.289   1.062
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.497   9.337  -3.063
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.955 -10.613  -2.649
+}
+Atom{  #H
+  Pos   6.682 -19.104   5.506
+}
+Atom{  #H
+  Pos  -6.382  -0.623  -4.025
+}
+Atom{  #H
+  Pos  -0.880  -8.771  -5.219
+}
+Atom{  #H
+  Pos   1.898  11.382   3.872
+}
+Atom{  #O
+  Pos   3.006  -7.827  -2.336
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -2.280  11.917   1.551
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   2.896 -20.769   5.955
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   6.004 -15.909   5.243
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -2.873  -2.640  -4.781
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -5.925   2.601  -4.346
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #P
+  Pos   9.713   0.376  -3.872
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #P
+  Pos  -9.152  20.124   2.613
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #O
+  Pos   8.592  20.475   2.357
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -0.446  -6.644   3.007
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   1.080  -8.399  -1.129
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #P
+  Pos   0.330   8.218  -7.744
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos  -0.551  11.139   0.173
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -2.333   0.946  -4.302
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -1.416  21.525   2.466
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   3.756  21.031  -2.089
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -3.457 -14.458  -0.426
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -4.057 -17.032   3.297
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   8.201  22.220   0.750
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.464  -6.707  -4.203
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.250  13.246   2.131
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -0.704  -5.463  -8.038
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.508  21.262   0.783
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.063  15.133   6.103
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.097  21.674   3.191
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.328   7.335   0.900
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.771   7.994  -2.919
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   4.145  -9.415  -0.143
+}
+Atom{  #H
+  Pos   7.407 -18.009   4.298
+}
+Atom{  #H
+  Pos  -7.010   0.605  -2.891
+}
+Atom{  #H
+  Pos  -9.389 -23.072  -0.122
+}
+Atom{  #H
+  Pos   3.120  12.479   4.576
+}
+Atom{  #N
+  Pos   4.209 -13.970   2.861
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #P
+  Pos  -3.768  11.908  -4.844
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos   0.477  -7.430   1.037
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -4.927  -5.135  -0.503
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   5.066  14.207  -1.957
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -0.200  12.527   5.011
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -6.507 -15.961   6.826
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -8.273 -20.854   1.190
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.419 -17.594   3.847
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.892  -8.820  -4.379
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   5.218 -17.504   2.618
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.614   1.542  -1.697
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   8.201 -14.937   5.523
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.164  -5.811  -2.696
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -8.181   3.435  -4.388
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -1.792 -10.688   1.732
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -7.643 -22.640  -1.099
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   2.706  13.896   0.732
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -0.007  -5.932  -6.756
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.217   4.689  -3.716
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.210  14.441   5.036
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.903   4.877  -1.566
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   3.650 -20.922   1.355
+}
+Atom{  #H
+  Pos   6.068 -20.202  10.415
+}
+Atom{  #H
+  Pos   2.659 -10.339  -0.303
+}
+Atom{  #H
+  Pos   4.956 -17.492   6.028
+}
+Atom{  #H
+  Pos  -4.899   0.992  -5.075
+}
+Atom{  #H
+  Pos  -8.042 -24.185   0.178
+}
+Atom{  #O
+  Pos   3.855 -22.448  10.301
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   0.900  13.151   2.615
+}
+Atom{  #O
+  Pos  -3.403  -8.196  -0.130
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   4.960 -10.804  -2.168
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -4.198   8.962   2.067
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   7.347 -17.705   7.624
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -7.484   0.375  -6.170
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -0.987  -8.757  -1.951
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -5.681  12.349  -1.028
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   1.604  10.808   0.735
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos -10.579 -18.963   3.478
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   3.984  -8.711  -2.853
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   7.125 -15.855   6.111
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.174   2.461  -5.006
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   8.479  20.725   0.965
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.479  -5.781  -2.295
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.939  13.858   0.124
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.235  21.410   1.557
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   8.196   0.539  -6.023
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   5.062 -20.776   3.392
+}
+Atom{  #H
+  Pos   5.537 -18.654   9.743
+}
+Atom{  #H
+  Pos   2.846  -7.600  -0.272
+}
+Atom{  #H
+  Pos   6.256 -17.425   2.330
+}
+Atom{  #H
+  Pos  -5.589   1.678  -1.256
+}
+Atom{  #H
+  Pos  -2.853 -19.902   5.687
+}
+Atom{  #H
+  Pos  -8.473 -22.789   2.142
+}
+Atom{  #O
+  Pos   8.444 -18.837   9.581
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -8.773  -1.166  -7.678
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   2.184 -14.584   2.096
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   3.136  -9.244  -7.188
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -1.722  11.216   6.523
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   1.696 -20.948   3.918
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -1.378  -2.186  -3.004
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos   8.692  22.125  -1.628
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -9.388 -18.212   1.340
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.900 -17.352   2.381
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -6.902 -20.240   0.924
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.072  -8.267  -0.656
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.113 -17.702   2.513
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.519   1.342  -1.902
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.817  -5.231  -1.021
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.056  14.199  -1.258
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.795  11.380  -3.232
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.137  12.925   5.254
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.841   1.074  -6.496
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   5.004 -20.670   5.810
+}
+Atom{  #H
+  Pos   3.557 -20.018   9.969
+}
+Atom{  #H
+  Pos   0.683  -9.104  -3.135
+}
+Atom{  #H
+  Pos   0.532   1.327  -0.581
+}
+Atom{  #H
+  Pos  -7.929 -21.737  -1.254
+}
+Atom{  #O
+  Pos   6.199 -12.970  -2.359
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -8.969 -20.658   0.374
+}
+Atom{  #O
+  Pos   8.699 -19.794   7.218
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -8.456  -1.744  -5.203
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   0.932 -10.238  -6.335
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   0.371  10.125   5.520
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -8.175 -18.250   3.532
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -5.995 -21.171   1.722
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   4.318 -21.845   9.110
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.223  -7.998   0.146
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   0.196 -10.007   5.828
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   3.757 -10.058  -2.164
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.020   9.694   1.781
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.748 -17.856   2.192
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.117   1.255  -1.784
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   7.640 -17.289   6.298
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -7.604   0.989  -4.895
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -6.537 -22.463   1.524
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   7.237  20.084   0.356
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.574  12.044  -2.090
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.968 -22.129  10.481
+}
+Atom{  #H
+  Pos   5.324 -22.197   8.879
+}
+Atom{  #H
+  Pos  -2.661  -7.241   2.003
+}
+Atom{  #H
+  Pos   4.678  -9.482  -4.745
+}
+Atom{  #H
+  Pos  -1.009   1.569   0.221
+}
+Atom{  #O
+  Pos   3.697 -12.958  -1.830
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -6.821 -19.205   1.250
+}
+Atom{  #O
+  Pos   6.510 -19.929   8.421
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -6.529  -1.863  -6.800
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   2.634  -9.366  -4.728
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -1.578  10.705   4.067
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   2.801 -20.973   1.898
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #P
+  Pos  -9.356 -18.904   2.648
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos   1.495 -11.457   6.552
+}
+Atom{  #N
+  Pos  -1.096 -12.013  -1.650
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   6.171  21.124   0.683
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.548 -22.782   8.229
+}
+Atom{  #H
+  Pos  -1.236  -6.484   3.613
+}
+Atom{  #H
+  Pos   4.032  -7.833  -4.822
+}
+Atom{  #O
+  Pos   5.377 -12.240  -0.119
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -6.682 -20.310  -0.141
+}
+Atom{  #N
+  Pos  -0.118 -14.938   4.121
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -2.119 -14.829  -0.523
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -2.146 -16.945   4.598
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   3.271 -10.944   4.919
+}
+Atom{  #C
+  Pos   4.112 -20.809   3.906
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.395 -22.164   7.937
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.022  -4.033  -6.575
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   3.289  -9.606  -0.788
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.782   9.959   0.301
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -6.601   0.434  -3.886
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -8.832 -20.418   2.419
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   1.633  14.569  -1.140
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos  -4.593 -21.126   1.247
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -7.245  13.358  -2.515
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   3.970 -22.680   7.169
+}
+Atom{  #H
+  Pos   0.497  -6.466   3.341
+}
+Atom{  #P
+  Pos   7.880 -19.103   8.239
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #P
+  Pos  -7.936  -1.153  -6.457
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #P
+  Pos   2.024  -9.247  -6.211
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #H
+  Pos  -6.058 -20.912   2.780
+}
+Atom{  #P
+  Pos  -0.764  11.068   5.404
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #O
+  Pos   0.610 -20.900   5.887
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -0.580  -2.560  -5.093
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #P
+  Pos  -9.096   4.248  -2.047
+  Radius   0.570
+  Color 0.000 0.000 0.800
+}
+Atom{  #N
+  Pos   1.441 -14.424   5.739
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -2.863 -14.119   5.053
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -5.603 -18.173   4.699
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   1.317  -8.768   4.033
+}
+Atom{  #C
+  Pos   4.079 -20.734   5.257
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   5.858   0.807  -5.506
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   2.914 -20.799   7.442
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.120  -2.847  -6.238
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -0.602  -7.172   1.790
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   1.640 -11.522   3.855
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   2.562  -8.286  -1.068
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.023  11.290   0.303
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.287 -17.784   4.452
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.026   0.881  -4.059
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   4.411   1.977  -4.004
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -5.382   1.315  -4.152
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   0.952 -12.759  -2.460
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   4.951  21.135  -1.579
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   0.429 -11.010   1.915
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   8.994  22.802  -0.426
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   1.943 -20.587   7.888
+}
+Atom{  #H
+  Pos  -4.739 -21.718  -0.828
+}
+Atom{  #O
+  Pos   3.831 -19.851   7.950
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -3.781  -1.731  -6.798
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos   0.052 -15.094   0.239
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -3.405 -13.249   2.921
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos   4.370   2.022  -6.154
+}
+Atom{  #H
+  Pos   3.578  -9.904   2.373
+}
+Atom{  #N
+  Pos  -4.552  14.464   1.896
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   4.510  -5.219  -0.496
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -4.269  14.207  -0.519
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   0.873 -11.977  -0.287
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos   1.902 -21.016   1.437
+}
+Atom{  #H
+  Pos  -3.753 -17.435  -1.188
+}
+Atom{  #H
+  Pos  -8.845 -18.442   5.472
+}
+Atom{  #O
+  Pos   5.707 -12.137   2.543
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -0.169 -20.285   3.449
+}
+Atom{  #N
+  Pos   3.723 -13.880   5.257
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   1.508 -10.482   6.064
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -4.194 -14.609  -1.397
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -1.406 -11.747   6.547
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -1.501 -14.190   1.703
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #O
+  Pos  -1.578 -17.886   0.204
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   1.442   1.618  -2.682
+}
+Atom{  #H
+  Pos   2.150  -9.039   1.815
+}
+Atom{  #O
+  Pos   2.496   1.594  -0.449
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos   6.155   2.808  -7.992
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   1.679 -20.878   5.280
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.555  -2.477  -4.349
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -3.141 -11.323  -0.965
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   5.652 -19.718   9.530
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -5.855  -1.593  -8.016
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   3.326  -8.456   4.505
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   0.293  -8.799  -2.181
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.368  10.841   1.147
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -3.039   1.185  -3.163
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.876  11.208   3.813
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.936  20.853  -0.981
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -4.736 -18.745  -0.514
+}
+Atom{  #H
+  Pos  -7.763 -19.727   4.902
+}
+Atom{  #H
+  Pos  -1.114 -19.925   5.477
+}
+Atom{  #O
+  Pos  -2.096  -1.712  -0.910
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #O
+  Pos  -3.372  -4.076  -8.945
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   2.254 -10.592   4.729
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -6.475 -14.378   8.770
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #N
+  Pos  -4.994 -13.444   1.343
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #H
+  Pos   4.825   2.215   0.499
+}
+Atom{  #H
+  Pos   8.978   0.859  -6.713
+}
+Atom{  #H
+  Pos   2.409 -11.766   1.933
+}
+Atom{  #O
+  Pos  -8.433  13.513  -1.751
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   3.416 -14.290   1.784
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   6.485 -11.495   0.353
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.107 -21.429  -0.001
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   1.063  20.603   0.405
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   4.280 -20.317   9.208
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   0.183  -7.989  -0.167
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.433  -2.160  -7.984
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   2.320  -4.747  -0.706
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos  -2.080  14.697  -0.690
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #N
+  Pos   2.445   1.746  -2.708
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos  -3.169  11.119   2.311
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -5.340 -17.077  -0.489
+}
+Atom{  #H
+  Pos  -6.601 -18.314   6.483
+}
+Atom{  #O
+  Pos   8.548 -13.254   2.879
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -1.287 -11.185   0.538
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -7.637 -13.728   6.584
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -3.184  14.211  -2.396
+}
+Atom{  #H
+  Pos   5.875   0.967  -0.192
+}
+Atom{  #H
+  Pos   8.155  -0.551  -6.034
+}
+Atom{  #H
+  Pos  -0.813 -10.291   3.528
+}
+Atom{  #O
+  Pos   4.379  -6.268   5.103
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos   6.880 -11.944   1.766
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.510  11.123  -0.614
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -5.655 -17.199   1.905
+}
+Atom{  #H
+  Pos  -7.997 -16.110   5.395
+}
+Atom{  #C
+  Pos   6.839   2.587  -6.766
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -1.954 -11.480  -0.691
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.288  -9.262   3.978
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos  -5.139 -13.848   6.720
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos   9.390  20.408   0.453
+}
+Atom{  #H
+  Pos  -0.075  15.609   2.761
+}
+Atom{  #H
+  Pos   6.232  -7.572   3.686
+}
+Atom{  #H
+  Pos  -6.412  11.388  -4.132
+}
+Atom{  #H
+  Pos   6.214   2.678  -0.498
+}
+Atom{  #H
+  Pos   6.575   0.544  -7.412
+}
+Atom{  #H
+  Pos  -1.500 -12.225  -2.549
+}
+Atom{  #H
+  Pos   2.027  -9.777   6.714
+}
+Atom{  #N
+  Pos   2.035  11.623  -2.845
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   2.154 -14.452   3.478
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #O
+  Pos   2.259  -6.334   3.677
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #C
+  Pos  -2.397 -20.963   1.163
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #N
+  Pos   1.294  20.495   2.713
+  Radius   0.450
+  Color 0.200 0.200 1.000
+}
+Atom{  #C
+  Pos   2.848 -20.923   3.233
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.383  -2.014  -2.066
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -4.383  -3.697  -8.021
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   2.534  11.240  -1.603
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Bond{  #O-P
+  Pos   8.216  18.755   3.221
+  Rot   0.718   1.063  -0.265 3.1416
+  Len   1.613
+}
+Bond{  #C-C
+  Pos   2.152 -10.413   2.532
+  Rot   0.365   1.438   0.020 3.1416
+  Len   1.531
+}
+Bond{  #C-N
+  Pos   2.234  14.562  -1.482
+  Rot   0.601   0.684  -0.342 3.1416
+  Len   1.383
+}
+Bond{  #C-H
+  Pos   5.649   1.453  -0.281
+  Rot   0.226   0.058   0.089 3.1416
+  Len   1.087
+}
+Bond{  #C-C
+  Pos  -6.688  18.215   0.511
+  Rot  -0.600   1.175  -0.227 3.1416
+  Len   1.526
+}
+Bond{  #C-C
+  Pos   7.086  -1.311  -1.852
+  Rot   0.552   1.231   0.243 3.1416
+  Len   1.526
+}
+Bond{  #O-P
+  Pos   8.289 -19.449   7.729
+  Rot   0.409   0.395  -0.511 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -8.196  -1.449  -5.830
+  Rot  -0.260   0.445   0.627 3.1416
+  Len   1.481
+}
+Bond{  #C-H
+  Pos   5.292  18.729   5.309
+  Rot  -0.228   0.814   0.417 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   1.108 -11.048   2.213
+  Rot   0.679   0.705   0.299 3.1416
+  Len   1.485
+}
+Bond{  #O-P
+  Pos   4.998 -11.574  -1.929
+  Rot  -0.038   1.577  -0.240 3.1416
+  Len   1.615
+}
+Bond{  #C-H
+  Pos  -6.131  -1.810  -8.434
+  Rot  -0.275   0.329  -0.418 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -3.648  -5.506  -1.658
+  Rot   0.169   0.439  -0.637 3.1416
+  Len   1.428
+}
+Bond{  #C-C
+  Pos   3.998  14.029  -0.567
+  Rot  -0.058   0.544   0.691 3.1416
+  Len   1.428
+}
+Bond{  #C-N
+  Pos  -0.924  -4.604  -0.402
+  Rot   0.481   0.900   0.400 3.1416
+  Len   1.336
+}
+Bond{  #C-N
+  Pos  -5.516  17.810   0.268
+  Rot  -0.572   0.733   0.471 3.1416
+  Len   1.481
+}
+Bond{  #C-N
+  Pos   5.900  -1.714  -1.716
+  Rot   0.634   0.677  -0.379 3.1416
+  Len   1.483
+}
+Bond{  #C-N
+  Pos  -1.349 -14.442   1.099
+  Rot   0.153   0.420  -0.603 3.1416
+  Len   1.343
+}
+Bond{  #C-C
+  Pos  -2.779   1.263  -2.532
+  Rot   0.260   0.765   0.630 3.1416
+  Len   1.373
+}
+Bond{  #H-N
+  Pos  -0.217  15.290   1.471
+  Rot   0.286   0.451  -0.414 3.1416
+  Len   1.013
+}
+Bond{  #H-N
+  Pos   0.796  -4.425  -3.176
+  Rot  -0.345   0.495   0.370 3.1416
+  Len   1.013
+}
+Bond{  #H-N
+  Pos   0.790  20.485   2.748
+  Rot  -0.505   0.496   0.034 3.1416
+  Len   1.012
+}
+Bond{  #C-H
+  Pos   8.176 -17.315   6.203
+  Rot   0.536   0.519  -0.095 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   4.741 -17.575   2.179
+  Rot   0.477   0.722   0.439 3.1416
+  Len   1.303
+}
+Bond{  #C-H
+  Pos  -8.116   0.942  -4.710
+  Rot  -0.511   0.499   0.184 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -4.072   1.551  -1.337
+  Rot  -0.542   0.642  -0.361 3.1416
+  Len   1.303
+}
+Bond{  #C-H
+  Pos   1.377  13.284   2.846
+  Rot  -0.477   0.414  -0.231 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   2.047   7.745   0.303
+  Rot   0.354   0.886  -0.569 3.1416
+  Len   1.392
+}
+Bond{  #H-N
+  Pos   1.375  17.511   0.408
+  Rot  -0.495   0.552  -0.093 3.1416
+  Len   1.011
+}
+Bond{  #C-C
+  Pos   6.457   2.854  -6.161
+  Rot   0.382   0.497  -0.605 3.1416
+  Len   1.527
+}
+Bond{  #C-N
+  Pos  -3.383   4.938  -2.055
+  Rot  -0.480   0.748  -0.489 3.1416
+  Len   1.376
+}
+Bond{  #C-H
+  Pos   2.762 -10.768   4.824
+  Rot   0.508   0.370   0.095 3.1416
+  Len   1.093
+}
+Bond{  #C-O
+  Pos  -4.372  -5.183  -0.762
+  Rot  -0.555   0.662   0.259 3.1416
+  Len   1.229
+}
+Bond{  #C-O
+  Pos   4.561  14.203  -1.607
+  Rot   0.505   0.618  -0.350 3.1416
+  Len   1.228
+}
+Bond{  #C-O
+  Pos   3.372 -20.325   7.696
+  Rot   0.458   1.181   0.254 3.1416
+  Len   1.413
+}
+Bond{  #C-O
+  Pos  -3.451  -2.289  -6.518
+  Rot  -0.330   1.264  -0.280 3.1416
+  Len   1.413
+}
+Bond{  #C-C
+  Pos   3.839   1.809  -1.558
+  Rot  -0.719   0.650   0.060 3.1416
+  Len   1.451
+}
+Bond{  #C-N
+  Pos   0.631  -8.194  -0.648
+  Rot  -0.449   0.894   0.481 3.1416
+  Len   1.378
+}
+Bond{  #C-C
+  Pos  -7.360 -18.288   5.175
+  Rot  -0.599   0.398  -0.304 3.1416
+  Len   1.531
+}
+Bond{  #C-P
+  Pos   5.761 -11.919  -0.668
+  Rot  -0.724   0.897  -1.021 3.1416
+  Len   2.643
+}
+Bond{  #H-N
+  Pos   0.028   1.359  -0.599
+  Rot   0.504   0.473   0.018 3.1416
+  Len   1.011
+}
+Bond{  #O-P
+  Pos  -4.898   7.125   2.207
+  Rot  -0.563   0.488   0.409 3.1416
+  Len   1.479
+}
+Bond{  #C-H
+  Pos  -6.361  14.874  -2.078
+  Rot  -0.193   1.045   0.075 3.1416
+  Len   1.086
+}
+Bond{  #C-H
+  Pos  -8.851 -23.105  -0.041
+  Rot  -0.538   0.578  -0.081 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos  -3.367 -17.060   3.398
+  Rot  -0.690   0.726  -0.101 3.1416
+  Len   1.396
+}
+Bond{  #C-N
+  Pos  -2.130 -20.163   4.447
+  Rot   0.085   0.821   0.644 3.1416
+  Len   1.336
+}
+Bond{  #C-O
+  Pos  -6.731 -16.179   6.188
+  Rot  -0.224   0.493  -0.638 3.1416
+  Len   1.421
+}
+Bond{  #C-C
+  Pos   3.154 -21.482   7.690
+  Rot   0.240   0.082   0.247 3.1416
+  Len   1.530
+}
+Bond{  #C-C
+  Pos  -3.571  -3.440  -6.407
+  Rot  -0.451   0.171  -0.168 3.1416
+  Len   1.528
+}
+Bond{  #C-H
+  Pos  -5.821   8.418  -0.380
+  Rot   0.119   1.058  -0.138 3.1416
+  Len   1.089
+}
+Bond{  #C-H
+  Pos   6.025  21.072   1.206
+  Rot  -0.147   0.493   0.522 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -3.714  21.605   3.572
+  Rot   0.383   0.475   0.381 3.1416
+  Len   1.089
+}
+Bond{  #C-C
+  Pos  -2.134   8.665  -2.991
+  Rot  -0.363   1.438  -0.072 3.1416
+  Len   1.533
+}
+Bond{  #C-O
+  Pos   6.349   0.940  -6.001
+  Rot   0.492   0.844  -0.495 3.1416
+  Len   1.420
+}
+Bond{  #C-H
+  Pos  -5.035  21.272   0.898
+  Rot  -0.527   0.549   0.115 3.1416
+  Len   1.079
+}
+Bond{  #C-O
+  Pos  -3.826 -14.534  -0.911
+  Rot  -0.369   0.539  -0.486 3.1416
+  Len   1.228
+}
+Bond{  #O-P
+  Pos   6.059   3.541  -8.319
+  Rot   0.096   0.075   0.327 3.1416
+  Len   1.617
+}
+Bond{  #C-N
+  Pos   2.905 -20.784   6.699
+  Rot   0.009   0.729   0.744 3.1416
+  Len   1.487
+}
+Bond{  #C-N
+  Pos  -2.997  -2.744  -5.510
+  Rot  -0.123   0.643  -0.729 3.1416
+  Len   1.492
+}
+Bond{  #C-N
+  Pos   1.276  -1.480  -0.682
+  Rot  -0.481   0.675   0.464 3.1416
+  Len   1.337
+}
+Bond{  #H-N
+  Pos   1.638 -17.968   0.555
+  Rot   0.331   0.515  -0.381 3.1416
+  Len   1.010
+}
+Bond{  #C-N
+  Pos   3.446  14.377  -1.541
+  Rot   0.611   0.518   0.283 3.1416
+  Len   1.392
+}
+Bond{  #C-C
+  Pos   2.293   5.651  -7.278
+  Rot   0.046   0.007   0.093 3.1416
+  Len   1.534
+}
+Bond{  #O-P
+  Pos  -6.505 -14.396   8.031
+  Rot   0.030   0.758   0.739 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos   4.973  21.076  -0.895
+  Rot   0.022   0.627   0.684 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos  -0.347  -8.778  -2.066
+  Rot   0.640   0.630  -0.115 3.1416
+  Len   1.301
+}
+Bond{  #C-C
+  Pos  -0.457  -7.640  -6.210
+  Rot   0.568   0.945  -0.481 3.1416
+  Len   1.530
+}
+Bond{  #C-N
+  Pos   0.986  10.825   0.941
+  Rot  -0.618   0.668   0.206 3.1416
+  Len   1.303
+}
+Bond{  #C-C
+  Pos  -3.043 -12.008   5.729
+  Rot   0.292   0.601   0.688 3.1416
+  Len   1.529
+}
+Bond{  #C-C
+  Pos   6.202  18.779   4.752
+  Rot   0.683   1.083  -0.139 3.1416
+  Len   1.531
+}
+Bond{  #C-O
+  Pos  -7.236 -22.406   1.412
+  Rot  -0.699   0.767  -0.112 3.1416
+  Len   1.420
+}
+Bond{  #C-N
+  Pos  -1.079 -20.580   2.345
+  Rot  -0.002   0.543  -0.679 3.1416
+  Len   1.392
+}
+Bond{  #O-P
+  Pos   9.023 -13.881   3.071
+  Rot  -0.475   1.436  -0.192 3.1416
+  Len   1.618
+}
+Bond{  #C-C
+  Pos   3.938  -8.765  -3.616
+  Rot  -0.046   0.712  -0.763 3.1416
+  Len   1.533
+}
+Bond{  #C-H
+  Pos   3.582   6.894  -6.295
+  Rot   0.532   0.519  -0.120 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -5.275  23.038   3.707
+  Rot  -0.638   0.700   0.415 3.1416
+  Len   1.527
+}
+Bond{  #C-C
+  Pos  -8.380  16.084   0.966
+  Rot  -0.447   0.268  -0.374 3.1416
+  Len   1.532
+}
+Bond{  #C-C
+  Pos   8.846  -3.423  -1.678
+  Rot   0.374   0.342   0.516 3.1416
+  Len   1.530
+}
+Bond{  #C-N
+  Pos  -5.294 -21.148   1.485
+  Rot  -0.701   0.718   0.237 3.1416
+  Len   1.481
+}
+Bond{  #C-H
+  Pos   6.769 -18.584   5.372
+  Rot  -0.087   0.024   0.134 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos  -3.080   7.963  -5.088
+  Rot  -0.515   0.363   0.006 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   2.401   4.691  -0.568
+  Rot   0.545   0.704   0.424 3.1416
+  Len   1.382
+}
+Bond{  #C-O
+  Pos  -5.915   7.004  -1.903
+  Rot  -0.548   0.868   0.425 3.1416
+  Len   1.421
+}
+Bond{  #C-H
+  Pos  -3.844 -14.125   7.753
+  Rot   0.052   0.708   0.519 3.1416
+  Len   1.091
+}
+Bond{  #C-O
+  Pos  -5.321   6.142  -2.383
+  Rot  -0.048   1.414   0.055 3.1416
+  Len   1.417
+}
+Bond{  #C-H
+  Pos   8.870  23.330  -0.484
+  Rot  -0.124   1.073  -0.058 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -5.500 -16.429   4.450
+  Rot  -0.562   1.279  -0.045 3.1416
+  Len   1.527
+}
+Bond{  #C-C
+  Pos   4.267   5.263  -1.216
+  Rot   0.038   0.890  -0.691 3.1416
+  Len   1.427
+}
+Bond{  #C-N
+  Pos   2.824 -20.948   2.566
+  Rot  -0.023   0.643  -0.668 3.1416
+  Len   1.337
+}
+Bond{  #C-H
+  Pos  -6.814   7.489  -1.738
+  Rot  -0.351   0.873  -0.260 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -3.718  14.285  -0.923
+  Rot  -0.551   0.610   0.404 3.1416
+  Len   1.375
+}
+Bond{  #C-N
+  Pos   3.906  -5.103  -0.189
+  Rot   0.604   0.572  -0.308 3.1416
+  Len   1.375
+}
+Bond{  #C-O
+  Pos   4.678   5.088  -0.108
+  Rot   0.450   0.616   0.418 3.1416
+  Len   1.228
+}
+Bond{  #C-N
+  Pos  -1.820   4.479  -2.699
+  Rot   0.094   0.752   0.686 3.1416
+  Len   1.389
+}
+Bond{  #C-H
+  Pos   6.915 -11.552   0.022
+  Rot   0.430   0.489  -0.331 3.1416
+  Len   1.091
+}
+Bond{  #O-P
+  Pos   4.367 -12.651  -1.760
+  Rot  -0.670   0.433  -0.071 3.1416
+  Len   1.481
+}
+Bond{  #C-H
+  Pos  -3.631  -6.946  -4.658
+  Rot  -0.167   0.301  -0.454 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos   4.493  13.082   2.584
+  Rot   0.242   0.376   0.454 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos   8.337  22.500   1.199
+  Rot   0.136   0.827   0.448 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos  -0.065   7.979  -1.918
+  Rot   0.273   0.561   0.620 3.1416
+  Len   1.379
+}
+Bond{  #C-N
+  Pos   4.699  -5.167  -2.349
+  Rot   0.446   0.609  -0.509 3.1416
+  Len   1.360
+}
+Bond{  #C-H
+  Pos  -5.762  21.406   4.966
+  Rot   0.216   0.465   0.494 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   2.782   1.740  -2.103
+  Rot  -0.337   0.699  -0.605 3.1416
+  Len   1.386
+}
+Bond{  #C-H
+  Pos   6.708   0.809  -6.954
+  Rot  -0.133   0.281  -0.458 3.1416
+  Len   1.091
+}
+Bond{  #H-N
+  Pos  -0.182  17.938  -1.905
+  Rot   0.499   0.560   0.062 3.1416
+  Len   1.011
+}
+Bond{  #O-P
+  Pos   3.970  -6.596   4.580
+  Rot   0.409   1.068   0.522 3.1416
+  Len   1.480
+}
+Bond{  #C-H
+  Pos   0.489  -5.705  -6.739
+  Rot   0.496   0.773   0.016 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   0.709  14.657   5.054
+  Rot  -0.501   0.762   0.018 3.1416
+  Len   1.092
+}
+Bond{  #C-C
+  Pos   4.966 -20.017   9.369
+  Rot   0.686   1.065   0.161 3.1416
+  Len   1.531
+}
+Bond{  #C-C
+  Pos  -5.144  -1.877  -8.000
+  Rot  -0.711   1.049  -0.016 3.1416
+  Len   1.531
+}
+Bond{  #C-O
+  Pos   7.506  22.297   0.625
+  Rot   0.695   0.633   0.125 3.1416
+  Len   1.420
+}
+Bond{  #C-N
+  Pos  -3.301   4.509  -5.422
+  Rot   0.454   0.500  -0.457 3.1416
+  Len   1.329
+}
+Bond{  #C-O
+  Pos   6.491  21.749   0.592
+  Rot   0.320   1.333  -0.091 3.1416
+  Len   1.416
+}
+Bond{  #H-N
+  Pos   0.268   4.325  -0.749
+  Rot  -0.417   0.517  -0.288 3.1416
+  Len   1.015
+}
+Bond{  #C-C
+  Pos  -0.613 -11.309   0.598
+  Rot  -0.674   0.812  -0.059 3.1416
+  Len   1.376
+}
+Bond{  #O-P
+  Pos   8.917  -4.950   1.393
+  Rot  -0.446   0.136  -0.048 3.1416
+  Len   1.620
+}
+Bond{  #O-P
+  Pos   6.536   4.697  -8.446
+  Rot   0.574   1.163   0.200 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -5.837 -14.131   7.006
+  Rot  -0.697   0.522   0.286 3.1416
+  Len   1.610
+}
+Bond{  #C-N
+  Pos   4.911 -13.739   2.878
+  Rot   0.703   0.971   0.016 3.1416
+  Len   1.479
+}
+Bond{  #C-O
+  Pos   6.293 -12.041   2.155
+  Rot   0.587   0.807  -0.389 3.1416
+  Len   1.420
+}
+Bond{  #O-P
+  Pos   1.705  -8.507  -6.181
+  Rot  -0.319   1.546   0.029 3.1416
+  Len   1.613
+}
+Bond{  #C-H
+  Pos   5.976  -7.633   3.208
+  Rot   0.255   0.606   0.478 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -8.169  17.306   1.239
+  Rot   0.236   0.044   0.100 3.1416
+  Len   1.535
+}
+Bond{  #C-O
+  Pos   5.660 -12.823   2.719
+  Rot   0.046   1.395  -0.175 3.1416
+  Len   1.418
+}
+Bond{  #C-C
+  Pos   7.248 -17.677   5.768
+  Rot   0.391   1.152   0.530 3.1416
+  Len   1.529
+}
+Bond{  #C-H
+  Pos   3.386   3.720  -8.031
+  Rot   0.015   0.008   0.092 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -3.878 -11.881   5.069
+  Rot  -0.543   0.508   0.027 3.1416
+  Len   1.090
+}
+Bond{  #C-O
+  Pos  -5.354   7.591   0.005
+  Rot   0.586   0.396   0.247 3.1416
+  Len   1.417
+}
+Bond{  #C-N
+  Pos   2.552  20.662   1.483
+  Rot  -0.668   0.616   0.036 3.1416
+  Len   1.342
+}
+Bond{  #C-N
+  Pos   3.588   4.895  -0.335
+  Rot   0.641   0.887  -0.192 3.1416
+  Len   1.392
+}
+Bond{  #C-O
+  Pos   2.667   1.822  -4.468
+  Rot  -0.353   0.591  -0.502 3.1416
+  Len   1.229
+}
+Bond{  #C-O
+  Pos  -5.271 -17.558   4.597
+  Rot  -0.333   0.092   0.102 3.1416
+  Len   1.412
+}
+Bond{  #C-N
+  Pos   1.320   8.363  -3.035
+  Rot  -0.574   0.647  -0.308 3.1416
+  Len   1.302
+}
+Bond{  #C-N
+  Pos   5.002 -17.482   3.270
+  Rot  -0.216   0.709   0.652 3.1416
+  Len   1.374
+}
+Bond{  #C-N
+  Pos  -4.508   1.434  -2.368
+  Rot   0.106   0.580  -0.671 3.1416
+  Len   1.376
+}
+Bond{  #H-N
+  Pos   0.714  12.249  -4.715
+  Rot   0.346   0.524  -0.367 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos  -6.792 -20.275   0.392
+  Rot   0.110   0.510  -0.532 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   3.717  -9.511  -0.466
+  Rot   0.428   0.640   0.323 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos  -2.157  -6.114  -3.315
+  Rot  -0.007   0.992   0.619 3.1416
+  Len   1.378
+}
+Bond{  #C-N
+  Pos   2.804  13.694   1.383
+  Rot  -0.098   0.891  -0.651 3.1416
+  Len   1.378
+}
+Bond{  #C-N
+  Pos   1.882  -1.442  -2.908
+  Rot  -0.476   0.670   0.465 3.1416
+  Len   1.331
+}
+Bond{  #C-N
+  Pos   2.285  11.432  -2.224
+  Rot   0.249   0.505   0.621 3.1416
+  Len   1.392
+}
+Bond{  #O-P
+  Pos  10.064 -14.252   3.665
+  Rot   0.567   0.995   0.402 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos   2.169 -14.518   2.787
+  Rot   0.015   0.628  -0.691 3.1416
+  Len   1.389
+}
+Bond{  #C-H
+  Pos  -4.594 -18.224  -0.455
+  Rot  -0.143   0.022  -0.059 3.1416
+  Len   1.088
+}
+Bond{  #O-P
+  Pos  -4.208  12.164  -5.380
+  Rot  -0.440   0.996  -0.537 3.1416
+  Len   1.479
+}
+Bond{  #C-C
+  Pos   2.854   6.400  -5.652
+  Rot   0.196   1.284  -0.522 3.1416
+  Len   1.526
+}
+Bond{  #O-P
+  Pos   7.614 -18.404   7.931
+  Rot  -0.266   1.508  -0.308 3.1416
+  Len   1.618
+}
+Bond{  #C-N
+  Pos   3.204 -13.980   5.659
+  Rot  -0.519   0.565   0.403 3.1416
+  Len   1.329
+}
+Bond{  #O-P
+  Pos  -7.710  -0.389  -6.313
+  Rot   0.226   1.574   0.143 3.1416
+  Len   1.619
+}
+Bond{  #C-N
+  Pos   2.733   1.796  -3.337
+  Rot   0.288   0.744  -0.629 3.1416
+  Len   1.387
+}
+Bond{  #C-H
+  Pos   8.640 -14.943   5.845
+  Rot   0.439   0.539   0.323 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   0.048  -7.689  -7.182
+  Rot  -0.063   0.317  -0.491 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -8.669   3.362  -4.619
+  Rot  -0.489   0.473  -0.231 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -2.217  11.583  -0.114
+  Rot  -0.194   0.837  -0.416 3.1416
+  Len   1.089
+}
+Bond{  #C-C
+  Pos   4.299 -21.081   9.159
+  Rot  -0.019   1.530   0.049 3.1416
+  Len   1.532
+}
+Bond{  #C-H
+  Pos  -4.482  -4.036  -6.284
+  Rot  -0.460   0.542   0.290 3.1416
+  Len   1.088
+}
+Bond{  #C-C
+  Pos   3.310  20.850  -0.403
+  Rot  -0.374   0.691  -0.578 3.1416
+  Len   1.377
+}
+Bond{  #C-N
+  Pos   4.848   5.658  -2.282
+  Rot   0.542   0.914  -0.376 3.1416
+  Len   1.390
+}
+Bond{  #C-C
+  Pos   8.598  22.511   0.162
+  Rot   0.396   1.058  -0.588 3.1416
+  Len   1.533
+}
+Bond{  #C-H
+  Pos   3.641  17.314   3.861
+  Rot  -0.416   0.498   0.349 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   6.446  -1.691  -2.627
+  Rot  -0.088   0.633  -0.531 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos  -2.453  21.058  -1.361
+  Rot   0.236   0.590  -0.620 3.1416
+  Len   1.336
+}
+Bond{  #C-N
+  Pos   3.103   5.843  -4.537
+  Rot  -0.444   0.777  -0.593 3.1416
+  Len   1.483
+}
+Bond{  #C-N
+  Pos  -3.073 -13.116   3.569
+  Rot   0.332   0.874   0.649 3.1416
+  Len   1.481
+}
+Bond{  #C-H
+  Pos   5.598  17.068  -1.191
+  Rot   0.413   0.217   0.137 3.1416
+  Len   1.090
+}
+Bond{  #O-P
+  Pos   4.013  -6.981   3.394
+  Rot  -0.451   0.861   0.664 3.1416
+  Len   1.609
+}
+Bond{  #C-H
+  Pos   2.971 -22.473   8.083
+  Rot  -0.423   0.235   0.146 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -3.880  -6.526  -3.735
+  Rot   0.415   0.470  -0.468 3.1416
+  Len   1.303
+}
+Bond{  #C-N
+  Pos   4.582  13.349   1.579
+  Rot  -0.332   0.549   0.551 3.1416
+  Len   1.303
+}
+Bond{  #H-N
+  Pos  -1.970 -15.025  -0.964
+  Rot   0.149   0.309  -0.440 3.1416
+  Len   1.009
+}
+Bond{  #C-O
+  Pos   3.137  11.145  -1.537
+  Rot   0.603   0.519   0.066 3.1416
+  Len   1.228
+}
+Bond{  #H-N
+  Pos  -1.402 -17.386   2.457
+  Rot   0.498   0.471   0.077 3.1416
+  Len   1.011
+}
+Bond{  #C-O
+  Pos   5.931 -11.868   0.117
+  Rot  -0.554   0.336  -0.236 3.1416
+  Len   1.416
+}
+Bond{  #C-O
+  Pos  -1.825  21.468   2.011
+  Rot   0.410   0.672   0.455 3.1416
+  Len   1.229
+}
+Bond{  #C-N
+  Pos   0.686  -8.599  -1.655
+  Rot   0.394   0.887   0.526 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos  -0.091  10.990   0.660
+  Rot  -0.460   0.835  -0.487 3.1416
+  Len   1.372
+}
+Bond{  #C-H
+  Pos   1.854   4.660  -7.285
+  Rot  -0.484   0.315  -0.100 3.1416
+  Len   1.092
+}
+Bond{  #C-C
+  Pos  -6.694  21.212   4.450
+  Rot  -0.715   0.492  -0.021 3.1416
+  Len   1.532
+}
+Bond{  #C-N
+  Pos  -4.179  14.620   2.423
+  Rot   0.373   0.821   0.528 3.1416
+  Len   1.329
+}
+Bond{  #H-N
+  Pos  -0.841  -6.564   3.310
+  Rot  -0.395   0.584   0.303 3.1416
+  Len   1.008
+}
+Bond{  #C-H
+  Pos   2.098 -11.426   2.223
+  Rot   0.311   0.204  -0.290 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos  -8.402 -18.549   5.172
+  Rot  -0.443   0.652   0.301 3.1416
+  Len   1.092
+}
+Bond{  #C-H
+  Pos   6.428   3.174  -5.146
+  Rot   0.353   0.597   0.410 3.1416
+  Len   1.087
+}
+Bond{  #C-C
+  Pos   6.840   1.830  -6.631
+  Rot   0.001   0.012   0.135 3.1416
+  Len   1.537
+}
+Bond{  #C-H
+  Pos  -6.346 -15.954   3.943
+  Rot  -0.284   0.504  -0.462 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos   8.935  20.567   0.709
+  Rot   0.456   0.388  -0.256 3.1416
+  Len   1.092
+}
+Bond{  #O-P
+  Pos   2.580  -9.245  -6.700
+  Rot   0.556   0.742  -0.488 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -1.243  11.142   5.963
+  Rot  -0.479   0.814   0.559 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos  -0.028  11.575  -1.563
+  Rot  -0.230   0.877  -0.607 3.1416
+  Len   1.358
+}
+Bond{  #C-O
+  Pos   4.008   4.543  -8.013
+  Rot   0.637   0.994   0.110 3.1416
+  Len   1.415
+}
+Bond{  #C-H
+  Pos  -6.953  11.692  -1.919
+  Rot  -0.380   0.193   0.171 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   4.587 -20.793   3.649
+  Rot   0.475   0.557  -0.257 3.1416
+  Len   1.081
+}
+Bond{  #C-N
+  Pos  -1.234  18.046  -0.300
+  Rot  -0.266   0.576  -0.611 3.1416
+  Len   1.346
+}
+Bond{  #C-O
+  Pos   7.836  -5.691   1.657
+  Rot  -0.635   0.644   0.313 3.1416
+  Len   1.422
+}
+Bond{  #C-H
+  Pos   4.285  -9.151  -4.562
+  Rot   0.393   0.214  -0.183 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -2.788 -14.644  -0.475
+  Rot  -0.669   0.881   0.049 3.1416
+  Len   1.392
+}
+Bond{  #C-H
+  Pos  -2.923  11.726   3.976
+  Rot  -0.047   1.063   0.163 3.1416
+  Len   1.090
+}
+Bond{  #H-N
+  Pos  -2.533  20.913  -2.369
+  Rot  -0.317   0.438  -0.387 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos  -5.146  -1.607  -1.708
+  Rot  -0.227   1.036  -0.047 3.1416
+  Len   1.088
+}
+Bond{  #O-P
+  Pos   9.024 -14.945   3.745
+  Rot   0.474   1.245  -0.483 3.1416
+  Len   1.612
+}
+Bond{  #O-P
+  Pos   9.144  18.571   2.399
+  Rot   0.210   0.300  -0.557 3.1416
+  Len   1.480
+}
+Bond{  #H-O
+  Pos   3.411 -22.288  10.391
+  Rot   0.443   0.320  -0.090 3.1416
+  Len   0.960
+}
+Bond{  #C-H
+  Pos  -4.423 -21.573  -0.414
+  Rot  -0.316   0.396  -0.413 3.1416
+  Len   1.080
+}
+Bond{  #H-O
+  Pos   8.949  22.322  -1.982
+  Rot   0.256   0.677  -0.355 3.1416
+  Len   0.960
+}
+Bond{  #H-N
+  Pos  -0.261 -14.954   3.635
+  Rot  -0.143   0.490  -0.486 3.1416
+  Len   1.013
+}
+Bond{  #C-C
+  Pos  -6.811   6.500  -1.297
+  Rot   0.348   1.429  -0.181 3.1416
+  Len   1.536
+}
+Bond{  #O-P
+  Pos  -4.166  11.977  -4.148
+  Rot   0.398   0.736  -0.696 3.1416
+  Len   1.609
+}
+Bond{  #C-N
+  Pos   1.474  20.605   0.962
+  Rot  -0.411   0.690  -0.557 3.1416
+  Len   1.384
+}
+Bond{  #O-P
+  Pos  -3.199  -4.846  -9.120
+  Rot  -0.173   1.578   0.175 3.1416
+  Len   1.617
+}
+Bond{  #C-H
+  Pos  -8.178 -23.661   0.109
+  Rot   0.136   0.022   0.069 3.1416
+  Len   1.091
+}
+Bond{  #O-P
+  Pos  -0.401 -10.116   6.356
+  Rot  -0.597   0.695   0.528 3.1416
+  Len   1.608
+}
+Bond{  #C-H
+  Pos   5.043  17.262   1.172
+  Rot   0.527   0.511   0.109 3.1416
+  Len   1.077
+}
+Bond{  #C-N
+  Pos  -0.572 -14.894   0.367
+  Rot   0.624   0.467  -0.129 3.1416
+  Len   1.336
+}
+Bond{  #C-N
+  Pos   3.832  17.320   2.805
+  Rot   0.226   0.787   0.708 3.1416
+  Len   1.489
+}
+Bond{  #C-O
+  Pos   5.103  18.532   4.321
+  Rot   0.417   0.638   0.571 3.1416
+  Len   1.420
+}
+Bond{  #C-H
+  Pos  -5.290  -2.477  -1.789
+  Rot  -0.372   0.167  -0.129 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -2.204   4.202  -5.790
+  Rot   0.644   0.523   0.089 3.1416
+  Len   1.331
+}
+Bond{  #C-O
+  Pos   3.495  -8.269  -2.595
+  Rot   0.489   0.266  -0.259 3.1416
+  Len   1.416
+}
+Bond{  #C-O
+  Pos   4.372  17.983   3.632
+  Rot   0.314   1.327   0.119 3.1416
+  Len   1.412
+}
+Bond{  #C-H
+  Pos  -2.041   7.712  -2.540
+  Rot  -0.270   0.262   0.379 3.1416
+  Len   1.089
+}
+Bond{  #C-O
+  Pos   7.775  -3.034  -2.062
+  Rot   0.697   0.744  -0.133 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos   2.784  -8.056  -1.702
+  Rot   0.222   0.939  -0.634 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos  -2.151  11.604   0.927
+  Rot  -0.128   1.024   0.624 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos   7.493 -17.497   6.961
+  Rot   0.146   0.918  -0.663 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos  -7.544   0.682  -5.532
+  Rot  -0.060   1.017   0.638 3.1416
+  Len   1.420
+}
+Bond{  #H-N
+  Pos   2.841  14.684  -2.311
+  Rot   0.006   0.634  -0.487 3.1416
+  Len   1.008
+}
+Bond{  #C-H
+  Pos   4.728   1.999  -5.745
+  Rot  -0.358   0.567  -0.409 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos   0.330  -7.710   0.435
+  Rot   0.147   0.959   0.602 3.1416
+  Len   1.360
+}
+Bond{  #C-H
+  Pos   5.818   2.309  -0.435
+  Rot   0.396   0.915  -0.064 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -1.482   4.261  -3.920
+  Rot  -0.431   0.866   0.536 3.1416
+  Len   1.412
+}
+Bond{  #C-O
+  Pos   1.115  20.685  -1.369
+  Rot  -0.404   0.594  -0.463 3.1416
+  Len   1.229
+}
+Bond{  #C-O
+  Pos  -6.266 -21.817   1.623
+  Rot  -0.271   0.062  -0.099 3.1416
+  Len   1.415
+}
+Bond{  #C-C
+  Pos   8.340  21.473   0.857
+  Rot  -0.139   1.515  -0.107 3.1416
+  Len   1.536
+}
+Bond{  #C-N
+  Pos   3.716   1.911  -3.985
+  Rot   0.695   0.764  -0.019 3.1416
+  Len   1.397
+}
+Bond{  #C-N
+  Pos   0.222  11.825  -2.636
+  Rot   0.479   0.723  -0.466 3.1416
+  Len   1.341
+}
+Bond{  #C-H
+  Pos  -5.389  17.599  -1.863
+  Rot  -0.449   0.479  -0.294 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos   5.460  -1.680   0.387
+  Rot   0.398   0.518   0.364 3.1416
+  Len   1.080
+}
+Bond{  #O-P
+  Pos   2.329  -9.306  -5.470
+  Rot  -0.305   0.863  -0.742 3.1416
+  Len   1.608
+}
+Bond{  #O-P
+  Pos  -1.171  10.887   4.736
+  Rot   0.407   0.985   0.668 3.1416
+  Len   1.607
+}
+Bond{  #C-N
+  Pos  -2.289 -17.220   2.940
+  Rot  -0.389   0.825   0.559 3.1416
+  Len   1.387
+}
+Bond{  #C-N
+  Pos   0.204   8.233  -2.941
+  Rot  -0.542   0.561   0.403 3.1416
+  Len   1.373
+}
+Bond{  #C-H
+  Pos  -5.822  -1.055  -8.093
+  Rot   0.033   1.084  -0.078 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -5.547   5.287  -2.884
+  Rot  -0.274   0.394  -0.446 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos   4.061  17.284   1.579
+  Rot   0.455   0.694  -0.517 3.1416
+  Len   1.377
+}
+Bond{  #C-H
+  Pos  -7.940  16.456   1.869
+  Rot  -0.006   0.419   0.530 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   8.569  -3.211  -2.689
+  Rot   0.097   0.335  -0.494 3.1416
+  Len   1.092
+}
+Bond{  #C-H
+  Pos  -3.028   4.330  -6.387
+  Rot  -0.180   0.525  -0.508 3.1416
+  Len   1.078
+}
+Bond{  #H-N
+  Pos  -1.580 -19.968   5.284
+  Rot   0.466   0.548   0.193 3.1416
+  Len   1.011
+}
+Bond{  #O-P
+  Pos   3.444  -7.690   4.281
+  Rot  -0.118   0.041   0.224 3.1416
+  Len   1.613
+}
+Bond{  #H-N
+  Pos   1.578  20.485   3.130
+  Rot   0.284   0.494   0.417 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos   5.860 -19.960   9.973
+  Rot   0.208   0.304   0.442 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   6.685 -14.749   2.142
+  Rot   0.162   0.067   0.205 3.1416
+  Len   1.085
+}
+Bond{  #C-C
+  Pos   7.268 -12.607   1.769
+  Rot  -0.388   1.430  -0.003 3.1416
+  Len   1.536
+}
+Bond{  #C-N
+  Pos  -3.328  17.758  -1.566
+  Rot  -0.425   0.607  -0.542 3.1416
+  Len   1.389
+}
+Bond{  #C-N
+  Pos   3.470  -1.577  -0.221
+  Rot   0.341   0.668   0.603 3.1416
+  Len   1.388
+}
+Bond{  #C-N
+  Pos   1.091  14.748  -1.486
+  Rot  -0.543   0.847  -0.346 3.1416
+  Len   1.336
+}
+Bond{  #C-N
+  Pos  -3.460 -21.382  -0.056
+  Rot  -0.647   0.604   0.055 3.1416
+  Len   1.303
+}
+Bond{  #O-P
+  Pos  -7.085 -14.071   6.938
+  Rot  -0.552   1.083  -0.354 3.1416
+  Len   1.479
+}
+Bond{  #C-O
+  Pos   4.055 -20.084   8.579
+  Rot   0.225   0.474   0.629 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos  -4.107  -1.946  -7.391
+  Rot  -0.326   0.495  -0.593 3.1416
+  Len   1.420
+}
+Bond{  #C-C
+  Pos   3.740   5.412  -2.297
+  Rot   0.565   0.715   0.390 3.1416
+  Len   1.375
+}
+Bond{  #H-N
+  Pos  -0.742   1.480  -0.199
+  Rot  -0.266   0.593   0.419 3.1416
+  Len   1.010
+}
+Bond{  #O-P
+  Pos  -3.667   7.066   1.869
+  Rot   0.667   0.429   0.071 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos   1.291  20.654  -0.251
+  Rot   0.228   0.747  -0.655 3.1416
+  Len   1.391
+}
+Bond{  #C-N
+  Pos   2.063 -14.252   5.901
+  Rot  -0.622   0.493  -0.162 3.1416
+  Len   1.331
+}
+Bond{  #C-C
+  Pos   1.621  12.664   4.722
+  Rot  -0.484   1.026   0.532 3.1416
+  Len   1.530
+}
+Bond{  #C-C
+  Pos   4.325  17.345   0.414
+  Rot  -0.191   0.734  -0.649 3.1416
+  Len   1.357
+}
+Bond{  #C-O
+  Pos   7.192  18.797   4.049
+  Rot   0.307   0.409  -0.563 3.1416
+  Len   1.415
+}
+Bond{  #C-H
+  Pos   6.340  -4.335   1.264
+  Rot   0.188   1.042  -0.102 3.1416
+  Len   1.085
+}
+Bond{  #C-C
+  Pos   0.856  11.250  -0.784
+  Rot   0.654   0.561   0.170 3.1416
+  Len   1.375
+}
+Bond{  #C-N
+  Pos  -1.306   4.079  -5.078
+  Rot   0.255   0.694   0.623 3.1416
+  Len   1.347
+}
+Bond{  #C-N
+  Pos  -4.281  17.879  -0.030
+  Rot   0.664   0.749   0.173 3.1416
+  Len   1.377
+}
+Bond{  #C-H
+  Pos   0.712   8.439  -3.873
+  Rot  -0.034   0.617  -0.530 3.1416
+  Len   1.074
+}
+Bond{  #C-N
+  Pos   4.636  -1.607  -1.609
+  Rot  -0.631   0.731  -0.272 3.1416
+  Len   1.376
+}
+Bond{  #C-H
+  Pos  -3.866 -14.831   7.218
+  Rot   0.030   0.001  -0.016 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos  -2.807  -6.562  -4.069
+  Rot   0.657   0.832   0.135 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos   3.576  13.369   2.082
+  Rot  -0.674   0.809  -0.048 3.1416
+  Len   1.374
+}
+Bond{  #C-C
+  Pos   1.644 -14.528   3.959
+  Rot   0.510   0.781  -0.481 3.1416
+  Len   1.410
+}
+Bond{  #C-O
+  Pos  -8.784  15.706  -0.104
+  Rot   0.042   0.828  -0.696 3.1416
+  Len   1.415
+}
+Bond{  #C-N
+  Pos  -4.350 -21.278   0.623
+  Rot  -0.243   0.838   0.624 3.1416
+  Len   1.373
+}
+Bond{  #C-O
+  Pos   9.053  -3.639  -0.506
+  Rot  -0.166   0.915   0.656 3.1416
+  Len   1.416
+}
+Bond{  #H-N
+  Pos  -0.554  -4.184   0.453
+  Rot  -0.111   0.692   0.455 3.1416
+  Len   1.009
+}
+Bond{  #H-N
+  Pos   0.582  15.046  -2.321
+  Rot   0.034   0.623  -0.489 3.1416
+  Len   1.009
+}
+Bond{  #C-N
+  Pos  -2.921  21.409   1.684
+  Rot  -0.687   0.697   0.127 3.1416
+  Len   1.396
+}
+Bond{  #C-N
+  Pos  -0.063  -7.301   1.414
+  Rot  -0.539   0.799   0.377 3.1416
+  Len   1.341
+}
+Bond{  #O-P
+  Pos  -2.660  -5.629  -9.937
+  Rot   0.366   0.727  -0.643 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos   4.285  15.343   7.676
+  Rot  -0.264   0.829   0.686 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos   5.472   1.392  -5.421
+  Rot   0.386   0.121  -0.085 3.1416
+  Len   1.412
+}
+Bond{  #O-P
+  Pos  -3.693  11.111  -4.944
+  Rot   0.074   0.010  -0.100 3.1416
+  Len   1.614
+}
+Bond{  #O-P
+  Pos  -9.634  20.100   3.172
+  Rot  -0.482   0.714   0.559 3.1416
+  Len   1.477
+}
+Bond{  #C-H
+  Pos  -5.525  14.072  -1.900
+  Rot   0.111   1.404  -1.037 3.1416
+  Len   2.180
+}
+Bond{  #C-C
+  Pos  -6.858 -17.158   5.515
+  Rot   0.097   0.007  -0.035 3.1416
+  Len   1.538
+}
+Bond{  #O-P
+  Pos  10.293   0.301  -4.326
+  Rot   0.579   0.666  -0.455 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos   2.807  -8.859   4.242
+  Rot  -0.519   0.305  -0.264 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos  -1.269 -10.652   2.118
+  Rot   0.523   0.688   0.386 3.1416
+  Len   1.302
+}
+Bond{  #C-C
+  Pos  -3.260  17.892  -0.440
+  Rot   0.357   0.639  -0.584 3.1416
+  Len   1.373
+}
+Bond{  #C-C
+  Pos   3.567  -1.558  -1.353
+  Rot  -0.438   0.693   0.528 3.1416
+  Len   1.374
+}
+Bond{  #C-C
+  Pos  -5.636   5.148  -1.833
+  Rot  -0.364   0.474   0.605 3.1416
+  Len   1.525
+}
+Bond{  #C-H
+  Pos   6.114  16.807   5.341
+  Rot   0.511   0.391   0.115 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -8.881  18.042   0.875
+  Rot  -0.476   0.558  -0.265 3.1416
+  Len   1.090
+}
+Bond{  #C-O
+  Pos  -8.465  18.337   1.776
+  Rot   0.061   0.402  -0.637 3.1416
+  Len   1.421
+}
+Bond{  #C-H
+  Pos   7.132 -18.037   4.768
+  Rot   0.275   0.573  -0.470 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -6.492  -0.095  -3.956
+  Rot   0.110   0.016  -0.070 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -4.568   5.218  -2.491
+  Rot  -0.705   0.960   0.053 3.1416
+  Len   1.481
+}
+Bond{  #C-O
+  Pos   6.081 -19.823   8.976
+  Rot   0.429   0.603  -0.555 3.1416
+  Len   1.418
+}
+Bond{  #C-O
+  Pos  -6.192  -1.728  -7.408
+  Rot  -0.337   0.573   0.608 3.1416
+  Len   1.416
+}
+Bond{  #C-H
+  Pos   1.802  -9.015   4.006
+  Rot  -0.486   0.792   0.027 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -4.065  14.778   3.423
+  Rot  -0.260   0.541   0.473 3.1416
+  Len   1.078
+}
+Bond{  #C-C
+  Pos  -4.130 -17.602   0.284
+  Rot  -0.322   0.658  -0.679 3.1416
+  Len   1.517
+}
+Bond{  #C-N
+  Pos   1.287 -14.514   5.090
+  Rot  -0.154   0.583  -0.649 3.1416
+  Len   1.347
+}
+Bond{  #C-N
+  Pos   1.368  11.750  -2.974
+  Rot   0.667   0.564   0.128 3.1416
+  Len   1.382
+}
+Bond{  #C-C
+  Pos   6.676  -5.296   1.668
+  Rot   0.524   0.299   0.302 3.1416
+  Len   1.522
+}
+Bond{  #O-P
+  Pos  -0.482  11.797   5.207
+  Rot   0.282   1.536  -0.196 3.1416
+  Len   1.613
+}
+Bond{  #C-H
+  Pos   2.150   5.995  -4.969
+  Rot  -0.509   0.662   0.162 3.1416
+  Len   1.093
+}
+Bond{  #C-H
+  Pos   6.348 -10.967   0.366
+  Rot  -0.137   1.073   0.014 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos  -3.467 -20.671   2.665
+  Rot   0.012   0.845   0.660 3.1416
+  Len   1.361
+}
+Bond{  #H-N
+  Pos   1.943   1.682  -2.695
+  Rot  -0.502   0.442   0.013 3.1416
+  Len   1.011
+}
+Bond{  #C-H
+  Pos   5.390  21.215  -1.883
+  Rot   0.439   0.620  -0.304 3.1416
+  Len   1.080
+}
+Bond{  #C-C
+  Pos   6.704  20.604   0.520
+  Rot   0.533   0.242  -0.164 3.1416
+  Len   1.525
+}
+Bond{  #C-O
+  Pos  -5.578  21.154   3.992
+  Rot  -0.401   1.039   0.479 3.1416
+  Len   1.414
+}
+Bond{  #H-N
+  Pos  -0.875  17.816  -2.427
+  Rot  -0.194   0.437  -0.461 3.1416
+  Len   1.009
+}
+Bond{  #O-P
+  Pos   2.910  -6.629   3.867
+  Rot  -0.651   1.035  -0.190 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos  -1.625  -5.581  -2.348
+  Rot   0.539   0.912   0.348 3.1416
+  Len   1.363
+}
+Bond{  #C-N
+  Pos   2.114  14.072   0.445
+  Rot  -0.593   0.857  -0.287 3.1416
+  Len   1.363
+}
+Bond{  #C-O
+  Pos   4.086 -22.147   9.706
+  Rot   0.231   1.008  -0.596 3.1416
+  Len   1.413
+}
+Bond{  #C-H
+  Pos  -6.027 -21.041   2.251
+  Rot  -0.032   0.675   0.529 3.1416
+  Len   1.091
+}
+Bond{  #C-O
+  Pos  -4.637  21.248   3.352
+  Rot  -0.540   0.281   0.161 3.1416
+  Len   1.414
+}
+Bond{  #C-O
+  Pos  -3.063   9.947  -4.805
+  Rot   0.557   0.341   0.239 3.1416
+  Len   1.416
+}
+Bond{  #C-C
+  Pos   4.850   1.938  -2.227
+  Rot  -0.292   0.625   0.610 3.1416
+  Len   1.357
+}
+Bond{  #H-N
+  Pos   0.309  -1.451  -0.355
+  Rot  -0.485   0.527  -0.138 3.1416
+  Len   1.010
+}
+Bond{  #C-C
+  Pos   6.068 -13.890   2.416
+  Rot   0.455   0.380  -0.479 3.1416
+  Len   1.526
+}
+Bond{  #C-N
+  Pos   5.583  21.070   0.236
+  Rot   0.588   0.795   0.448 3.1416
+  Len   1.482
+}
+Bond{  #C-N
+  Pos  -4.036 -20.980   1.626
+  Rot   0.557   0.834   0.378 3.1416
+  Len   1.378
+}
+Bond{  #O-P
+  Pos  -2.512  -5.823  -8.709
+  Rot  -0.514   1.012  -0.585 3.1416
+  Len   1.611
+}
+Bond{  #O-P
+  Pos   3.965  14.936   6.535
+  Rot   0.584   1.123   0.455 3.1416
+  Len   1.611
+}
+Bond{  #C-H
+  Pos  -4.896 -17.390  -0.442
+  Rot  -0.445   0.858  -0.047 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   5.641  -8.225   2.645
+  Rot  -0.079   0.013  -0.085 3.1416
+  Len   1.089
+}
+Bond{  #C-C
+  Pos   5.561  17.712   5.059
+  Rot  -0.042   1.519  -0.168 3.1416
+  Len   1.538
+}
+Bond{  #O-P
+  Pos   8.763  19.743   2.657
+  Rot  -0.171   1.541  -0.300 3.1416
+  Len   1.618
+}
+Bond{  #O-P
+  Pos  -8.509  20.546   2.851
+  Rot  -0.643   0.383  -0.238 3.1416
+  Len   1.610
+}
+Bond{  #O-P
+  Pos   9.100   0.686  -4.293
+  Rot   0.613   0.496   0.421 3.1416
+  Len   1.612
+}
+Bond{  #C-C
+  Pos   3.870  -9.384  -2.509
+  Rot   0.113   1.438  -0.345 3.1416
+  Len   1.530
+}
+Bond{  #C-C
+  Pos  -4.306  21.194   0.141
+  Rot   0.202   0.608  -0.643 3.1416
+  Len   1.354
+}
+Bond{  #C-H
+  Pos  -2.217 -12.859   4.130
+  Rot   0.525   0.670  -0.087 3.1416
+  Len   1.092
+}
+Bond{  #C-O
+  Pos   5.829  -6.290   0.263
+  Rot   0.014   0.021   0.169 3.1416
+  Len   1.416
+}
+Bond{  #C-C
+  Pos   8.677  -2.259  -2.188
+  Rot  -0.205   0.028  -0.007 3.1416
+  Len   1.538
+}
+Bond{  #H-N
+  Pos  -1.298 -12.119  -2.099
+  Rot  -0.202   0.398  -0.450 3.1416
+  Len   1.008
+}
+Bond{  #C-H
+  Pos  -2.039   9.821  -4.710
+  Rot   0.466   0.785  -0.144 3.1416
+  Len   1.089
+}
+Bond{  #C-C
+  Pos  -7.103   0.711  -4.390
+  Rot  -0.502   1.041  -0.505 3.1416
+  Len   1.527
+}
+Bond{  #H-N
+  Pos  -0.122  12.307  -4.455
+  Rot  -0.490   0.586  -0.107 3.1416
+  Len   1.016
+}
+Bond{  #C-H
+  Pos   2.974  -9.973  -0.545
+  Rot  -0.315   0.174   0.242 3.1416
+  Len   1.081
+}
+Bond{  #C-N
+  Pos   4.339  20.932  -0.019
+  Rot  -0.655   0.603   0.194 3.1416
+  Len   1.377
+}
+Bond{  #C-C
+  Pos  -1.739 -20.848   1.414
+  Rot  -0.658   0.599  -0.251 3.1416
+  Len   1.428
+}
+Bond{  #C-N
+  Pos  -4.058  21.335   1.297
+  Rot  -0.450   0.614  -0.514 3.1416
+  Len   1.374
+}
+Bond{  #C-C
+  Pos  -5.902  14.064  -1.507
+  Rot  -0.266   1.070  -0.645 3.1416
+  Len   1.525
+}
+Bond{  #C-N
+  Pos  -1.249  -7.306   1.584
+  Rot  -0.647   0.558  -0.206 3.1416
+  Len   1.383
+}
+Bond{  #C-C
+  Pos  -7.588 -20.547   1.057
+  Rot  -0.686   0.456   0.133 3.1416
+  Len   1.526
+}
+Bond{  #O-P
+  Pos   9.630 -14.899   2.649
+  Rot   0.132   0.348  -0.614 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos   0.469  12.726   5.133
+  Rot   0.669   0.907   0.121 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos   3.799 -14.031   3.409
+  Rot  -0.410   0.626   0.547 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos  -2.686   1.065  -3.732
+  Rot   0.353   0.561  -0.569 3.1416
+  Len   1.361
+}
+Bond{  #O-P
+  Pos  -9.738   4.402  -2.383
+  Rot  -0.641   0.895  -0.335 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -3.095  12.203  -4.753
+  Rot   0.673   1.035   0.091 3.1416
+  Len   1.481
+}
+Bond{  #C-N
+  Pos  -4.952  13.982  -0.691
+  Rot  -0.684   0.515  -0.171 3.1416
+  Len   1.479
+}
+Bond{  #C-H
+  Pos  -7.861 -19.191   4.886
+  Rot   0.098   0.009   0.016 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   5.162  -5.411  -0.202
+  Rot   0.652   0.549   0.294 3.1416
+  Len   1.481
+}
+Bond{  #C-C
+  Pos  -2.565   4.555  -3.550
+  Rot   0.652   0.552   0.166 3.1416
+  Len   1.372
+}
+Bond{  #C-C
+  Pos  -1.648  -8.133  -0.255
+  Rot   0.575   0.580  -0.401 3.1416
+  Len   1.428
+}
+Bond{  #C-H
+  Pos  -7.369   5.849  -0.613
+  Rot  -0.210   0.555   0.504 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   0.601 -12.503  -1.952
+  Rot   0.351   0.413  -0.508 3.1416
+  Len   1.337
+}
+Bond{  #C-C
+  Pos  -2.201  17.897  -0.968
+  Rot  -0.702   0.654  -0.056 3.1416
+  Len   1.411
+}
+Bond{  #C-C
+  Pos   2.442  -1.519  -0.985
+  Rot   0.686   0.673   0.160 3.1416
+  Len   1.410
+}
+Bond{  #C-H
+  Pos   8.009 -14.427   5.505
+  Rot  -0.192   1.055  -0.019 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -8.013   3.944  -4.489
+  Rot   0.168   1.054  -0.101 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -1.246  -5.094  -1.401
+  Rot  -0.159   0.928   0.599 3.1416
+  Len   1.342
+}
+Bond{  #C-O
+  Pos   2.506  17.598  -1.149
+  Rot  -0.224   0.689  -0.567 3.1416
+  Len   1.228
+}
+Bond{  #C-H
+  Pos  -6.340  23.125   3.818
+  Rot  -0.427   0.696  -0.304 3.1416
+  Len   1.091
+}
+Bond{  #C-O
+  Pos   5.786 -16.579   5.203
+  Rot   0.218   1.377   0.040 3.1416
+  Len   1.412
+}
+Bond{  #C-H
+  Pos   3.682 -22.422   7.553
+  Rot   0.288   0.287  -0.384 3.1416
+  Len   1.089
+}
+Bond{  #C-O
+  Pos  -2.813  -8.097   0.008
+  Rot  -0.590   0.515  -0.138 3.1416
+  Len   1.228
+}
+Bond{  #C-H
+  Pos   1.294  12.790   5.758
+  Rot   0.156   0.410   0.505 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -4.408  -2.929  -8.003
+  Rot  -0.025   1.538   0.019 3.1416
+  Len   1.538
+}
+Bond{  #H-N
+  Pos   0.524   3.681  -4.685
+  Rot   0.281   0.367  -0.397 3.1416
+  Len   1.011
+}
+Bond{  #H-N
+  Pos   1.959   7.507   1.298
+  Rot   0.266   0.455   0.425 3.1416
+  Len   1.008
+}
+Bond{  #C-C
+  Pos   6.213 -17.657   5.200
+  Rot   0.644   0.356   0.038 3.1416
+  Len   1.526
+}
+Bond{  #H-N
+  Pos   0.025  -6.555   3.174
+  Rot   0.472   0.597   0.167 3.1416
+  Len   1.016
+}
+Bond{  #O-P
+  Pos  -8.684   3.739  -2.519
+  Rot  -0.412   1.316   0.472 3.1416
+  Len   1.614
+}
+Bond{  #C-H
+  Pos  -4.656 -16.828   4.946
+  Rot   0.282   0.661   0.451 3.1416
+  Len   1.090
+}
+Bond{  #O-P
+  Pos   1.478  -9.742  -6.273
+  Rot  -0.546   0.244  -0.062 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -0.196  10.596   5.462
+  Rot   0.568   0.269   0.058 3.1416
+  Len   1.480
+}
+Bond{  #C-H
+  Pos  -8.204 -22.569   1.721
+  Rot  -0.269   0.326   0.421 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   5.178 -17.355   4.542
+  Rot   0.391   0.845   0.620 3.1416
+  Len   1.481
+}
+Bond{  #C-N
+  Pos  -1.155  15.203   1.862
+  Rot   0.651   0.809   0.023 3.1416
+  Len   1.334
+}
+Bond{  #C-N
+  Pos   1.782  -4.546  -3.410
+  Rot  -0.640   0.800  -0.137 3.1416
+  Len   1.335
+}
+Bond{  #C-H
+  Pos  -2.657  -2.921  -6.515
+  Rot   0.463   0.471  -0.277 3.1416
+  Len   1.089
+}
+Bond{  #C-O
+  Pos  -7.839  13.436  -2.133
+  Rot   0.594   0.633  -0.382 3.1416
+  Len   1.421
+}
+Bond{  #C-H
+  Pos   3.962  -8.326  -4.601
+  Rot   0.070   1.039  -0.221 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   1.911 -17.706   4.668
+  Rot  -0.625   0.587  -0.216 3.1416
+  Len   1.331
+}
+Bond{  #C-N
+  Pos  -2.059  -7.719   0.762
+  Rot  -0.164   0.417  -0.616 3.1416
+  Len   1.392
+}
+Bond{  #O-P
+  Pos  -6.521 -15.188   7.059
+  Rot   0.013   0.034  -0.233 3.1416
+  Len   1.616
+}
+Bond{  #H-N
+  Pos   0.175 -15.279  -0.214
+  Rot   0.123   0.319  -0.453 3.1416
+  Len   1.009
+}
+Bond{  #C-C
+  Pos   2.771 -14.272   3.717
+  Rot  -0.618   0.506  -0.239 3.1416
+  Len   1.372
+}
+Bond{  #C-N
+  Pos   1.581  -1.462  -1.795
+  Rot   0.176   0.647   0.649 3.1416
+  Len   1.345
+}
+Bond{  #C-N
+  Pos   2.800 -14.437   1.940
+  Rot   0.616   0.799  -0.156 3.1416
+  Len   1.304
+}
+Bond{  #C-N
+  Pos   0.059   7.162   1.486
+  Rot  -0.269   0.494   0.586 3.1416
+  Len   1.335
+}
+Bond{  #C-C
+  Pos   2.403  -9.502   3.265
+  Rot  -0.115   1.000   0.713 3.1416
+  Len   1.522
+}
+Bond{  #C-O
+  Pos  -2.724  11.518   1.931
+  Rot  -0.445   0.309   0.380 3.1416
+  Len   1.416
+}
+Bond{  #C-C
+  Pos  -7.846  18.328   0.712
+  Rot  -0.558   0.465   0.427 3.1416
+  Len   1.529
+}
+Bond{  #C-C
+  Pos   6.168  -7.414   2.172
+  Rot  -0.448   0.488   0.558 3.1416
+  Len   1.535
+}
+Bond{  #C-O
+  Pos  -2.240  -1.863  -1.488
+  Rot   0.143   0.765   0.578 3.1416
+  Len   1.229
+}
+Bond{  #O-P
+  Pos  -4.266   8.169   1.933
+  Rot   0.068   1.599   0.135 3.1416
+  Len   1.613
+}
+Bond{  #C-C
+  Pos   4.659  17.398  -0.782
+  Rot   0.526   0.757  -0.546 3.1416
+  Len   1.517
+}
+Bond{  #C-C
+  Pos   4.577  16.843   3.723
+  Rot   0.520   0.245   0.209 3.1416
+  Len   1.527
+}
+Bond{  #C-C
+  Pos  -3.322 -13.996   6.819
+  Rot  -0.574   0.474   0.415 3.1416
+  Len   1.531
+}
+Bond{  #C-O
+  Pos   1.563   6.590  -7.332
+  Rot   0.684   0.529  -0.040 3.1416
+  Len   1.417
+}
+Bond{  #C-N
+  Pos  -3.362  18.034   0.767
+  Rot   0.256   0.775   0.624 3.1416
+  Len   1.361
+}
+Bond{  #C-N
+  Pos   3.841  -1.538  -2.542
+  Rot  -0.164   0.707  -0.660 3.1416
+  Len   1.361
+}
+Bond{  #C-C
+  Pos   2.925  -8.946  -0.928
+  Rot   0.364   0.106   0.140 3.1416
+  Len   1.533
+}
+Bond{  #C-H
+  Pos  -0.952  -8.296  -5.475
+  Rot   0.072   0.069   0.256 3.1416
+  Len   1.089
+}
+Bond{  #C-H
+  Pos   0.237  10.755   1.662
+  Rot  -0.131   0.452   0.514 3.1416
+  Len   1.076
+}
+Bond{  #C-C
+  Pos  -2.402  10.624   0.302
+  Rot  -0.380   0.101  -0.001 3.1416
+  Len   1.532
+}
+Bond{  #C-H
+  Pos   2.001  11.893   4.031
+  Rot  -0.103   0.034  -0.159 3.1416
+  Len   1.089
+}
+Bond{  #C-H
+  Pos   4.541 -20.702   5.534
+  Rot   0.462   0.572   0.276 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos  -4.768  -2.174  -1.142
+  Rot   0.151   0.470   0.518 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos  -4.060 -13.154   2.738
+  Rot   0.655   0.591   0.183 3.1416
+  Len   1.374
+}
+Bond{  #C-H
+  Pos  -3.674  11.304   2.218
+  Rot  -0.505   0.731  -0.093 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   1.527 -17.917   1.564
+  Rot  -0.221   0.607  -0.628 3.1416
+  Len   1.337
+}
+Bond{  #C-N
+  Pos  -0.796   1.323  -1.201
+  Rot   0.321   0.737   0.583 3.1416
+  Len   1.338
+}
+Bond{  #C-N
+  Pos  -1.030  -8.512  -1.304
+  Rot   0.042   0.449  -0.647 3.1416
+  Len   1.387
+}
+Bond{  #C-N
+  Pos   1.821  -8.342  -1.099
+  Rot   0.741   0.800   0.030 3.1416
+  Len   1.488
+}
+Bond{  #C-N
+  Pos  -1.287  11.214   0.238
+  Rot  -0.736   0.818   0.065 3.1416
+  Len   1.485
+}
+Bond{  #C-O
+  Pos  -7.978 -22.889  -0.529
+  Rot   0.335   0.954  -0.570 3.1416
+  Len   1.412
+}
+Bond{  #O-P
+  Pos   9.438  -0.364  -3.691
+  Rot  -0.275   0.070   0.181 3.1416
+  Len   1.619
+}
+Bond{  #O-P
+  Pos  -8.839  19.385   2.513
+  Rot   0.313   0.070  -0.100 3.1416
+  Len   1.618
+}
+Bond{  #C-H
+  Pos   2.462   6.569  -7.848
+  Rot   0.215   0.703  -0.476 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos  -5.946  22.230   4.297
+  Rot  -0.033   0.021   0.175 3.1416
+  Len   1.531
+}
+Bond{  #C-O
+  Pos  -8.553 -20.636   1.805
+  Rot   0.280   0.491  -0.615 3.1416
+  Len   1.419
+}
+Bond{  #C-C
+  Pos  -2.750 -12.938   6.411
+  Rot   0.001   0.000  -0.006 3.1416
+  Len   1.534
+}
+Bond{  #C-H
+  Pos  -0.780 -10.453   3.016
+  Rot  -0.033   0.700   0.512 3.1416
+  Len   1.076
+}
+Bond{  #C-H
+  Pos  -1.494  -7.824  -6.008
+  Rot  -0.470   0.542  -0.277 3.1416
+  Len   1.092
+}
+Bond{  #C-C
+  Pos   3.856 -22.005   8.524
+  Rot   0.462   0.923   0.586 3.1416
+  Len   1.526
+}
+Bond{  #C-C
+  Pos   7.663 -15.396   5.817
+  Rot   0.538   1.225  -0.294 3.1416
+  Len   1.532
+}
+Bond{  #C-C
+  Pos  -7.678   2.948  -4.697
+  Rot  -0.503   1.253   0.309 3.1416
+  Len   1.531
+}
+Bond{  #C-H
+  Pos   7.121  19.596   0.566
+  Rot  -0.116   0.056   0.210 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos   4.473  -8.511  -2.718
+  Rot   0.489   0.746   0.135 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos  -2.053  -4.803  -0.565
+  Rot  -0.648   0.725   0.237 3.1416
+  Len   1.382
+}
+Bond{  #C-C
+  Pos  -2.501   9.459  -3.814
+  Rot  -0.005   0.883  -0.752 3.1416
+  Len   1.523
+}
+Bond{  #C-C
+  Pos   3.480 -20.866   3.570
+  Rot  -0.632   0.661  -0.337 3.1416
+  Len   1.437
+}
+Bond{  #C-C
+  Pos  -6.184  11.712  -2.661
+  Rot   0.389   0.435  -0.571 3.1416
+  Len   1.534
+}
+Bond{  #C-H
+  Pos  -7.360  13.372  -3.048
+  Rot  -0.115   0.559  -0.533 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   5.595 -19.186   9.636
+  Rot  -0.058   1.078   0.107 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   6.286 -14.355   1.454
+  Rot  -0.236   0.462  -0.483 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -0.174  11.258  -0.391
+  Rot   0.377   0.807  -0.564 3.1416
+  Len   1.377
+}
+Bond{  #C-O
+  Pos   3.263  -9.093  -4.553
+  Rot  -0.629   0.435  -0.175 3.1416
+  Len   1.415
+}
+Bond{  #H-N
+  Pos   0.071   6.957   2.490
+  Rot   0.281   0.473   0.417 3.1416
+  Len   1.008
+}
+Bond{  #C-C
+  Pos  -4.321  -2.154  -2.123
+  Rot  -0.598   0.813   0.463 3.1416
+  Len   1.517
+}
+Bond{  #O-P
+  Pos  -0.055   8.140  -8.371
+  Rot  -0.385   0.661  -0.627 3.1416
+  Len   1.479
+}
+Bond{  #C-H
+  Pos   5.680   2.030  -2.859
+  Rot   0.537   0.577  -0.022 3.1416
+  Len   1.079
+}
+Bond{  #C-C
+  Pos  -3.038 -12.413   4.630
+  Rot  -0.297   1.332   0.412 3.1416
+  Len   1.526
+}
+Bond{  #H-N
+  Pos  -2.449 -19.956   5.390
+  Rot  -0.404   0.559   0.298 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos  -2.320   8.327  -6.858
+  Rot  -0.308   0.841  -0.339 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -3.157  14.923   2.970
+  Rot   0.649   0.813   0.019 3.1416
+  Len   1.331
+}
+Bond{  #C-C
+  Pos  -3.821  -2.355  -3.241
+  Rot   0.098   0.825   0.655 3.1416
+  Len   1.357
+}
+Bond{  #C-O
+  Pos  -8.067 -18.453   4.202
+  Rot  -0.108   0.910  -0.670 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos  -2.079 -11.959   6.482
+  Rot  -0.673   0.496  -0.066 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos   0.245 -11.221   1.286
+  Rot  -0.184   0.477  -0.629 3.1416
+  Len   1.377
+}
+Bond{  #C-H
+  Pos   5.726  -4.806   1.704
+  Rot  -0.426   0.573   0.338 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos   2.300  17.493  -0.040
+  Rot  -0.430   0.663   0.542 3.1416
+  Len   1.386
+}
+Bond{  #C-H
+  Pos  -4.165  -1.961  -8.415
+  Rot   0.268   0.745  -0.431 3.1416
+  Len   1.092
+}
+Bond{  #C-H
+  Pos  -2.576   9.457   1.991
+  Rot   0.444   0.309   0.210 3.1416
+  Len   1.090
+}
+Bond{  #C-O
+  Pos  -1.973 -17.745   0.653
+  Rot   0.395   0.473  -0.449 3.1416
+  Len   1.229
+}
+Bond{  #C-N
+  Pos  -2.154 -14.005   1.762
+  Rot   0.653   0.496  -0.058 3.1416
+  Len   1.362
+}
+Bond{  #C-H
+  Pos  -2.279 -13.893   6.611
+  Rot   0.470   0.358   0.205 3.1416
+  Len   1.091
+}
+Bond{  #C-O
+  Pos   9.023  -1.311  -2.845
+  Rot  -0.140   0.502   0.664 3.1416
+  Len   1.420
+}
+Bond{  #H-O
+  Pos  -7.786 -22.188  -1.176
+  Rot  -0.143   0.931  -0.078 3.1416
+  Len   0.960
+}
+Bond{  #H-N
+  Pos   2.884   4.572   0.339
+  Rot  -0.062   0.372   0.482 3.1416
+  Len   1.008
+}
+Bond{  #C-N
+  Pos  -0.126   7.660  -0.738
+  Rot  -0.333   0.489   0.561 3.1416
+  Len   1.359
+}
+Bond{  #C-C
+  Pos  -3.022  11.163   3.062
+  Rot   0.147   0.811   0.751 3.1416
+  Len   1.533
+}
+Bond{  #C-C
+  Pos   4.990   1.912  -0.994
+  Rot   0.432   0.786   0.623 3.1416
+  Len   1.517
+}
+Bond{  #H-N
+  Pos   0.042  -4.412  -0.146
+  Rot   0.485   0.467  -0.144 3.1416
+  Len   1.014
+}
+Bond{  #H-N
+  Pos   0.094  14.913  -1.607
+  Rot  -0.455   0.494   0.224 3.1416
+  Len   1.014
+}
+Bond{  #C-C
+  Pos   5.581   2.549  -5.446
+  Rot   0.494   1.336  -0.111 3.1416
+  Len   1.528
+}
+Bond{  #O-P
+  Pos  -3.641  -6.019  -9.213
+  Rot  -0.615   0.337   0.081 3.1416
+  Len   1.479
+}
+Bond{  #O-P
+  Pos   5.166  14.861   6.882
+  Rot   0.617   0.346  -0.108 3.1416
+  Len   1.479
+}
+Bond{  #H-N
+  Pos  -0.902  -2.111  -2.851
+  Rot   0.476   0.580   0.152 3.1416
+  Len   1.011
+}
+Bond{  #C-C
+  Pos  -6.509 -16.155   4.978
+  Rot  -0.446   0.524   0.572 3.1416
+  Len   1.529
+}
+Bond{  #O-P
+  Pos  -0.180   8.377  -7.143
+  Rot   0.510   0.645  -0.601 3.1416
+  Len   1.607
+}
+Bond{  #C-H
+  Pos   6.212  -5.513  -0.268
+  Rot   0.398   0.634  -0.360 3.1416
+  Len   1.089
+}
+Bond{  #O-P
+  Pos   9.784   0.766  -3.247
+  Rot   0.070   1.130   0.625 3.1416
+  Len   1.480
+}
+Bond{  #C-H
+  Pos  -5.979  13.890  -0.462
+  Rot  -0.343   0.678   0.401 3.1416
+  Len   1.089
+}
+Bond{  #O-P
+  Pos  -9.365  20.384   1.954
+  Rot  -0.213   1.000  -0.659 3.1416
+  Len   1.480
+}
+Bond{  #C-N
+  Pos   4.748   1.977  -4.669
+  Rot   0.338   0.746  -0.666 3.1416
+  Len   1.492
+}
+Bond{  #C-H
+  Pos  -7.733  21.247   4.742
+  Rot  -0.324   0.853   0.312 3.1416
+  Len   1.090
+}
+Bond{  #C-O
+  Pos   1.808  17.376   2.274
+  Rot  -0.429   0.624   0.440 3.1416
+  Len   1.228
+}
+Bond{  #C-H
+  Pos  -3.059 -11.977   6.822
+  Rot  -0.308   0.739   0.405 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   8.587   0.699  -6.368
+  Rot   0.391   0.705  -0.345 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   1.271   4.496  -0.727
+  Rot  -0.585   0.487   0.266 3.1416
+  Len   1.335
+}
+Bond{  #C-H
+  Pos  -0.408  -5.617  -8.470
+  Rot   0.296   0.392  -0.431 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -3.396  -2.571  -4.339
+  Rot  -0.523   0.758   0.442 3.1416
+  Len   1.377
+}
+Bond{  #C-H
+  Pos   1.841  15.048   6.594
+  Rot  -0.222   0.461   0.491 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   2.783 -14.005   6.587
+  Rot   0.099   0.613   0.525 3.1416
+  Len   1.079
+}
+Bond{  #C-H
+  Pos  -2.995   4.970  -1.043
+  Rot  -0.092   0.633   0.523 3.1416
+  Len   1.079
+}
+Bond{  #C-N
+  Pos   4.437  -1.631   0.203
+  Rot   0.625   0.623  -0.180 3.1416
+  Len   1.303
+}
+Bond{  #C-H
+  Pos   9.317  -1.434  -1.861
+  Rot   0.435   0.630   0.319 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos  -4.347  17.666  -1.838
+  Rot  -0.593   0.648   0.270 3.1416
+  Len   1.304
+}
+Bond{  #C-C
+  Pos   1.881 -10.537   5.396
+  Rot  -0.373   0.822   0.668 3.1416
+  Len   1.533
+}
+Bond{  #C-O
+  Pos  -0.848  -6.075  -5.197
+  Rot   0.099   1.266  -0.422 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos   1.810  14.037   3.414
+  Rot  -0.044   1.328   0.336 3.1416
+  Len   1.414
+}
+Bond{  #C-H
+  Pos  -6.806   0.519  -3.389
+  Rot  -0.204   0.630   0.498 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos   3.812 -14.130   2.323
+  Rot   0.396   0.848   0.538 3.1416
+  Len   1.375
+}
+Bond{  #C-C
+  Pos  -2.938 -20.899   1.583
+  Rot   0.541   0.624  -0.420 3.1416
+  Len   1.376
+}
+Bond{  #C-N
+  Pos  -2.605 -21.149   0.526
+  Rot  -0.208   0.509  -0.636 3.1416
+  Len   1.390
+}
+Bond{  #C-N
+  Pos   2.272 -20.935   3.575
+  Rot  -0.576   0.658   0.343 3.1416
+  Len   1.341
+}
+Bond{  #C-N
+  Pos  -1.881  -2.100  -2.535
+  Rot   0.502   0.607  -0.469 3.1416
+  Len   1.385
+}
+Bond{  #C-C
+  Pos  -0.986  -7.226  -5.252
+  Rot  -0.039   0.170  -0.478 3.1416
+  Len   1.526
+}
+Bond{  #C-O
+  Pos  -0.549 -20.757   1.359
+  Rot   0.532   0.590  -0.306 3.1416
+  Len   1.228
+}
+Bond{  #C-C
+  Pos   1.979  12.910   3.634
+  Rot   0.126   0.256   0.556 3.1416
+  Len   1.525
+}
+Bond{  #C-N
+  Pos  -1.646 -20.372   3.414
+  Rot   0.569   0.636  -0.389 3.1416
+  Len   1.383
+}
+Bond{  #C-N
+  Pos   4.777   1.984  -3.420
+  Rot   0.365   0.696   0.583 3.1416
+  Len   1.377
+}
+Bond{  #C-C
+  Pos  -6.706  13.865  -2.333
+  Rot  -0.538   0.255  -0.182 3.1416
+  Len   1.523
+}
+Bond{  #C-H
+  Pos   4.888  -5.112  -4.467
+  Rot   0.325   0.490  -0.427 3.1416
+  Len   1.078
+}
+Bond{  #C-C
+  Pos  -4.367  22.388   3.241
+  Rot  -0.270   1.479   0.050 3.1416
+  Len   1.530
+}
+Bond{  #C-N
+  Pos   2.053  17.415   1.168
+  Rot   0.184   0.644   0.667 3.1416
+  Len   1.386
+}
+Bond{  #C-C
+  Pos  -0.445  -8.128  -0.412
+  Rot  -0.627   0.549  -0.245 3.1416
+  Len   1.375
+}
+Bond{  #C-H
+  Pos   5.262 -17.371   5.595
+  Rot  -0.306   0.423   0.433 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -1.548  -6.525  -4.354
+  Rot   0.601   0.633  -0.420 3.1416
+  Len   1.482
+}
+Bond{  #C-N
+  Pos   2.378  13.454   2.556
+  Rot  -0.525   0.703   0.522 3.1416
+  Len   1.482
+}
+Bond{  #C-C
+  Pos  -3.094  10.407   2.046
+  Rot  -0.075   1.476   0.265 3.1416
+  Len   1.528
+}
+Bond{  #O-P
+  Pos  -9.968 -18.934   3.063
+  Rot  -0.612   0.710   0.415 3.1416
+  Len   1.479
+}
+Bond{  #C-N
+  Pos  -3.540   4.844  -3.130
+  Rot   0.323   0.532  -0.586 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos  -3.852  21.541   2.501
+  Rot  -0.245   0.877   0.690 3.1416
+  Len   1.488
+}
+Bond{  #H-N
+  Pos   0.922  -1.493   0.271
+  Rot   0.127   0.486   0.488 3.1416
+  Len   1.010
+}
+Bond{  #C-O
+  Pos   1.144 -20.889   5.583
+  Rot  -0.534   0.604   0.303 3.1416
+  Len   1.230
+}
+Bond{  #C-O
+  Pos  -1.068  -2.519  -4.721
+  Rot   0.487   0.573  -0.372 3.1416
+  Len   1.229
+}
+Bond{  #C-C
+  Pos   5.983  -5.218   0.730
+  Rot   0.169   1.147   0.637 3.1416
+  Len   1.525
+}
+Bond{  #C-H
+  Pos   7.345   2.790  -6.790
+  Rot   0.506   0.749  -0.024 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos   2.648   6.666  -6.773
+  Rot  -0.401   0.510  -0.599 3.1416
+  Len   1.530
+}
+Bond{  #C-H
+  Pos  -5.121 -17.215   1.974
+  Rot  -0.534   0.555  -0.069 3.1416
+  Len   1.077
+}
+Bond{  #C-N
+  Pos   3.346  20.942  -1.535
+  Rot   0.410   0.784  -0.554 3.1416
+  Len   1.390
+}
+Bond{  #C-C
+  Pos  -2.289   8.088  -5.806
+  Rot   0.277   0.710  -0.713 3.1416
+  Len   1.533
+}
+Bond{  #C-C
+  Pos  -3.088 -17.553   1.033
+  Rot   0.720   0.675   0.069 3.1416
+  Len   1.450
+}
+Bond{  #C-H
+  Pos  -3.255  10.023   0.041
+  Rot  -0.474   0.608  -0.260 3.1416
+  Len   1.087
+}
+Bond{  #C-O
+  Pos  -2.802 -13.551   4.636
+  Rot  -0.061   0.140   0.417 3.1416
+  Len   1.415
+}
+Bond{  #C-H
+  Pos   7.567  -0.333  -1.784
+  Rot  -0.071   1.055  -0.175 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos  -7.218  19.161   0.362
+  Rot   0.069   1.078   0.079 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos   4.883  15.829   3.997
+  Rot  -0.214   0.048   0.065 3.1416
+  Len   1.087
+}
+Bond{  #C-O
+  Pos   6.229  -7.056   1.024
+  Rot   0.386   0.632   0.591 3.1416
+  Len   1.422
+}
+Bond{  #C-H
+  Pos   7.187 -11.551   1.986
+  Rot   0.308   0.939   0.220 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -2.314   4.707  -1.789
+  Rot  -0.588   0.822   0.223 3.1416
+  Len   1.304
+}
+Bond{  #C-O
+  Pos  -7.671   5.713  -1.593
+  Rot   0.512   0.837   0.476 3.1416
+  Len   1.422
+}
+Bond{  #C-H
+  Pos   0.907 -17.805   4.835
+  Rot  -0.380   0.519   0.383 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos  -0.709   0.792  -4.487
+  Rot   0.317   0.451  -0.428 3.1416
+  Len   1.080
+}
+Bond{  #C-N
+  Pos  -3.106 -13.535   2.370
+  Rot   0.299   0.403  -0.550 3.1416
+  Len   1.377
+}
+Bond{  #C-O
+  Pos  -7.637  20.953   3.759
+  Rot  -0.228   0.723  -0.671 3.1416
+  Len   1.418
+}
+Bond{  #C-N
+  Pos   1.577  14.408  -0.491
+  Rot   0.056   0.832  -0.649 3.1416
+  Len   1.342
+}
+Bond{  #C-N
+  Pos   1.687 -20.913   4.599
+  Rot  -0.008   0.717   0.681 3.1416
+  Len   1.364
+}
+Bond{  #C-N
+  Pos  -1.467  -2.332  -3.676
+  Rot  -0.089   0.548  -0.673 3.1416
+  Len   1.387
+}
+Bond{  #C-H
+  Pos  -3.175  14.287  -1.861
+  Rot  -0.009   0.464  -0.534 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos   3.048  -9.822   2.463
+  Rot   0.530   0.462  -0.090 3.1416
+  Len   1.087
+}
+Bond{  #C-O
+  Pos   8.843  22.464  -1.027
+  Rot  -0.151   0.368  -0.601 3.1416
+  Len   1.412
+}
+Bond{  #O-P
+  Pos  -9.098   3.976  -1.360
+  Rot  -0.002   0.467   0.688 3.1416
+  Len   1.479
+}
+Bond{  #C-H
+  Pos  -7.402  18.529  -0.240
+  Rot  -0.114   0.447  -0.523 3.1416
+  Len   1.089
+}
+Bond{  #C-H
+  Pos   7.021  -7.489   1.530
+  Rot   0.405   0.191  -0.086 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -6.681 -18.117   5.981
+  Rot   0.080   0.348   0.502 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   2.617  -4.783  -1.333
+  Rot  -0.298   0.730   0.627 3.1416
+  Len   1.389
+}
+Bond{  #C-N
+  Pos  -2.282  14.733  -0.026
+  Rot   0.202   0.658  -0.663 3.1416
+  Len   1.389
+}
+Bond{  #C-C
+  Pos  -0.356  -5.698  -7.397
+  Rot  -0.348   1.001  -0.641 3.1416
+  Len   1.533
+}
+Bond{  #C-H
+  Pos  -6.103  11.384  -3.682
+  Rot  -0.309   0.550  -0.450 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos   1.637  14.787   5.569
+  Rot   0.427   1.112   0.534 3.1416
+  Len   1.531
+}
+Bond{  #C-H
+  Pos  -5.089 -12.845   2.881
+  Rot  -0.374   0.753   0.326 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos   5.189   6.258  -4.255
+  Rot   0.301   0.716  -0.412 3.1416
+  Len   1.080
+}
+Bond{  #C-N
+  Pos  -2.251  21.202  -0.237
+  Rot   0.438   0.737   0.504 3.1416
+  Len   1.341
+}
+Bond{  #C-H
+  Pos   4.971  17.220  -1.797
+  Rot  -0.215   0.369  -0.469 3.1416
+  Len   1.090
+}
+Bond{  #C-C
+  Pos   7.518   0.806  -6.260
+  Rot   0.678   0.498   0.237 3.1416
+  Len   1.532
+}
+Bond{  #C-N
+  Pos  -4.855 -13.251   1.949
+  Rot   0.139   0.844   0.606 3.1416
+  Len   1.302
+}
+Bond{  #O-P
+  Pos  -8.766 -18.577   3.090
+  Rot  -0.590   0.480  -0.442 3.1416
+  Len   1.614
+}
+Bond{  #C-N
+  Pos   4.854  -5.151  -3.449
+  Rot  -0.292   0.752  -0.591 3.1416
+  Len   1.330
+}
+Bond{  #C-H
+  Pos   2.704  -7.943  -0.670
+  Rot   0.142   0.887   0.398 3.1416
+  Len   1.089
+}
+Bond{  #C-O
+  Pos   6.564 -15.882   5.677
+  Rot   0.561   0.736   0.434 3.1416
+  Len   1.419
+}
+Bond{  #C-N
+  Pos  -4.892   1.320  -3.596
+  Rot  -0.490   0.736  -0.556 3.1416
+  Len   1.483
+}
+Bond{  #C-O
+  Pos  -6.550   2.531  -4.676
+  Rot  -0.625   0.640  -0.330 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos   8.536  20.600   1.661
+  Rot  -0.057   0.834  -0.696 3.1416
+  Len   1.419
+}
+Bond{  #H-N
+  Pos   0.412 -15.028   0.590
+  Rot   0.360   0.573   0.351 3.1416
+  Len   1.014
+}
+Bond{  #H-N
+  Pos   0.462   3.888  -3.837
+  Rot   0.219   0.576   0.452 3.1416
+  Len   1.014
+}
+Bond{  #C-O
+  Pos  -5.653   1.958  -4.249
+  Rot  -0.272   1.348  -0.097 3.1416
+  Len   1.409
+}
+Bond{  #C-O
+  Pos  -6.127  12.197  -1.559
+  Rot  -0.446   0.558  -0.531 3.1416
+  Len   1.421
+}
+Bond{  #O-P
+  Pos   0.605   7.494  -7.518
+  Rot   0.274   0.082   0.225 3.1416
+  Len   1.613
+}
+Bond{  #C-O
+  Pos   8.102 -13.262   2.326
+  Rot  -0.446   0.703  -0.553 3.1416
+  Len   1.421
+}
+Bond{  #C-N
+  Pos   4.382  -5.157  -1.168
+  Rot  -0.128   0.749  -0.672 3.1416
+  Len   1.374
+}
+Bond{  #C-N
+  Pos  -4.045  14.346   0.115
+  Rot   0.223   0.825   0.634 3.1416
+  Len   1.373
+}
+Bond{  #C-C
+  Pos   8.261  -1.181  -1.895
+  Rot   0.622   0.426  -0.286 3.1416
+  Len   1.527
+}
+Bond{  #C-N
+  Pos   2.922  17.322   1.966
+  Rot   0.684   0.654   0.131 3.1416
+  Len   1.396
+}
+Bond{  #C-O
+  Pos   5.092  -7.365   2.730
+  Rot  -0.628   1.037   0.000 3.1416
+  Len   1.418
+}
+Bond{  #C-N
+  Pos  -0.159 -10.813   2.210
+  Rot   0.588   0.489  -0.295 3.1416
+  Len   1.372
+}
+Bond{  #C-H
+  Pos   7.201  19.033   5.052
+  Rot   0.316   0.483   0.440 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -8.621 -20.756   0.782
+  Rot  -0.348   0.643  -0.408 3.1416
+  Len   1.090
+}
+Bond{  #H-N
+  Pos   0.562  20.567   0.467
+  Rot  -0.501   0.470   0.061 3.1416
+  Len   1.012
+}
+Bond{  #C-H
+  Pos   6.965 -15.650   6.591
+  Rot  -0.159   0.750   0.479 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -7.113   2.593  -5.532
+  Rot   0.062   0.678  -0.526 3.1416
+  Len   1.092
+}
+Bond{  #C-N
+  Pos   5.164  -1.654  -0.657
+  Rot   0.102   0.693  -0.680 3.1416
+  Len   1.375
+}
+Bond{  #C-N
+  Pos  -4.943  17.740  -0.886
+  Rot  -0.002   0.766   0.683 3.1416
+  Len   1.374
+}
+Bond{  #H-N
+  Pos   0.737 -12.844  -2.909
+  Rot  -0.215   0.420  -0.449 3.1416
+  Len   1.009
+}
+Bond{  #C-N
+  Pos   3.361   5.596  -3.316
+  Rot  -0.186   0.478   0.629 3.1416
+  Len   1.379
+}
+Bond{  #C-H
+  Pos  -3.006   9.287  -2.878
+  Rot  -0.509   0.494   0.186 3.1416
+  Len   1.088
+}
+Bond{  #C-C
+  Pos  -8.124 -22.743   0.670
+  Rot  -0.189   0.373  -0.630 3.1416
+  Len   1.533
+}
+Bond{  #C-N
+  Pos   3.689 -17.674   2.127
+  Rot   0.576   0.723  -0.387 3.1416
+  Len   1.388
+}
+Bond{  #C-N
+  Pos  -3.024   1.451  -1.439
+  Rot  -0.505   0.803   0.463 3.1416
+  Len   1.387
+}
+Bond{  #C-H
+  Pos   2.428 -20.693   7.665
+  Rot  -0.486   0.651   0.223 3.1416
+  Len   1.089
+}
+Bond{  #O-P
+  Pos  10.073  -4.463   1.344
+  Rot   0.710   0.554  -0.098 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos -10.067  14.622  -1.627
+  Rot  -0.673   0.551   0.242 3.1416
+  Len   1.479
+}
+Bond{  #C-C
+  Pos   3.584  -4.957  -1.900
+  Rot  -0.669   0.824  -0.059 3.1416
+  Len   1.372
+}
+Bond{  #C-C
+  Pos  -3.153  14.628   0.693
+  Rot   0.669   0.828  -0.056 3.1416
+  Len   1.372
+}
+Bond{  #C-N
+  Pos  -1.680   0.913  -4.181
+  Rot   0.654   0.633   0.122 3.1416
+  Len   1.331
+}
+Bond{  #O-P
+  Pos   4.650  15.986   6.663
+  Rot   0.100   1.541  -0.327 3.1416
+  Len   1.617
+}
+Bond{  #C-H
+  Pos   1.768 -10.130   6.389
+  Rot   0.260   0.898   0.325 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   6.814  19.629   4.521
+  Rot  -0.071   1.078  -0.090 3.1416
+  Len   1.090
+}
+Bond{  #C-C
+  Pos   0.052  -6.696  -6.723
+  Rot  -0.059   1.531  -0.033 3.1416
+  Len   1.534
+}
+Bond{  #C-N
+  Pos  -4.498 -16.988   3.896
+  Rot  -0.441   0.789   0.599 3.1416
+  Len   1.490
+}
+Bond{  #C-C
+  Pos   3.432  17.462  -0.408
+  Rot  -0.701   0.787  -0.173 3.1416
+  Len   1.450
+}
+Bond{  #C-N
+  Pos   1.589  20.551   2.116
+  Rot  -0.295   0.613   0.597 3.1416
+  Len   1.336
+}
+Bond{  #C-C
+  Pos  -3.296 -13.872   1.339
+  Rot  -0.489   0.636  -0.482 3.1416
+  Len   1.376
+}
+Bond{  #C-H
+  Pos  -6.160   4.346  -1.307
+  Rot  -0.160   0.030  -0.079 3.1416
+  Len   1.086
+}
+Bond{  #C-H
+  Pos   9.758  -3.798  -1.241
+  Rot   0.537   0.593  -0.080 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos  -9.343  15.645   0.758
+  Rot  -0.516   0.604   0.167 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   4.103 -17.527   3.885
+  Rot  -0.684   0.621  -0.038 3.1416
+  Len   1.377
+}
+Bond{  #C-H
+  Pos   2.612  12.441   4.383
+  Rot   0.508   0.583   0.193 3.1416
+  Len   1.090
+}
+Bond{  #C-C
+  Pos  -4.203  -3.865  -7.298
+  Rot  -0.181   0.932  -0.723 3.1416
+  Len   1.528
+}
+Bond{  #C-O
+  Pos   8.375 -15.160   4.875
+  Rot   0.175   0.484  -0.648 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos  -8.226   3.332  -3.689
+  Rot  -0.045   0.605   0.699 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos   5.139   5.979  -3.250
+  Rot  -0.251   0.755  -0.593 3.1416
+  Len   1.303
+}
+Bond{  #C-H
+  Pos  -4.270  23.428   3.527
+  Rot   0.368   0.870   0.235 3.1416
+  Len   1.089
+}
+Bond{  #N-N
+  Pos   2.257  20.606   2.080
+  Rot   0.963   1.268  -0.632 3.1416
+  Len   2.315
+}
+Bond{  #C-H
+  Pos   1.501 -10.970   6.308
+  Rot  -0.006   0.058   0.244 3.1416
+  Len   1.090
+}
+Bond{  #C-C
+  Pos   2.855   4.574  -7.654
+  Rot   0.516   0.449  -0.469 3.1416
+  Len   1.532
+}
+Bond{  #C-N
+  Pos   2.287 -20.823   5.617
+  Rot   0.609   0.752   0.338 3.1416
+  Len   1.396
+}
+Bond{  #C-N
+  Pos  -2.214  -2.559  -4.565
+  Rot  -0.659   0.617  -0.216 3.1416
+  Len   1.397
+}
+Bond{  #C-O
+  Pos  -5.179  11.713  -3.342
+  Rot   0.615   1.041  -0.110 3.1416
+  Len   1.416
+}
+Bond{  #C-H
+  Pos   5.123   2.077   0.064
+  Rot  -0.298   0.683   0.435 3.1416
+  Len   1.091
+}
+Bond{  #C-O
+  Pos   1.947 -11.057   4.292
+  Rot   0.307   1.173   0.437 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos   1.557  10.965   0.060
+  Rot   0.047   0.537   0.674 3.1416
+  Len   1.388
+}
+Bond{  #O-P
+  Pos  -9.094 -19.661   2.534
+  Rot   0.262   0.052  -0.115 3.1416
+  Len   1.618
+}
+Bond{  #O-P
+  Pos   8.162 -18.970   8.910
+  Rot   0.282   0.873   0.671 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -8.354  -1.160  -7.067
+  Rot  -0.418   0.734  -0.611 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos   1.713 -11.304   3.184
+  Rot  -0.073   0.492   0.671 3.1416
+  Len   1.420
+}
+Bond{  #C-N
+  Pos  -4.322 -17.132   2.670
+  Rot  -0.265   0.589  -0.628 3.1416
+  Len   1.377
+}
+Bond{  #C-C
+  Pos   3.266 -17.648   3.180
+  Rot  -0.153   0.632  -0.667 3.1416
+  Len   1.373
+}
+Bond{  #C-O
+  Pos   2.808   1.664  -0.974
+  Rot  -0.312   0.544   0.524 3.1416
+  Len   1.229
+}
+Bond{  #O-P
+  Pos  -0.718 -10.200   7.569
+  Rot   0.279   0.765   0.685 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos  -6.344  17.148   0.802
+  Rot  -0.256   0.051   0.064 3.1416
+  Len   1.410
+}
+Bond{  #C-H
+  Pos   7.307  20.042  -0.183
+  Rot   0.070   0.503  -0.539 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   0.467 -11.705   0.185
+  Rot   0.406   0.407  -0.472 3.1416
+  Len   1.359
+}
+Bond{  #C-H
+  Pos  -4.766  23.300   2.801
+  Rot  -0.128   0.743  -0.491 3.1416
+  Len   1.090
+}
+Bond{  #H-N
+  Pos  -0.289  15.477   2.323
+  Rot   0.215   0.637   0.438 3.1416
+  Len   1.011
+}
+Bond{  #C-H
+  Pos  -4.473  21.068  -0.893
+  Rot  -0.368   0.483  -0.391 3.1416
+  Len   1.081
+}
+Bond{  #C-C
+  Pos  -3.053  -2.111  -2.326
+  Rot   0.670   0.823   0.260 3.1416
+  Len   1.451
+}
+Bond{  #H-N
+  Pos  -0.712   6.920   2.098
+  Rot  -0.502   0.439   0.026 3.1416
+  Len   1.016
+}
+Bond{  #O-P
+  Pos   9.125  -3.853   0.795
+  Rot   0.238   0.385   0.646 3.1416
+  Len   1.615
+}
+Bond{  #O-P
+  Pos  -9.068  15.318  -1.335
+  Rot  -0.326   0.298  -0.534 3.1416
+  Len   1.612
+}
+Bond{  #H-O
+  Pos  -6.250  23.711   5.535
+  Rot   0.407   0.539  -0.248 3.1416
+  Len   0.960
+}
+Bond{  #C-N
+  Pos  -1.540 -10.937   1.135
+  Rot  -0.252   0.943   0.597 3.1416
+  Len   1.388
+}
+Bond{  #O-P
+  Pos   0.884   8.707  -7.708
+  Rot   0.554   1.230   0.036 3.1416
+  Len   1.480
+}
+Bond{  #C-O
+  Pos  -2.227  10.957   3.940
+  Rot   0.649   0.456   0.127 3.1416
+  Len   1.415
+}
+Bond{  #C-C
+  Pos   6.909  -6.447   1.792
+  Rot  -0.293   0.080  -0.177 3.1416
+  Len   1.537
+}
+Bond{  #C-C
+  Pos  -6.579   5.349  -1.172
+  Rot  -0.580   1.252   0.056 3.1416
+  Len   1.523
+}
+Bond{  #C-H
+  Pos  -0.513  -6.713  -4.453
+  Rot   0.435   0.466   0.322 3.1416
+  Len   1.093
+}
+Bond{  #C-H
+  Pos  -2.029   7.510  -6.678
+  Rot  -0.016   0.024  -0.160 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -6.333   7.915   0.136
+  Rot  -0.394   0.557   0.378 3.1416
+  Len   1.092
+}
+Bond{  #C-O
+  Pos  -2.412 -17.017   4.048
+  Rot   0.266   0.686   0.550 3.1416
+  Len   1.229
+}
+Bond{  #C-N
+  Pos   3.018  -1.479  -3.288
+  Rot  -0.659   0.698  -0.086 3.1416
+  Len   1.332
+}
+Bond{  #C-N
+  Pos  -1.658 -14.761  -0.014
+  Rot  -0.462   0.623  -0.510 3.1416
+  Len   1.382
+}
+Bond{  #C-N
+  Pos  -2.442  18.173   1.377
+  Rot   0.664   0.710  -0.013 3.1416
+  Len   1.330
+}
+Bond{  #C-C
+  Pos  -3.621 -14.191   0.216
+  Rot  -0.163   0.981   0.641 3.1416
+  Len   1.428
+}
+Bond{  #C-N
+  Pos  -2.134 -17.477   1.741
+  Rot   0.234   0.818   0.639 3.1416
+  Len   1.385
+}
+Bond{  #C-O
+  Pos  -6.182 -18.047   5.089
+  Rot  -0.579   0.836   0.390 3.1416
+  Len   1.419
+}
+Bond{  #C-N
+  Pos  -3.259  -4.999  -0.674
+  Rot  -0.558   0.465  -0.346 3.1416
+  Len   1.393
+}
+Bond{  #C-N
+  Pos   3.923  -4.928  -4.171
+  Rot  -0.639   0.800  -0.130 3.1416
+  Len   1.331
+}
+Bond{  #C-O
+  Pos  -2.196   7.749  -4.639
+  Rot  -0.370   1.104  -0.455 3.1416
+  Len   1.416
+}
+Bond{  #C-N
+  Pos  -1.054   8.051  -2.728
+  Rot  -0.716   0.687  -0.191 3.1416
+  Len   1.487
+}
+Bond{  #C-O
+  Pos   5.177  16.840   5.781
+  Rot   0.426   0.832  -0.555 3.1416
+  Len   1.421
+}
+Bond{  #C-N
+  Pos  -3.486   4.681  -4.341
+  Rot  -0.269   0.673  -0.624 3.1416
+  Len   1.360
+}
+Bond{  #C-H
+  Pos   3.918 -20.168   9.588
+  Rot  -0.362   0.695   0.380 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   5.815 -13.567   3.396
+  Rot   0.202   0.485   0.502 3.1416
+  Len   1.088
+}
+Bond{  #C-O
+  Pos   4.358 -10.431  -2.166
+  Rot  -0.601   1.081   0.002 3.1416
+  Len   1.416
+}
+Bond{  #C-O
+  Pos  -3.609   9.328   1.924
+  Rot   0.589   1.074  -0.143 3.1416
+  Len   1.416
+}
+Bond{  #C-O
+  Pos  -1.798   7.673  -3.551
+  Rot  -0.027   0.389  -0.633 3.1416
+  Len   1.419
+}
+Bond{  #H-N
+  Pos   0.815 -18.047   0.844
+  Rot  -0.492   0.436  -0.092 3.1416
+  Len   1.011
+}
+Bond{  #C-O
+  Pos   0.852 -10.244   5.946
+  Rot  -0.656   0.945  -0.118 3.1416
+  Len   1.415
+}
+Bond{  #C-C
+  Pos  -6.449 -20.706   1.323
+  Rot  -0.454   1.228  -0.399 3.1416
+  Len   1.525
+}
+Bond{  #C-C
+  Pos   2.668  -4.748  -2.616
+  Rot   0.246   0.635   0.657 3.1416
+  Len   1.411
+}
+Bond{  #C-C
+  Pos  -2.146  14.916   1.238
+  Rot  -0.339   0.560  -0.601 3.1416
+  Len   1.410
+}
+Bond{  #O-P
+  Pos  -8.640   4.918  -2.058
+  Rot   0.457   1.480  -0.011 3.1416
+  Len   1.621
+}
+Bond{  #O-P
+  Pos   7.195 -19.516   8.330
+  Rot   0.685   1.218  -0.091 3.1416
+  Len   1.610
+}
+Bond{  #O-P
+  Pos  -7.232  -1.508  -6.628
+  Rot  -0.704   1.161   0.171 3.1416
+  Len   1.613
+}
+Bond{  #C-H
+  Pos   2.917   7.427  -6.020
+  Rot  -0.134   1.051   0.154 3.1416
+  Len   1.090
+}
+Bond{  #C-C
+  Pos   4.095 -20.772   4.582
+  Rot   0.016   0.639  -0.675 3.1416
+  Len   1.353
+}
+Bond{  #C-N
+  Pos   0.562 -12.113  -0.865
+  Rot  -0.311   0.535  -0.578 3.1416
+  Len   1.340
+}
+Bond{  #C-N
+  Pos  -2.835 -20.412   3.564
+  Rot   0.621   0.767   0.239 3.1416
+  Len   1.343
+}
+Bond{  #C-C
+  Pos   7.382 -16.572   6.204
+  Rot  -0.257   1.485  -0.093 3.1416
+  Len   1.535
+}
+Bond{  #C-C
+  Pos  -7.389   1.725  -4.950
+  Rot   0.215   1.505  -0.056 3.1416
+  Len   1.538
+}
+Bond{  #C-H
+  Pos  -7.412  20.431   4.629
+  Rot  -0.003   0.038   0.199 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos   7.858  20.404   0.660
+  Rot   0.621   1.083   0.304 3.1416
+  Len   1.525
+}
+Bond{  #C-H
+  Pos   8.175  -0.006  -6.028
+  Rot  -0.021   0.000  -0.006 3.1416
+  Len   1.091
+}
+Bond{  #H-N
+  Pos   2.370  11.663  -3.220
+  Rot   0.335   0.545  -0.375 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos   3.356 -10.336  -2.407
+  Rot  -0.401   0.267  -0.242 3.1416
+  Len   1.089
+}
+Bond{  #C-N
+  Pos  -1.090  17.916  -1.438
+  Rot   0.409   0.636  -0.528 3.1416
+  Len   1.337
+}
+Bond{  #C-H
+  Pos  -0.736  -4.919  -8.032
+  Rot  -0.031   1.089   0.006 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   1.727   8.218  -2.069
+  Rot   0.166   0.842  -0.658 3.1416
+  Len   1.388
+}
+Bond{  #C-H
+  Pos   2.067  15.669   6.005
+  Rot   0.004   1.081  -0.099 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   9.528  22.756  -0.325
+  Rot   0.534   0.500   0.101 3.1416
+  Len   1.091
+}
+Bond{  #O-P
+  Pos  -9.372 -18.558   1.994
+  Rot  -0.016   1.086  -0.654 3.1416
+  Len   1.480
+}
+Bond{  #C-C
+  Pos  -6.909  12.701  -2.303
+  Rot   0.336   0.111   0.213 3.1416
+  Len   1.535
+}
+Bond{  #C-N
+  Pos   3.487 -20.752   5.606
+  Rot   0.591   0.705  -0.349 3.1416
+  Len   1.374
+}
+Bond{  #C-C
+  Pos   7.089 -13.771   1.855
+  Rot   0.566   1.263  -0.082 3.1416
+  Len   1.523
+}
+Bond{  #C-O
+  Pos  -0.378  -5.724  -6.188
+  Rot   0.371   0.502  -0.569 3.1416
+  Len   1.420
+}
+Bond{  #C-O
+  Pos   1.488  14.550   4.393
+  Rot  -0.278   0.601   0.643 3.1416
+  Len   1.419
+}
+Bond{  #O-P
+  Pos  -4.551   7.327   1.025
+  Rot   0.216   0.854   0.774 3.1416
+  Len   1.610
+}
+Bond{  #C-N
+  Pos   1.070 -17.842   3.825
+  Rot  -0.217   0.608  -0.627 3.1416
+  Len   1.332
+}
+Bond{  #C-N
+  Pos  -0.711   0.952  -3.478
+  Rot   0.316   0.737   0.582 3.1416
+  Len   1.331
+}
+Bond{  #C-O
+  Pos  -3.878  -3.887  -8.483
+  Rot  -0.506   0.900   0.462 3.1416
+  Len   1.421
+}
+Bond{  #C-C
+  Pos  -3.397  21.130  -0.621
+  Rot   0.708   0.724  -0.120 3.1416
+  Len   1.436
+}
+Bond{  #C-N
+  Pos   3.556 -13.986   4.606
+  Rot   0.167   0.786   0.651 3.1416
+  Len   1.360
+}
+Bond{  #C-N
+  Pos   0.535  12.053  -3.725
+  Rot  -0.166   0.844  -0.623 3.1416
+  Len   1.337
+}
+Bond{  #C-C
+  Pos   2.430 -17.779   2.353
+  Rot   0.683   0.782   0.160 3.1416
+  Len   1.411
+}
+Bond{  #O-P
+  Pos   5.618 -12.657  -2.024
+  Rot   0.581   0.427  -0.335 3.1416
+  Len   1.480
+}
+Bond{  #C-C
+  Pos  -1.818   1.298  -1.843
+  Rot  -0.701   0.748  -0.059 3.1416
+  Len   1.410
+}
+Bond{  #C-N
+  Pos   2.853  -4.736  -3.787
+  Rot  -0.431   0.732   0.514 3.1416
+  Len   1.347
+}
+Bond{  #C-O
+  Pos  -1.351   8.283  -6.531
+  Rot   0.661   0.960  -0.012 3.1416
+  Len   1.415
+}
+Bond{  #C-N
+  Pos  -2.157  15.066   2.414
+  Rot   0.351   0.669  -0.575 3.1416
+  Len   1.347
+}
+Bond{  #C-H
+  Pos   4.821 -22.021   8.994
+  Rot   0.503   0.369  -0.115 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   3.590 -14.290   1.274
+  Rot   0.175   0.540  -0.511 3.1416
+  Len   1.079
+}
+Bond{  #C-H
+  Pos  -4.864  -3.913  -8.164
+  Rot  -0.481   0.330  -0.143 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   4.218   5.944  -3.894
+  Rot  -0.671   0.549  -0.051 3.1416
+  Len   1.373
+}
+Bond{  #C-N
+  Pos  -3.887  -6.063  -2.781
+  Rot  -0.408   0.412  -0.486 3.1416
+  Len   1.389
+}
+Bond{  #C-N
+  Pos   4.426  13.655   0.576
+  Rot   0.487   0.492   0.452 3.1416
+  Len   1.390
+}
+Bond{  #H-N
+  Pos   0.650   4.197   0.028
+  Rot  -0.035   0.386   0.489 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos  -5.140   1.153  -4.614
+  Rot   0.241   0.384  -0.462 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos  -0.066   7.402   0.362
+  Rot   0.394   0.604   0.538 3.1416
+  Len   1.341
+}
+Bond{  #O-P
+  Pos   5.803   4.186  -9.363
+  Rot  -0.160   0.652  -0.717 3.1416
+  Len   1.479
+}
+Bond{  #H-N
+  Pos  -2.278  -7.341   1.691
+  Rot  -0.383   0.604   0.313 3.1416
+  Len   1.008
+}
+Bond{  #C-O
+  Pos   6.497   2.697  -7.379
+  Rot   0.342   0.600   0.613 3.1416
+  Len   1.421
+}
+Bond{  #C-C
+  Pos  -4.198 -17.367   1.503
+  Rot   0.389   0.543  -0.539 3.1416
+  Len   1.357
+}
+Bond{  #C-N
+  Pos  -4.187  14.474   1.323
+  Rot  -0.365   0.669   0.573 3.1416
+  Len   1.360
+}
+Bond{  #C-H
+  Pos   3.219   4.341  -8.640
+  Rot  -0.152   0.630  -0.517 3.1416
+  Len   1.091
+}
+Bond{  #C-H
+  Pos   3.230  -5.002   0.653
+  Rot  -0.071   0.524   0.534 3.1416
+  Len   1.079
+}
+Bond{  #H-N
+  Pos   2.351 -20.994   1.668
+  Rot  -0.450   0.484  -0.230 3.1416
+  Len   1.011
+}
+Bond{  #C-H
+  Pos  -2.506   9.560   0.060
+  Rot   0.276   0.142  -0.240 3.1416
+  Len   1.082
+}
+Bond{  #C-H
+  Pos   7.684  -0.851  -1.066
+  Rot   0.045   0.537   0.543 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos   5.515  16.297   3.585
+  Rot   0.417   0.516  -0.348 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -0.404   3.959  -4.372
+  Rot   0.647   0.527   0.083 3.1416
+  Len   1.335
+}
+Bond{  #C-O
+  Pos  -5.658  13.053  -0.945
+  Rot  -0.022   0.005  -0.083 3.1416
+  Len   1.418
+}
+Bond{  #O-P
+  Pos  -8.913  14.162  -1.810
+  Rot   0.480   0.161   0.059 3.1416
+  Len   1.619
+}
+Bond{  #C-O
+  Pos  -1.351  -5.746  -8.081
+  Rot  -0.647   0.424  -0.043 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos   2.722  14.876   6.091
+  Rot   0.659   0.450  -0.011 3.1416
+  Len   1.415
+}
+Bond{  #C-C
+  Pos   2.271  -9.927   4.354
+  Rot  -0.017   0.099   0.375 3.1416
+  Len   1.528
+}
+Bond{  #C-N
+  Pos   1.301 -17.878   2.695
+  Rot   0.447   0.695  -0.503 3.1416
+  Len   1.347
+}
+Bond{  #C-N
+  Pos  -0.756   1.140  -2.340
+  Rot  -0.361   0.788   0.556 3.1416
+  Len   1.346
+}
+Bond{  #C-C
+  Pos   2.022  11.182  -1.109
+  Rot  -0.512   0.656   0.495 3.1416
+  Len   1.428
+}
+Bond{  #C-N
+  Pos  -0.524  -6.908   2.399
+  Rot   0.078   0.932   0.608 3.1416
+  Len   1.336
+}
+Bond{  #C-O
+  Pos   8.341   0.768  -5.369
+  Rot   0.146   0.937   0.654 3.1416
+  Len   1.416
+}
+Bond{  #C-C
+  Pos  -6.201   7.532  -0.860
+  Rot   0.261   1.139   0.618 3.1416
+  Len   1.534
+}
+Bond{  #H-N
+  Pos   3.225 -20.947   1.627
+  Rot   0.425   0.530  -0.272 3.1416
+  Len   1.009
+}
+Bond{  #C-H
+  Pos   2.334  -9.390   2.184
+  Rot  -0.184   0.892  -0.369 3.1416
+  Len   1.082
+}
+Bond{  #C-C
+  Pos   0.884   7.960  -1.355
+  Rot   0.677   0.798  -0.057 3.1416
+  Len   1.376
+}
+Bond{  #C-H
+  Pos  -3.189 -11.355   4.851
+  Rot   0.146   1.035  -0.190 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos  -0.423 -12.131  -1.547
+  Rot  -0.673   0.809  -0.103 3.1416
+  Len   1.383
+}
+Bond{  #C-O
+  Pos   2.519   4.771  -6.508
+  Rot  -0.179   0.830  -0.676 3.1416
+  Len   1.420
+}
+Bond{  #C-N
+  Pos  -1.373  18.181   0.837
+  Rot   0.405   0.629  -0.527 3.1416
+  Len   1.332
+}
+Bond{  #C-O
+  Pos   0.748  -7.614  -6.422
+  Rot  -0.637   0.862  -0.269 3.1416
+  Len   1.418
+}
+Bond{  #C-H
+  Pos  -3.769  -4.510  -6.517
+  Rot   0.253   0.066   0.059 3.1416
+  Len   1.087
+}
+Bond{  #C-O
+  Pos   2.678   5.265  -5.481
+  Rot   0.020   0.094  -0.351 3.1416
+  Len   1.415
+}
+Bond{  #C-H
+  Pos  -5.692  10.861  -3.099
+  Rot   0.103   0.027   0.133 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   2.977 -17.611   4.365
+  Rot  -0.442   0.664   0.518 3.1416
+  Len   1.362
+}
+Bond{  #C-H
+  Pos   5.375  17.901  -1.401
+  Rot   0.190   1.048  -0.073 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos   5.737 -17.465   2.474
+  Rot   0.519   0.580  -0.144 3.1416
+  Len   1.080
+}
+Bond{  #C-H
+  Pos  -5.101   1.610  -1.477
+  Rot  -0.488   0.607   0.221 3.1416
+  Len   1.079
+}
+Bond{  #C-N
+  Pos   2.550   5.196  -2.489
+  Rot  -0.624   0.493   0.198 3.1416
+  Len   1.363
+}
+Bond{  #C-C
+  Pos  -5.992   0.874  -4.019
+  Rot  -0.609   0.323   0.133 3.1416
+  Len   1.527
+}
+Bond{  #C-O
+  Pos  -5.878  23.373   4.704
+  Rot  -0.034   0.309  -0.582 3.1416
+  Len   1.412
+}
+Bond{  #C-C
+  Pos  -1.621 -11.333  -0.076
+  Rot   0.334   0.862   0.615 3.1416
+  Len   1.429
+}
+Bond{  #O-P
+  Pos   5.304   4.552  -8.274
+  Rot   0.659   0.528  -0.372 3.1416
+  Len   1.611
+}
+Bond{  #C-H
+  Pos  -4.102 -17.569  -0.791
+  Rot   0.349   0.678  -0.396 3.1416
+  Len   1.090
+}
+Bond{  #C-N
+  Pos   0.508 -14.771   4.281
+  Rot  -0.626   0.500  -0.159 3.1416
+  Len   1.334
+}
+Bond{  #O-P
+  Pos  -1.202 -10.986   6.716
+  Rot  -0.204   0.045  -0.169 3.1416
+  Len   1.613
+}
+Bond{  #C-N
+  Pos   4.354  21.083  -1.834
+  Rot   0.598   0.704   0.255 3.1416
+  Len   1.303
+}
+Bond{  #C-H
+  Pos   5.827   3.596  -5.644
+  Rot  -0.248   1.019  -0.088 3.1416
+  Len   1.088
+}
+Bond{  #C-O
+  Pos  -2.548 -11.402  -0.828
+  Rot  -0.594   0.693  -0.137 3.1416
+  Len   1.228
+}
+Bond{  #C-H
+  Pos  -5.926  17.986   1.226
+  Rot   0.162   0.729   0.486 3.1416
+  Len   1.089
+}
+Bond{  #C-C
+  Pos  -2.536   8.863  -4.830
+  Rot  -0.030   0.048  -0.264 3.1416
+  Len   1.530
+}
+Bond{  #C-C
+  Pos   5.350  16.644   4.579
+  Rot   0.253   1.083   0.647 3.1416
+  Len   1.528
+}
+Bond{  #C-H
+  Pos   2.186  -1.430  -3.884
+  Rot  -0.172   0.557  -0.511 3.1416
+  Len   1.079
+}
+Bond{  #C-H
+  Pos  -7.476 -16.253   5.473
+  Rot  -0.521   0.689  -0.078 3.1416
+  Len   1.092
+}
+Bond{  #C-H
+  Pos  -1.538  18.297   1.841
+  Rot   0.240   0.618   0.477 3.1416
+  Len   1.079
+}
+Bond{  #C-C
+  Pos  -2.822  -5.796  -2.495
+  Rot  -0.658   0.703   0.200 3.1416
+  Len   1.375
+}
+Bond{  #C-C
+  Pos   3.323  13.877   0.428
+  Rot   0.617   0.669  -0.304 3.1416
+  Len   1.375
+}
+Bond{  #C-C
+  Pos   3.523  -9.832  -1.476
+  Rot   0.234   0.535  -0.688 3.1416
+  Len   1.522
+}
+Bond{  #C-C
+  Pos  -2.901   9.826   1.041
+  Rot  -0.119   0.629   0.740 3.1416
+  Len   1.522
+}
+Bond{  #C-H
+  Pos  -6.862 -19.722   1.087
+  Rot   0.041   1.062   0.163 3.1416
+  Len   1.088
+}
+Bond{  #C-H
+  Pos   7.931 -13.353   1.309
+  Rot   0.275   0.461  -0.463 3.1416
+  Len   1.091
+}
+Bond{  #C-C
+  Pos   6.682 -11.720   1.059
+  Rot  -0.197   0.992  -0.706 3.1416
+  Len   1.534
+}
+Bond{  #C-H
+  Pos  -3.238  10.907   4.088
+  Rot  -0.362   0.244   0.274 3.1416
+  Len   1.090
+}
+Bond{  #H-N
+  Pos   1.451 -12.833  -2.397
+  Rot   0.499   0.435   0.063 3.1416
+  Len   1.017
+}
+Bond{  #C-H
+  Pos  -2.256   9.737  -2.790
+  Rot   0.241   0.941   0.272 3.1416
+  Len   1.081
+}
+Bond{  #C-N
+  Pos  -2.024  21.339   0.912
+  Rot  -0.210   0.753   0.645 3.1416
+  Len   1.364
+}
+Bond{  #C-C
+  Pos  -8.104 -21.602   1.245
+  Rot   0.169   0.021   0.055 3.1416
+  Len   1.537
+}
+Bond{  #H-N
+  Pos  -1.716  20.967  -2.055
+  Rot   0.500   0.493  -0.074 3.1416
+  Len   1.012
+}
+Bond{  #C-N
+  Pos  -3.721   1.255  -3.101
+  Rot   0.682   0.617  -0.062 3.1416
+  Len   1.376
+}
+Bond{  #C-N
+  Pos   1.011   7.445   0.886
+  Rot   0.683   0.801  -0.014 3.1416
+  Len   1.383
+}
+Bond{  #O-P
+  Pos   9.162  -3.903   2.047
+  Rot  -0.201   1.113   0.607 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos  -9.314  15.102  -2.544
+  Rot   0.080   1.032  -0.675 3.1416
+  Len   1.480
+}
+Bond{  #O-P
+  Pos   9.379  19.101   3.540
+  Rot   0.444   0.830   0.585 3.1416
+  Len   1.480
+}
+Bond{  #H-N
+  Pos  -0.459 -15.018   4.485
+  Rot  -0.340   0.425   0.364 3.1416
+  Len   1.010
+}
+Bond{  #C-H
+  Pos  -4.426  -2.551  -4.073
+  Rot  -0.507   0.489  -0.176 3.1416
+  Len   1.078
+}
+Bond{  #C-H
+  Pos  -5.883 -15.404   4.464
+  Rot   0.179   1.054   0.058 3.1416
+  Len   1.088
+}
+Bond{  #C-N
+  Pos  -1.525 -11.747  -1.170
+  Rot  -0.429   0.963   0.479 3.1416
+  Len   1.393
+}
+Bond{  #C-C
+  Pos   1.981   8.002  -0.839
+  Rot  -0.420   0.782  -0.573 3.1416
+  Len   1.428
+}
+Bond{  #C-C
+  Pos   2.227  20.779  -0.944
+  Rot   0.709   0.788  -0.037 3.1416
+  Len   1.428
+}
+Bond{  #C-H
+  Pos   7.248  -5.687   2.508
+  Rot   0.047   0.617   0.539 3.1416
+  Len   1.091
+}
+Bond{  #C-N
+  Pos   2.811  -4.867  -0.293
+  Rot   0.491   0.532   0.412 3.1416
+  Len   1.305
+}
+Bond{  #C-N
+  Pos  -2.623  14.529  -1.009
+  Rot  -0.543   0.484  -0.319 3.1416
+  Len   1.304
+}
+Bond{  #O-P
+  Pos  -1.555  -9.776   6.694
+  Rot  -0.557   1.188  -0.189 3.1416
+  Len   1.480
+}
+Bond{  #C-H
+  Pos  -5.697   4.890  -0.776
+  Rot   0.303   0.576   0.451 3.1416
+  Len   1.089
+}
+Bond{  #C-H
+  Pos   9.079  -4.368  -1.232
+  Rot  -0.140   0.023  -0.069 3.1416
+  Len   1.090
+}
+Bond{  #C-H
+  Pos  -8.665  15.079   0.710
+  Rot   0.162   0.038   0.117 3.1416
+  Len   1.090
+}
+Bond{  #H-N
+  Pos  -0.623 -20.356   3.236
+  Rot   0.454   0.577   0.212 3.1416
+  Len   1.013
+}
+Bond{  #C-O
+  Pos  -7.267  16.538   1.103
+  Rot  -0.667   0.753   0.236 3.1416
+  Len   1.418
+}
+Bond{  #C-C
+  Pos   1.174  13.683   5.145
+  Rot   0.036   1.525  -0.109 3.1416
+  Len   1.533
+}
+Bond{  #C-N
+  Pos   1.891   4.842  -1.642
+  Rot  -0.035   0.506   0.649 3.1416
+  Len   1.342
+}
+Bond{  #C-O
+  Pos  -2.806 -13.912   5.729
+  Rot   0.057   0.916   0.676 3.1416
+  Len   1.419
+}
+Bond{  #C-O
+  Pos   6.806  -2.423  -2.012
+  Rot   0.272   0.060   0.083 3.1416
+  Len   1.410
+}
+Bond{  #H-N
+  Pos  -2.785  -4.566   0.126
+  Rot  -0.084   0.706   0.455 3.1416
+  Len   1.008
+}
+Bond{  #C-O
+  Pos  -4.518 -14.068   6.977
+  Rot  -0.622   0.927  -0.257 3.1416
+  Len   1.415
+}
+Bond{  #C-O
+  Pos   3.008   8.021  -0.228
+  Rot   0.607   0.700   0.038 3.1416
+  Len   1.227
+}
+Bond{  #C-N
+  Pos  -4.389 -13.684   1.100
+  Rot  -0.605   0.935   0.243 3.1416
+  Len   1.389
+}
+Bond{  #C-H
+  Pos   0.488  -8.951  -2.658
+  Rot   0.195   0.385  -0.477 3.1416
+  Len   1.075
+}
+Bond{  #H-N
+  Pos   0.996  -4.341  -4.024
+  Rot  -0.146   0.578  -0.478 3.1416
+  Len   1.009
+}
