@@ -22,35 +22,104 @@
     <a-scene embedded arjs="debugUIEnabled:false; patternRatio:0.75">
 
         <a-assets>
-            <a-assets-item id="ethanol-obj" src="./assets/model/ethanol/ethanol.fixed.obj"></a-assets-item>
-            <a-assets-item id="ethanol-mtl" src="./assets/model/ethanol/ethanol.fixed.mtl"></a-assets-item>
+            <a-assets-item id="001-obj" src="./assets/model/001/001.obj"></a-assets-item>
+            <a-assets-item id="001-mtl" src="./assets/model/001/001.mtl"></a-assets-item>
 
-            <a-assets-item id="benzene-obj" src="./assets/model/benzene/benzene.obj"></a-assets-item>
-            <a-assets-item id="benzene-mtl" src="./assets/model/benzene/benzene.mtl"></a-assets-item>
+            <a-assets-item id="007-obj" src="./assets/model/007/007.obj"></a-assets-item>
+            <a-assets-item id="007-mtl" src="./assets/model/007/007.mtl"></a-assets-item>
+
+            <a-assets-item id="014-obj" src="./assets/model/014/014.obj"></a-assets-item>
+            <a-assets-item id="014-mtl" src="./assets/model/014/014.mtl"></a-assets-item>
+
+            <a-assets-item id="018-obj" src="./assets/model/018/018.obj"></a-assets-item>
+            <a-assets-item id="018-mtl" src="./assets/model/018/018.mtl"></a-assets-item>
+
+            <a-assets-item id="025-obj" src="./assets/model/025/025.obj"></a-assets-item>
+            <a-assets-item id="025-mtl" src="./assets/model/025/025.mtl"></a-assets-item>
+
+            <a-assets-item id="070-obj" src="./assets/model/070/070.obj"></a-assets-item>
+            <a-assets-item id="070-mtl" src="./assets/model/070/070.mtl"></a-assets-item>
+
+            <a-assets-item id="144-obj" src="./assets/model/144/144.obj"></a-assets-item>
+            <a-assets-item id="144-mtl" src="./assets/model/144/144.mtl"></a-assets-item>
+
+            <a-assets-item id="156-obj" src="./assets/model/156/156.obj"></a-assets-item>
+            <a-assets-item id="156-mtl" src="./assets/model/156/156.mtl"></a-assets-item>
+
+            <a-assets-item id="180-obj" src="./assets/model/180/180.obj"></a-assets-item>
+            <a-assets-item id="180-mtl" src="./assets/model/180/180.mtl"></a-assets-item>
+
+            <a-assets-item id="197-obj" src="./assets/model/197/197.obj"></a-assets-item>
+            <a-assets-item id="197-mtl" src="./assets/model/197/197.mtl"></a-assets-item>
+
+            <a-assets-item id="248-obj" src="./assets/model/248/248.obj"></a-assets-item>
+            <a-assets-item id="248-mtl" src="./assets/model/248/248.mtl"></a-assets-item>
         </a-assets>
 
         <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.001.patt">
-            <a-box position="0 0.5 0" color="#0000ff"
-                animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
-                animation__2="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true;"></a-box>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.002.patt">
-            <a-box position="0 0.5 0" color="#ff0000"
-                animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
-                animation__2="property: rotation; to: 0 360 0; dur: 4000; easing: linear; loop: true;"></a-box>
-        </a-marker>
-
-        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.003.patt">
-            <a-entity obj-model="obj: #ethanol-obj; mtl: #ethanol-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+            <a-entity obj-model="obj: #001-obj; mtl: #001-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
                 animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
-                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;"></a-entity>
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
         </a-marker>
 
-        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.004.patt">
-            <a-entity obj-model="obj: #benzene-obj; mtl: #benzene-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.007.patt">
+            <a-entity obj-model="obj: #007-obj; mtl: #007-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
                 animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
-                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;"></a-entity>
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.014.patt">
+            <a-entity obj-model="obj: #014-obj; mtl: #014-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.018.patt">
+            <a-entity obj-model="obj: #018-obj; mtl: #018-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.025.patt">
+            <a-entity obj-model="obj: #025-obj; mtl: #025-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.070.patt">
+            <a-entity obj-model="obj: #070-obj; mtl: #070-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.144.patt">
+            <a-entity obj-model="obj: #144-obj; mtl: #144-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.156.patt">
+            <a-entity obj-model="obj: #156-obj; mtl: #156-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.180.patt">
+            <a-entity obj-model="obj: #180-obj; mtl: #180-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.197.patt">
+            <a-entity obj-model="obj: #197-obj; mtl: #197-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
+        </a-marker>
+
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.248.patt">
+            <a-entity obj-model="obj: #248-obj; mtl: #248-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+                animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+                animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;">
         </a-marker>
 
         <a-entity camera></a-entity>
@@ -58,3 +127,9 @@
 </body>
 
 </html>
+
+<!-- === MEMO === 
+<a-entity obj-model="obj: #xxx-obj; mtl: #xxx-mtl" position="0 1.5 0" scale="0.45 0.45 0.45"
+animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 2000; loop: true"
+animation__2="property: rotation; to: 0 360 0; dur: 6000; easing: linear; loop: true;"></a-entity>
+-->
