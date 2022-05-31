@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <title>WebARを体験しよう！ - A-Frame + AR.js / 物理化学班 </title>
+    <title>A-Frame + AR.jsでWebAR！ / 物理化学班 </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:url" content="https://miyaryo1212.github.io/webar/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="WebARを体験しよう！" />
-    <meta property="og:description" content="A-FrameとAR.jsを用いてブラウザ上でARを体験！" />
+    <meta property="og:title" content="WebARの可能性を探る" />
+    <meta property="og:description" content="「A-Frame」と「AR.js」を用いてプラットフォームに依存しないWebARを実現する。" />
     <meta property="og:site_name" content="butsukaga" />
     <meta property="og:image" content="#" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
@@ -16,11 +16,45 @@
 
 <body>
     <header>
-        <h1>WebAR体験</h1>
+        <h1>ButsukagaLABO</h1>
     </header>
     <main>
         <article>
-            <h2>分子構造の3Dモデル</h2>
+            <h2>◇WebARについて</h2>
+
+            <h3>- プラットフォームに依存しないWebARを実現する</h3>
+            <p>今回のAR (仮想現実) の一番の魅力は何か、それはプラットフォームに依存することなく自由に体験ができることである。現在普及しているスマートフォン用OSは、主にAppleのiOS
+                (iPadOS)、Googleが開発したAndroid (及びその派生OS)
+                である。本来はそれぞれに向けてアプリを制作しなければならない。<b>しかし、</b>今回AR体験を実施するにあたってアプリを開発することなく実現することができた。</p>
+            <p>着目点はWeb、ブラウザを使うことでプラットフォームの垣根を越えることが出来た。Web上に環境を構築することでOSごとの仕様の差を考慮する必要がなくなったのだ。</p>
+
+            <h3>- 「A-Frame」とは</h3>
+            <p>制作にあたって、「<a href="https://aframe.io/" target="_blank">A-Frame</a>」を用いた。</p>
+            <blockquote>A-Frame （エーフレーム）とは、 バーチャルリアリティ （VR）体験を構築するための オープンソース のWebフレームワークの一つである 。 Supermediumおよび
+                Google の開発者によって保守されている。 A-Frameは、開発者が HTML を使用して3Dおよび WebVR シーンを作成できる Three.js 用の
+                エンティティ・コンポーネント・システム フレームワークであり、 Unity
+                などのエンジンで使用されている一般的なゲーム開発パターンを取り入れながら、Web開発者やデザイナーによく知られているオーサリングツールを提供する。
+                A-Frameはもともと2015年半ばから後半にかけて Mozilla VRチーム内で開発された 。 - <a
+                    href="https://www.bing.com/ck/a?!&&p=49d508099d80668a09d4a5f40ebac913723f100a03a2918655ebb20542b6a814JmltdHM9MTY1Mzk4OTE4NyZpZ3VpZD0xM2Y0MGY1MS05MDU2LTQ2ZjctYmE3YS1iN2ZhNWVmNmRkYjImaW5zaWQ9NTQzOA&ptn=3&fclid=bf4b4e8b-e0c3-11ec-a5cf-aafff722d964&u=a1aHR0cHM6Ly9qYS53aWtpcGVkaWEub3JnL3dpa2kvQS1GcmFtZSM6fjp0ZXh0PUEtRnJhbWUlMjAlRUYlQkMlODglRTMlODIlQTglRTMlODMlQkMlRTMlODMlOTUlRTMlODMlQUMlRTMlODMlQkMlRTMlODMlQTAlRUYlQkMlODklRTMlODElQTglRTMlODElQUYlRTMlODAlODElMjAlRTMlODMlOTAlRTMlODMlQkMlRTMlODMlODElRTMlODMlQTMlRTMlODMlQUIlRTMlODMlQUElRTMlODIlQTIlRTMlODMlQUElRTMlODMlODYlRTMlODIlQTMlMjAlRUYlQkMlODhWUiVFRiVCQyU4OSVFNCVCRCU5MyVFOSVBOCU5MyVFMyU4MiU5MiVFNiVBNyU4QiVFNyVBRiU4OSVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MSU5RiVFMyU4MiU4MSVFMyU4MSVBRSUyMCVFMyU4MiVBQSVFMyU4MyVCQyVFMyU4MyU5NyVFMyU4MyVCMyVFMyU4MiVCRCVFMyU4MyVCQyVFMyU4MiVCOSUyMCVFMyU4MSVBRVdlYiVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBRSVFNCVCOCU4MCVFMyU4MSVBNCVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QiUyMCVFMyU4MCU4MiUyMFN1cGVybWVkaXVtJUUzJTgxJThBJUUzJTgyJTg4JUUzJTgxJUIzLCVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyVCQiVFMyU4MiVCMyVFMyU4MyVCMyVFMyU4MyU5RCVFMyU4MyVCQyVFMyU4MyU4RCVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MyVCQiVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCUyMCVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QSVFMyU4MCU4MSUyMFVuaXR5JTIwJUUzJTgxJUFBJUUzJTgxJUE5JUUzJTgxJUFFJUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJUIzJUUzJTgxJUE3JUU0JUJEJUJGJUU3JTk0JUE4JUUzJTgxJTk1JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUU0JUI4JTgwJUU4JTg4JUFDJUU3JTlBJTg0JUUzJTgxJUFBJUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUU5JTk2JThCJUU3JTk5JUJBJUUzJTgzJTkxJUUzJTgyJUJGJUUzJTgzJUJDJUUzJTgzJUIzJUUzJTgyJTkyJUU1JThGJTk2JUUzJTgyJThBJUU1JTg1JUE1JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJThDJUUzJTgyJTg5JUUzJTgwJTgxV2ViJUU5JTk2JThCJUU3JTk5JUJBJUU4JTgwJTg1JUUzJTgyJTg0JUUzJTgzJTg3JUUzJTgyJUI2JUUzJTgyJUE0JUUzJTgzJThBJUUzJTgzJUJDJUUzJTgxJUFCJUUzJTgyJTg4JUUzJTgxJThGJUU3JTlGJUE1JUUzJTgyJTg5JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUUzJTgyJUFBJUUzJTgzJUJDJUUzJTgyJUI1JUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgzJTg0JUUzJTgzJUJDJUUzJTgzJUFCJUUzJTgyJTkyJUU2JThGJTkwJUU0JUJFJTlCJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgwJTgyJTIwQS1GcmFtZSVFMyU4MSVBRiVFMyU4MiU4MiVFMyU4MSVBOCVFMyU4MiU4MiVFMyU4MSVBODIwMTUlRTUlQjklQjQlRTUlOEQlOEElRTMlODElQjAlRTMlODElOEIlRTMlODIlODklRTUlQkUlOEMlRTUlOEQlOEElRTMlODElQUIlRTMlODElOEIlRTMlODElOTElRTMlODElQTYlMjBNb3ppbGxhJTIwVlIlRTMlODMlODElRTMlODMlQkMlRTMlODMlQTAlRTUlODYlODUlRTMlODElQTclRTklOTYlOEIlRTclOTklQkElRTMlODElOTUlRTMlODIlOEMlRTMlODElOUYlMjAlRTMlODAlODI&ntb=1"
+                    target="_blank">Wikipedia</a></blockquote>
+            <p><img src="https://www.drupal.org/files/project-images/download_6.png" alt="A-Frame logo"></p>
+            <p>要は、<strong>すごい人</strong>たちが作ってくれた、<strong>すごいフレームワーク</strong>...ひな形を使った！そういうこと！_(:3」z)_</p>
+            <p>フレームワークを使うことについて、「<a
+                    href="https://www.bing.com/search?q=%E8%BB%8A%E8%BC%AA%E3%81%AE%E5%86%8D%E9%96%8B%E7%99%BA&cvid=ebd652a78b4944dfa90a991851e0a2bb&aqs=edge..69i57.3334j0j1&pglt=161&FORM=ANNTA1&PC=LCTS"
+                    target="_blank">車輪の再発明</a>」をする必要はない！あるものは徹底的に使っていく方針でいこう。
+            </p>
+
+            <h3>- 「AR.js」とは</h3>
+            <p>「A-Frame」はVR用のフレームワークなので、当然VR的な表現しか出来ない。<strong>単体では。</strong>「AR.js」は名前の通り、AR的な表現を可能にするツールである。「A-Frame」向けと、「Three.js」向けの2つが開発されているが当然、前者を使う。</p>
+        </article>
+    </main>
+    <footer>
+        <small>&#xA9; 2022 miyaryo1212</small><br>
+    </footer>
+</body>
+
+<!--
+    
                 <ul>
                     <li>007 クロロメタン</li>
                     <li>014 エタノール</li>
@@ -32,14 +66,9 @@
                     <li>180 サリチル酸メチル</li>
                     <li>197 ナフタレン</li>
                     <li>232 ポリスチレン</li>
-                    <li>248 セルローズ</li>
+                    <li>248 セルロース</li>
                 </ul>
                 <p>今回ARを製作するにあたって、<a href="https://rika-net.com/contents/cp0010/start.html" target="_blank">理科ねっとわーく</a>のものを使用しました。
-        </article>
-    </main>
-    <footer>
-        <small>&#xA9; 2022 miyaryo1212</small><br>
-    </footer>
-</body>
+-->
 
 </html>
