@@ -34,18 +34,51 @@
                 Google の開発者によって保守されている。 A-Frameは、開発者が HTML を使用して3Dおよび WebVR シーンを作成できる Three.js 用の
                 エンティティ・コンポーネント・システム フレームワークであり、 Unity
                 などのエンジンで使用されている一般的なゲーム開発パターンを取り入れながら、Web開発者やデザイナーによく知られているオーサリングツールを提供する。
-                A-Frameはもともと2015年半ばから後半にかけて Mozilla VRチーム内で開発された 。 - <a
+                A-Frameはもともと2015年半ばから後半にかけて Mozilla VRチーム内で開発された 。
+                <br>- <a
                     href="https://www.bing.com/ck/a?!&&p=49d508099d80668a09d4a5f40ebac913723f100a03a2918655ebb20542b6a814JmltdHM9MTY1Mzk4OTE4NyZpZ3VpZD0xM2Y0MGY1MS05MDU2LTQ2ZjctYmE3YS1iN2ZhNWVmNmRkYjImaW5zaWQ9NTQzOA&ptn=3&fclid=bf4b4e8b-e0c3-11ec-a5cf-aafff722d964&u=a1aHR0cHM6Ly9qYS53aWtpcGVkaWEub3JnL3dpa2kvQS1GcmFtZSM6fjp0ZXh0PUEtRnJhbWUlMjAlRUYlQkMlODglRTMlODIlQTglRTMlODMlQkMlRTMlODMlOTUlRTMlODMlQUMlRTMlODMlQkMlRTMlODMlQTAlRUYlQkMlODklRTMlODElQTglRTMlODElQUYlRTMlODAlODElMjAlRTMlODMlOTAlRTMlODMlQkMlRTMlODMlODElRTMlODMlQTMlRTMlODMlQUIlRTMlODMlQUElRTMlODIlQTIlRTMlODMlQUElRTMlODMlODYlRTMlODIlQTMlMjAlRUYlQkMlODhWUiVFRiVCQyU4OSVFNCVCRCU5MyVFOSVBOCU5MyVFMyU4MiU5MiVFNiVBNyU4QiVFNyVBRiU4OSVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MSU5RiVFMyU4MiU4MSVFMyU4MSVBRSUyMCVFMyU4MiVBQSVFMyU4MyVCQyVFMyU4MyU5NyVFMyU4MyVCMyVFMyU4MiVCRCVFMyU4MyVCQyVFMyU4MiVCOSUyMCVFMyU4MSVBRVdlYiVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBRSVFNCVCOCU4MCVFMyU4MSVBNCVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QiUyMCVFMyU4MCU4MiUyMFN1cGVybWVkaXVtJUUzJTgxJThBJUUzJTgyJTg4JUUzJTgxJUIzLCVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyVCQiVFMyU4MiVCMyVFMyU4MyVCMyVFMyU4MyU5RCVFMyU4MyVCQyVFMyU4MyU4RCVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MyVCQiVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCUyMCVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QSVFMyU4MCU4MSUyMFVuaXR5JTIwJUUzJTgxJUFBJUUzJTgxJUE5JUUzJTgxJUFFJUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJUIzJUUzJTgxJUE3JUU0JUJEJUJGJUU3JTk0JUE4JUUzJTgxJTk1JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUU0JUI4JTgwJUU4JTg4JUFDJUU3JTlBJTg0JUUzJTgxJUFBJUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUU5JTk2JThCJUU3JTk5JUJBJUUzJTgzJTkxJUUzJTgyJUJGJUUzJTgzJUJDJUUzJTgzJUIzJUUzJTgyJTkyJUU1JThGJTk2JUUzJTgyJThBJUU1JTg1JUE1JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJThDJUUzJTgyJTg5JUUzJTgwJTgxV2ViJUU5JTk2JThCJUU3JTk5JUJBJUU4JTgwJTg1JUUzJTgyJTg0JUUzJTgzJTg3JUUzJTgyJUI2JUUzJTgyJUE0JUUzJTgzJThBJUUzJTgzJUJDJUUzJTgxJUFCJUUzJTgyJTg4JUUzJTgxJThGJUU3JTlGJUE1JUUzJTgyJTg5JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUUzJTgyJUFBJUUzJTgzJUJDJUUzJTgyJUI1JUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgzJTg0JUUzJTgzJUJDJUUzJTgzJUFCJUUzJTgyJTkyJUU2JThGJTkwJUU0JUJFJTlCJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgwJTgyJTIwQS1GcmFtZSVFMyU4MSVBRiVFMyU4MiU4MiVFMyU4MSVBOCVFMyU4MiU4MiVFMyU4MSVBODIwMTUlRTUlQjklQjQlRTUlOEQlOEElRTMlODElQjAlRTMlODElOEIlRTMlODIlODklRTUlQkUlOEMlRTUlOEQlOEElRTMlODElQUIlRTMlODElOEIlRTMlODElOTElRTMlODElQTYlMjBNb3ppbGxhJTIwVlIlRTMlODMlODElRTMlODMlQkMlRTMlODMlQTAlRTUlODYlODUlRTMlODElQTclRTklOTYlOEIlRTclOTklQkElRTMlODElOTUlRTMlODIlOEMlRTMlODElOUYlMjAlRTMlODAlODI&ntb=1"
-                    target="_blank">Wikipedia</a></blockquote>
+                    target="_blank">Wikipedia</a>
+            </blockquote>
             <p><img src="https://www.drupal.org/files/project-images/download_6.png" alt="A-Frame logo"></p>
             <p>要は、<strong>すごい人</strong>たちが作ってくれた、<strong>すごいフレームワーク</strong>...ひな形を使った！そういうこと！_(:3」z)_</p>
             <p>フレームワークを使うことについて、「<a
                     href="https://www.bing.com/search?q=%E8%BB%8A%E8%BC%AA%E3%81%AE%E5%86%8D%E9%96%8B%E7%99%BA&cvid=ebd652a78b4944dfa90a991851e0a2bb&aqs=edge..69i57.3334j0j1&pglt=161&FORM=ANNTA1&PC=LCTS"
-                    target="_blank">車輪の再発明</a>」をする必要はない！あるものは徹底的に使っていく方針でいこう。
+                    target="_blank">車輪の再発明</a>」をする必要はない！あるものは徹底的に使わせていただく方針でいこう。
             </p>
 
             <h3>- 「AR.js」とは</h3>
-            <p>「A-Frame」はVR用のフレームワークなので、当然VR的な表現しか出来ない。<strong>単体では。</strong>「AR.js」は名前の通り、AR的な表現を可能にするツールである。「A-Frame」向けと、「Three.js」向けの2つが開発されているが当然、前者を使う。</p>
+            <p>「A-Frame」はVR用のフレームワークなので、当然VR的な表現しか出来ない。<strong>単体では。</strong>「AR.js」は名前の通り、AR的な表現を可能にするツールである。「A-Frame」向けに開発されたものがあるので用いる。
+            </p>
+            <p><img src="https://ar-js-org.github.io/AR.js-Docs/logo.png" alt="AR.js"></p>
+            <p>このツールによって、絶対座標の仮想空間から、現実世界に存在するマーカーを基準とする相対的な空間へと変わった。マーカには写真、数字、文字、図形など割と何でも使えるが細かいものほど当然精度はが低下してしまう。そこで今回は安定性を重視し、単調な6x6の図形パターンを採用した。
+            </p>
+
+            <h3>基準のマーカーをExcelで作る</h3>
+            <p>マーカーを用意することになったのだが、1個や2個ならまだしも20個ともなると手動でやる気にはならない。...Excelで作ってしまおう。</p>
+            <p>こんな手順。</p>
+            <ol>
+                <li>対象となる6x6のセルに <code>=RAND()</code> で0以上1未満の乱数を割り当てる。 </li>
+                <li>四捨五入の発想で、セルの値が0.5未満なら白、以上なら黒に塗りつぶす。するとQRコードのような2次元コードが生成される。</li>
+                <li>マクロを組んで、乱数の計算 → 選択範囲をクリップボードにコピーを自動化。</li>
+                <li>クリップボードにある画像をWindows Paintなど適当なソフトに貼り付けて保存。</li>
+                <li><a href="https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html"
+                        target="_blank">AR.js Marker Training</a>で画像を数値化し、[.patt] 形式で保存。</li>
+                <li>AR.jsにpatt形式のファイルを読み込ませて、サンプルとする。</li>
+                <li>カメラが数値化された画像に似たパターンを認識するとそこに拡張現実空間を描画する。</li>
+            </ol>
+            <p><img src="./images/marker/pattern-6x6.marker.001.png" alt="marker001"></p>
+            <p>元画像</p>
+            <p style="text-align:center"><img src="./images/Screenshot 2022-06-01 012226.png" alt=""></p>
+            <p>数値化された画像の一部。元画像が白黒だったため、比較的分かりやすい。</p>
+            <p>文章化するって難しい。
+                <br><small>(伝わる人には伝わるレベルではあるだろうが、それは一般公開向けとしてどうなのだろうか...)</small>
+            </p>
+
+            <h3>Blenderで表示させる3Dモデルを準備する</h3>
+            <p>マーカーの準備が整ったので、いよいよ3Dモデルの準備に取り掛かる。使うのは3DCG・モデリングソフト (人によって呼称が様々)「Blender」<a href="https://wa3.i-3-i.info/word15874.html" target="_blank">OSS (オープンソースソフトウェア)</a>であり、善意のもとで<b>無料</b>だ。</p>
+
+            <h3>HTMLで構造を作る</h3>
+            <p>...</p>
         </article>
     </main>
     <footer>
