@@ -22,20 +22,20 @@
         <article>
             <h2>◇WebARについて</h2>
 
-            <h3>- プラットフォームに依存しないWebARを実現する</h3>
+            <h3>プラットフォームに依存しないWebARを実現する</h3>
             <p>今回のAR (仮想現実) の一番の魅力は何か、それはプラットフォームに依存することなく自由に体験ができることである。現在普及しているスマートフォン用OSは、主にAppleのiOS
                 (iPadOS)、Googleが開発したAndroid (及びその派生OS)
                 である。本来はそれぞれに向けてアプリを制作しなければならない。<b>しかし、</b>今回AR体験を実施するにあたってアプリを開発することなく実現することができた。</p>
             <p>着目点はWeb、ブラウザを使うことでプラットフォームの垣根を越えることが出来た。Web上に環境を構築することでOSごとの仕様の差を考慮する必要がなくなったのだ。</p>
 
-            <h3>- 「A-Frame」とは</h3>
+            <h3>「A-Frame」とは</h3>
             <p>制作にあたって、「<a href="https://aframe.io/" target="_blank">A-Frame</a>」を用いた。</p>
             <blockquote>A-Frame （エーフレーム）とは、 バーチャルリアリティ （VR）体験を構築するための オープンソース のWebフレームワークの一つである 。 Supermediumおよび
                 Google の開発者によって保守されている。 A-Frameは、開発者が HTML を使用して3Dおよび WebVR シーンを作成できる Three.js 用の
                 エンティティ・コンポーネント・システム フレームワークであり、 Unity
                 などのエンジンで使用されている一般的なゲーム開発パターンを取り入れながら、Web開発者やデザイナーによく知られているオーサリングツールを提供する。
                 A-Frameはもともと2015年半ばから後半にかけて Mozilla VRチーム内で開発された 。
-                <br>- <a
+                <br><a
                     href="https://www.bing.com/ck/a?!&&p=49d508099d80668a09d4a5f40ebac913723f100a03a2918655ebb20542b6a814JmltdHM9MTY1Mzk4OTE4NyZpZ3VpZD0xM2Y0MGY1MS05MDU2LTQ2ZjctYmE3YS1iN2ZhNWVmNmRkYjImaW5zaWQ9NTQzOA&ptn=3&fclid=bf4b4e8b-e0c3-11ec-a5cf-aafff722d964&u=a1aHR0cHM6Ly9qYS53aWtpcGVkaWEub3JnL3dpa2kvQS1GcmFtZSM6fjp0ZXh0PUEtRnJhbWUlMjAlRUYlQkMlODglRTMlODIlQTglRTMlODMlQkMlRTMlODMlOTUlRTMlODMlQUMlRTMlODMlQkMlRTMlODMlQTAlRUYlQkMlODklRTMlODElQTglRTMlODElQUYlRTMlODAlODElMjAlRTMlODMlOTAlRTMlODMlQkMlRTMlODMlODElRTMlODMlQTMlRTMlODMlQUIlRTMlODMlQUElRTMlODIlQTIlRTMlODMlQUElRTMlODMlODYlRTMlODIlQTMlMjAlRUYlQkMlODhWUiVFRiVCQyU4OSVFNCVCRCU5MyVFOSVBOCU5MyVFMyU4MiU5MiVFNiVBNyU4QiVFNyVBRiU4OSVFMyU4MSU5OSVFMyU4MiU4QiVFMyU4MSU5RiVFMyU4MiU4MSVFMyU4MSVBRSUyMCVFMyU4MiVBQSVFMyU4MyVCQyVFMyU4MyU5NyVFMyU4MyVCMyVFMyU4MiVCRCVFMyU4MyVCQyVFMyU4MiVCOSUyMCVFMyU4MSVBRVdlYiVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBRSVFNCVCOCU4MCVFMyU4MSVBNCVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QiUyMCVFMyU4MCU4MiUyMFN1cGVybWVkaXVtJUUzJTgxJThBJUUzJTgyJTg4JUUzJTgxJUIzLCVFMyU4MiVBOCVFMyU4MyVCMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyU4NiVFMyU4MiVBMyVFMyU4MyVCQiVFMyU4MiVCMyVFMyU4MyVCMyVFMyU4MyU5RCVFMyU4MyVCQyVFMyU4MyU4RCVFMyU4MyVCMyVFMyU4MyU4OCVFMyU4MyVCQiVFMyU4MiVCNyVFMyU4MiVCOSVFMyU4MyU4NiVFMyU4MyVBMCUyMCVFMyU4MyU5NSVFMyU4MyVBQyVFMyU4MyVCQyVFMyU4MyVBMCVFMyU4MyVBRiVFMyU4MyVCQyVFMyU4MiVBRiVFMyU4MSVBNyVFMyU4MSU4MiVFMyU4MiU4QSVFMyU4MCU4MSUyMFVuaXR5JTIwJUUzJTgxJUFBJUUzJTgxJUE5JUUzJTgxJUFFJUUzJTgyJUE4JUUzJTgzJUIzJUUzJTgyJUI4JUUzJTgzJUIzJUUzJTgxJUE3JUU0JUJEJUJGJUU3JTk0JUE4JUUzJTgxJTk1JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUU0JUI4JTgwJUU4JTg4JUFDJUU3JTlBJTg0JUUzJTgxJUFBJUUzJTgyJUIyJUUzJTgzJUJDJUUzJTgzJUEwJUU5JTk2JThCJUU3JTk5JUJBJUUzJTgzJTkxJUUzJTgyJUJGJUUzJTgzJUJDJUUzJTgzJUIzJUUzJTgyJTkyJUU1JThGJTk2JUUzJTgyJThBJUU1JTg1JUE1JUUzJTgyJThDJUUzJTgxJUFBJUUzJTgxJThDJUUzJTgyJTg5JUUzJTgwJTgxV2ViJUU5JTk2JThCJUU3JTk5JUJBJUU4JTgwJTg1JUUzJTgyJTg0JUUzJTgzJTg3JUUzJTgyJUI2JUUzJTgyJUE0JUUzJTgzJThBJUUzJTgzJUJDJUUzJTgxJUFCJUUzJTgyJTg4JUUzJTgxJThGJUU3JTlGJUE1JUUzJTgyJTg5JUUzJTgyJThDJUUzJTgxJUE2JUUzJTgxJTg0JUUzJTgyJThCJUUzJTgyJUFBJUUzJTgzJUJDJUUzJTgyJUI1JUUzJTgzJUFBJUUzJTgzJUIzJUUzJTgyJUIwJUUzJTgzJTg0JUUzJTgzJUJDJUUzJTgzJUFCJUUzJTgyJTkyJUU2JThGJTkwJUU0JUJFJTlCJUUzJTgxJTk5JUUzJTgyJThCJUUzJTgwJTgyJTIwQS1GcmFtZSVFMyU4MSVBRiVFMyU4MiU4MiVFMyU4MSVBOCVFMyU4MiU4MiVFMyU4MSVBODIwMTUlRTUlQjklQjQlRTUlOEQlOEElRTMlODElQjAlRTMlODElOEIlRTMlODIlODklRTUlQkUlOEMlRTUlOEQlOEElRTMlODElQUIlRTMlODElOEIlRTMlODElOTElRTMlODElQTYlMjBNb3ppbGxhJTIwVlIlRTMlODMlODElRTMlODMlQkMlRTMlODMlQTAlRTUlODYlODUlRTMlODElQTclRTklOTYlOEIlRTclOTklQkElRTMlODElOTUlRTMlODIlOEMlRTMlODElOUYlMjAlRTMlODAlODI&ntb=1"
                     target="_blank">Wikipedia</a>
             </blockquote>
@@ -46,14 +46,14 @@
                     target="_blank">車輪の再発明</a>」をする必要はない！あるものは徹底的に使わせていただく方針でいこう。
             </p>
 
-            <h3>- 「AR.js」とは</h3>
+            <h3>「AR.js」とは</h3>
             <p>「A-Frame」はVR用のフレームワークなので、当然VR的な表現しか出来ない。<strong>単体では。</strong>「AR.js」は名前の通り、AR的な表現を可能にするツールである。「A-Frame」向けに開発されたものがあるので用いる。
             </p>
             <p><img src="https://ar-js-org.github.io/AR.js-Docs/logo.png" alt="AR.js"></p>
             <p>このツールによって、絶対座標の仮想空間から、現実世界に存在するマーカーを基準とする相対的な空間へと変わった。マーカには写真、数字、文字、図形など割と何でも使えるが、細かいものほど精度が低下してしまう。そこで今回は安定性を重視し、単調な6x6の図形パターンを採用した。
             </p>
 
-            <h3>- 基準のマーカーをExcelで作る</h3>
+            <h3>基準のマーカーをExcelで作る</h3>
             <p>マーカーを用意することになったのだが、1個や2個ならまだしも20個ともなると手動でやる気にはならない。...Excelで作ってしまおう。</p>
             <p>こんな手順。</p>
             <ol>
@@ -71,14 +71,34 @@
             <p style="text-align:center"><img src="./images/Screenshot 2022-06-01 012226.png" alt=""></p>
             <p>数値化された画像の一部。元画像が白黒だったため、比較的分かりやすい。</p>
             <p>文章化するって難しい。
-                <br><small>(伝わる人には伝わるレベルではあるだろうが、それは一般公開向けとしてどうなのだろうか...)</small>
+                <br><small>(伝わる人には伝わるレベルではあるだろうが、それは一般向けとしてどうなのだろうか...)</small>
             </p>
 
-            <h3>- Blenderで表示させる3Dモデルを準備する</h3>
-            <p>マーカーの準備が整ったので、いよいよ3Dモデルの準備に取り掛かる。使うのは3DCG・モデリングソフト (人によって呼称が様々)「Blender」<a href="https://wa3.i-3-i.info/word15874.html" target="_blank">OSS (オープンソースソフトウェア)</a>であり、善意のもとで<b>無料</b>だ。</p>
+            <h3>Blenderで表示させる3Dモデルを準備する</h3>
+            <p>マーカーの準備が整ったので、いよいよ3Dモデルの準備に取り掛かる。使うのは3DCG・モデリングソフト (人によって呼称が様々)「Blender」<a
+                    href="https://wa3.i-3-i.info/word15874.html" target="_blank">OSS
+                    (オープンソースソフトウェア)</a>であり、善意のもとで<b>無料</b>だ。</p>
+            <p>このソフトを使ってモデルを準備するのだが、今回はインターネット上のモデルを加工して使うことにした。学校活動内においては、申請不要で自由に使うことが許可されている<a href="https://rika-net.com/contents/cp0010/start.html
+                " target="_blank">理科ねっとわーく</a>より「有機分子モデルデータベース」のお世話になる。</p>
+            <p>ここでは [.wrl] 形式で配布されているので、A-Frameに対応した [.obj] 形式にBlenderを使って変換する。wrl形式は色情報を保存できないので
+                (つまり、無地のものをダウンロードすることになる) 、obj形式への変換と同時に着色しておく。</p>
+            <p>エクスポートすると、形の情報の入った [.obj] ファイルと色や質感の情報が入った [.mtl] ファイルが出力されるので2つセットで保管するように。</p>
 
-            <h3>- HTMLで構造を作る</h3>
-            <p>...</p>
+            <h3>HTMLで構造を作る</h3>
+            <p>いよいよ仮想空間を構築していく。以下にコードの一部を抜粋した。</p>
+            <p>ざっくり説明すると...</p>
+            <ul>
+                <li>カメラで認識した「001.patt」と類似したパターンの上に仮想空間を描画する。</li>
+                <li>描画するオブジェクトモデルは「obj-001」に「mtl-001」の情報を加えたもの。</li>
+            </ul>
+            <script src="https://gist.github.com/miyaryo1212/079dde3d6dd6017bc56c1ef83dadb702.js"></script>
+            <p>コード全体を見たい方は、<a href="https://github.com/miyaryo1212/webar/blob/main/webar.html" target="_blank">GitHub</a>にソースがあるので是非参照してみてください！</p>
+
+            <h3>公開する</h3>
+            <p>「<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>」や「<a href="https://www.netlify.com/" target="_blank">Netlify</a>」等の静的ホスティングサービスを使って公開する。</p>
+
+            <h3>最後に</h3>
+            <p>ここまで読んでくださり、ありがとうございます。興味は湧いたでしょうか？何か少しでも参考になったことがあれば幸いです。</p>
         </article>
     </main>
     <footer>
