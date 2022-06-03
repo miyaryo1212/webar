@@ -1,0 +1,268 @@
+#VRML V2.0 utf8
+WorldInfo {
+  info [
+    "copyright (c) 2000 - Ratio International Inc."
+    "s184(Cumene).wrl"
+  ]
+  title "Benzene ( C6H6 )                                            [     .0]"
+}
+NavigationInfo {
+ headlight TRUE
+ type [ "EXAMINE" ]
+}
+Background{
+  skyColor [ 0.400 0.400 0.400 ]
+  groundColor [ 0.400 0.400 0.400 ]
+}
+
+Viewpoint {
+
+  description "ExpressCamera"
+  position 0.0000 0.0000 150.0000
+  orientation 0 0 1 0
+  fieldOfView 0.0828
+}
+
+PROTO Atom [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 1.000 1.000 1.000
+  field SFFloat Radius   0.360
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Sphere{
+          radius IS Radius
+        }
+      }
+    ]
+  }
+}
+
+PROTO Bond [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 0.700 0.700 0.700
+  field SFRotation Rot 0 0 0 0
+  field SFFloat Len 1.0
+  field SFFloat Radius   0.100
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    rotation IS Rot
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Cylinder{
+          radius IS Radius
+          height IS Len
+        }
+      }
+    ]
+  }
+}
+
+
+Atom{  #C
+  Pos  -2.176   1.206  -0.611
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos   1.873  -1.281   0.576
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -0.267   2.192  -0.309
+}
+Atom{  #H
+  Pos  -3.937  -0.032  -0.890
+}
+Atom{  #H
+  Pos  -2.736   2.152  -0.700
+}
+Atom{  #H
+  Pos   1.378  -1.452   1.560
+}
+Atom{  #H
+  Pos   1.610  -2.135  -0.090
+}
+Atom{  #H
+  Pos   1.288   1.151   1.858
+}
+Atom{  #H
+  Pos   1.463   2.203   0.408
+}
+Atom{  #C
+  Pos  -0.797   1.228  -0.393
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.886   1.299   1.038
+}
+Atom{  #C
+  Pos   1.432   0.053  -0.040
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos  -0.200  -2.138  -0.298
+}
+Atom{  #H
+  Pos  -2.669  -2.177  -0.689
+}
+Atom{  #C
+  Pos  -0.089   0.029  -0.280
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   1.923   0.184  -1.034
+}
+Atom{  #C
+  Pos  -0.760  -1.191  -0.387
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.139  -1.213  -0.605
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #H
+  Pos   2.975  -1.303   0.738
+}
+Atom{  #C
+  Pos   1.787   1.240   0.866
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Atom{  #C
+  Pos  -2.847  -0.015  -0.717
+  Radius   0.480
+  Color 0.216 0.216 0.216
+}
+Bond{  #C-H
+  Pos  -2.456   1.679  -0.655
+  Rot   0.280   0.078   0.044 3.1416
+  Len   1.103
+}
+Bond{  #C-H
+  Pos   1.538   1.196   1.362
+  Rot   0.249   0.602  -0.496 3.1416
+  Len   1.114
+}
+Bond{  #C-C
+  Pos  -1.449  -1.202  -0.496
+  Rot   0.690   0.709   0.109 3.1416
+  Len   1.397
+}
+Bond{  #C-H
+  Pos   1.625   1.722   0.637
+  Rot   0.162   0.076   0.229 3.1416
+  Len   1.115
+}
+Bond{  #C-H
+  Pos   2.337   1.269   0.952
+  Rot  -0.550   0.528  -0.086 3.1416
+  Len   1.114
+}
+Bond{  #C-C
+  Pos   1.610   0.647   0.413
+  Rot   0.177   1.360   0.453 3.1416
+  Len   1.534
+}
+Bond{  #C-H
+  Pos  -2.404  -1.695  -0.647
+  Rot   0.265   1.034   0.042 3.1416
+  Len   1.103
+}
+Bond{  #C-C
+  Pos   0.672   0.041  -0.160
+  Rot  -0.760   0.758  -0.120 3.1416
+  Len   1.540
+}
+Bond{  #C-C
+  Pos  -0.443   0.628  -0.337
+  Rot  -0.354   1.298  -0.056 3.1416
+  Len   1.397
+}
+Bond{  #C-H
+  Pos   1.678   0.119  -0.537
+  Rot  -0.246   0.493   0.497 3.1416
+  Len   1.117
+}
+Bond{  #C-C
+  Pos  -2.493  -0.614  -0.661
+  Rot   0.354   0.099   0.056 3.1416
+  Len   1.397
+}
+Bond{  #C-H
+  Pos   1.625  -1.366   1.068
+  Rot   0.248   0.643  -0.492 3.1416
+  Len   1.114
+}
+Bond{  #C-H
+  Pos   1.742  -1.708   0.243
+  Rot   0.131   0.984   0.333 3.1416
+  Len   1.115
+}
+Bond{  #C-C
+  Pos  -1.487   1.217  -0.502
+  Rot   0.690   0.709   0.109 3.1416
+  Len   1.397
+}
+Bond{  #C-C
+  Pos   1.653  -0.614   0.268
+  Rot  -0.220   1.434  -0.308 3.1416
+  Len   1.534
+}
+Bond{  #C-C
+  Pos  -2.512   0.596  -0.664
+  Rot  -0.335   0.088  -0.053 3.1416
+  Len   1.397
+}
+Bond{  #C-H
+  Pos  -3.392  -0.023  -0.804
+  Rot   0.545   0.560   0.086 3.1416
+  Len   1.103
+}
+Bond{  #C-C
+  Pos  -0.424  -0.581  -0.334
+  Rot   0.335   1.309   0.053 3.1416
+  Len   1.397
+}
+Bond{  #C-H
+  Pos  -0.532   1.710  -0.351
+  Rot  -0.265   0.070  -0.042 3.1416
+  Len   1.103
+}
+Bond{  #C-H
+  Pos  -0.480  -1.665  -0.342
+  Rot  -0.280   1.025  -0.044 3.1416
+  Len   1.103
+}
+Bond{  #C-H
+  Pos   2.424  -1.292   0.657
+  Rot  -0.551   0.569  -0.081 3.1416
+  Len   1.114
+}

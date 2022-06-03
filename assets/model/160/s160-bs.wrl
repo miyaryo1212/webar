@@ -1,0 +1,218 @@
+#VRML V2.0 utf8
+WorldInfo {
+  info [
+    "copyright (c) 2000 - Ratio International Inc."
+    "s160(benzoic acid).wrl"
+  ]
+  title "data_CSD_CIF/MIF_BENZAC02"
+}
+NavigationInfo {
+ headlight TRUE
+ type [ "EXAMINE" ]
+}
+Background{
+  skyColor [ 0.400 0.400 0.400 ]
+  groundColor [ 0.400 0.400 0.400 ]
+}
+
+Viewpoint {
+
+  description "ExpressCamera"
+  position 0.0000 0.0000 150.0000
+  orientation 0 0 1 0
+  fieldOfView 0.0828
+}
+
+PROTO Atom [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 0.216 0.216 0.216
+  field SFFloat Radius   0.480
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Sphere{
+          radius IS Radius
+        }
+      }
+    ]
+  }
+}
+
+PROTO Bond [
+  field SFVec3f Pos 0 0 0
+  field SFColor Color 0.700 0.700 0.700
+  field SFRotation Rot 0 0 0 0
+  field SFFloat Len 1.0
+  field SFFloat Radius   0.100
+  field SFFloat Transp 0
+]{
+  Transform{
+    translation IS Pos
+    rotation IS Rot
+    children[
+      Shape{
+        appearance Appearance{
+          material Material{
+            diffuseColor IS Color
+            specularColor 1 1 1
+            transparency IS Transp
+            shininess 0.8
+          }
+        }
+        geometry Cylinder{
+          radius IS Radius
+          height IS Len
+        }
+      }
+    ]
+  }
+}
+
+
+Atom{  #H
+  Pos   1.838   0.732  -0.798
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #O
+  Pos  -0.280   1.653   2.337
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Atom{  #H
+  Pos  -2.013  -1.761  -0.328
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #H
+  Pos  -0.143   2.242   2.955
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #H
+  Pos  -1.544  -0.214   1.248
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #H
+  Pos   1.263  -0.845  -2.400
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #C
+  Pos   0.191   0.432   0.369
+}
+Atom{  #C
+  Pos   0.739  -0.736  -1.645
+}
+Atom{  #C
+  Pos  -0.946  -0.349   0.506
+}
+Atom{  #C
+  Pos  -0.394  -1.510  -1.508
+}
+Atom{  #H
+  Pos  -0.603  -2.184  -2.169
+  Radius   0.360
+  Color 1.000 1.000 1.000
+}
+Atom{  #C
+  Pos   1.034   0.232  -0.709
+}
+Atom{  #C
+  Pos   0.510   1.478   1.372
+}
+Atom{  #C
+  Pos  -1.225  -1.318  -0.441
+}
+Atom{  #O
+  Pos   1.573   2.149   1.211
+  Radius   0.420
+  Color 1.000 0.400 0.400
+}
+Bond{  #C-O
+  Pos   1.042   1.813   1.292
+  Rot  -0.532   0.298   0.081 3.1416
+  Len   1.267
+}
+Bond{  #C-C
+  Pos  -0.810  -1.414  -0.974
+  Rot   0.415   0.587  -0.533 3.1416
+  Len   1.365
+}
+Bond{  #C-H
+  Pos   1.436   0.482  -0.753
+  Rot  -0.402   0.225   0.045 3.1416
+  Len   0.951
+}
+Bond{  #H-O
+  Pos  -0.211   1.948   2.646
+  Rot   0.068   0.727   0.309 3.1416
+  Len   0.865
+}
+Bond{  #C-O
+  Pos   0.115   1.565   1.854
+  Rot   0.395   0.542  -0.482 3.1416
+  Len   1.259
+}
+Bond{  #C-C
+  Pos  -0.378   0.041   0.437
+  Rot   0.569   1.083  -0.069 3.1416
+  Len   1.386
+}
+Bond{  #C-H
+  Pos  -1.245  -0.281   0.877
+  Rot   0.299   0.414  -0.371 3.1416
+  Len   0.962
+}
+Bond{  #C-H
+  Pos   1.001  -0.790  -2.023
+  Rot  -0.262   0.517   0.378 3.1416
+  Len   0.926
+}
+Bond{  #C-C
+  Pos   0.613   0.332  -0.170
+  Rot   0.421   0.591  -0.539 3.1416
+  Len   1.383
+}
+Bond{  #C-H
+  Pos  -1.619  -1.539  -0.384
+  Rot   0.394   0.677  -0.057 3.1416
+  Len   0.911
+}
+Bond{  #C-C
+  Pos   0.351   0.955   0.871
+  Rot  -0.159   0.219  -0.502 3.1416
+  Len   1.484
+}
+Bond{  #C-C
+  Pos   0.172  -1.123  -1.576
+  Rot   0.567   1.077  -0.069 3.1416
+  Len   1.380
+}
+Bond{  #C-C
+  Pos   0.887  -0.252  -1.177
+  Rot  -0.147   0.205  -0.468 3.1416
+  Len   1.378
+}
+Bond{  #C-C
+  Pos  -1.086  -0.834   0.032
+  Rot  -0.139   0.207  -0.473 3.1416
+  Len   1.383
+}
+Bond{  #C-H
+  Pos  -0.499  -1.847  -1.839
+  Rot   0.104   0.820   0.331 3.1416
+  Len   0.967
+}
