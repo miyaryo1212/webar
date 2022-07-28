@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>WebAR Sample</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:url" content="https://miyaryo1212.github.io/webar/sample.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="WebAR Sample" />
+    <meta property="og:description" content="A-FrameとAR.jsを用いたWebARのサンプル" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <a-assets>
+        <a-assets-item id="building001-obj" src="./assets/model/sample/building001/building001.obj"></a-assets-item>
+        <a-assets-item id="building001-mtl" src="./assets/model/sample/building001/building001.mtl"></a-assets-item>
+    </a-assets>
+
+    <a-scene embedded arjs="debugUIEnabled:false; patternRatio:0.75">
+        <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.001.patt">
+            <a-entity obj-model="obj: #building001-obj; mtl: #building001-mtl" position="0 0 0" scale="1 1 1">
+        </a-marker>
+    </a-scene>
+</body>
+
+</html>
