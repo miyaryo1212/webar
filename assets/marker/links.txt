@@ -1,5 +1,2 @@
-[有機分子モデルデータベース3D]
-https://rika-net.com/contents/cp0010/start.html
-
 [AR.js用マーカー]
 https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html
